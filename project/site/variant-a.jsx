@@ -140,20 +140,20 @@ const VA_CSS = `
   .va-grid{ display:grid; grid-template-columns: 1fr 1fr; gap:16px; }
   @media (max-width: 720px){ .va-grid{ grid-template-columns: 1fr; } }
   .va-logo-grid{
-    display:flex; flex-wrap:wrap; gap:12px;
+    display:grid; grid-template-columns: repeat(4, 1fr); gap:16px;
   }
   .va-logo-tile{
-    width:58px; height:58px; min-width:0; box-sizing:border-box;
+    width:100%; aspect-ratio:1; min-width:0; box-sizing:border-box;
     border:1px solid rgba(124,242,160,0.14);
     background:rgba(230,239,225,0.025);
-    border-radius:4px; padding:10px;
+    border-radius:4px; padding:14px;
     display:flex; align-items:center; justify-content:center;
     text-decoration:none; color:inherit;
     transition:border-color .15s, background .15s;
   }
   .va-logo-tile:hover{ border-color:rgba(124,242,160,0.35); background:rgba(124,242,160,0.04); }
   .va-logo-mark{
-    width:36px; height:36px; flex:0 0 36px;
+    width:54px; height:54px; flex:0 0 54px;
     border:1px solid rgba(124,242,160,0.22);
     border-radius:4px; background:#e6efe1;
     display:flex; align-items:center; justify-content:center;
