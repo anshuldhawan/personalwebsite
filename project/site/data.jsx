@@ -135,7 +135,7 @@ const SITE_DATA = {
     {
       slug: 'what-is-spirituality',
       title: 'What is Spirituality?',
-      date: '2025 · 04',
+      date: '2025 · 11',
       blurb: 'On spirit, identity, meditation, gratitude, affirmations, and living consciously.',
       content: [
         'Spirituality is a way of living with a constant realization that we are "ALL" spirits. And "ALL" includes all of humanity, all of the animal kingdom, all the birds, all the fishes, and all of plant life.',
@@ -262,7 +262,7 @@ const SITE_DATA = {
     {
       slug: 'emotion-and-rationality-of-decision-making',
       title: 'Emotion and Rationality in Decision-Making',
-      date: '2025 · 04',
+      date: '2025 · 09',
       blurb: 'On using emotion as signal and rationality as refinement.',
       content: [
         'I generally believe that better decisions come from balancing emotion and rationality. The tricky part is that the balance is rarely obvious in the moment. I often notice myself having an emotional response first, then building a rational story around it afterward. The logic can feel clean, but underneath it there is still an initial pull that shaped the conclusion before I had fully examined it.',
@@ -291,7 +291,7 @@ const SITE_DATA = {
     {
       slug: 'the-issue-of-neat-categorization',
       title: 'The issue of neat categorization',
-      date: '2025 · 04',
+      date: '2025 · 07',
       blurb: 'On why categories help us think, and what they quietly leave out.',
       content: [
         'I recently realized how much of a knack we have for categorizing things in order to understand them. Essentially, we make things simple so we can pattern match more easily.',
@@ -327,7 +327,7 @@ const SITE_DATA = {
     {
       slug: 'three-perspectives-on-reality',
       title: 'Three Perspectives on Reality',
-      date: '2024',
+      date: '2025 · 04',
       blurb: 'On moving between broad, close, and metaphysical views of reality.',
       content: [
         "I have noticed that when you analyze something deeply, it helps to move between two perspectives. One is the bird's-eye view, where you look from high above and understand the whole shape of the thing. The other is the worm's-eye view, where you get close enough to see the details, textures, and hidden mechanics.",
@@ -360,7 +360,7 @@ const SITE_DATA = {
     {
       slug: 'generative-games',
       title: 'Generative Games on building systems that generate games',
-      date: '2025 · 03',
+      date: '2025 · 01',
       blurb: 'On building systems that generate games, and what that changes about the medium.',
       content: [
         'The future of the gaming industry is going to be Generative Games.',
@@ -385,7 +385,7 @@ const SITE_DATA = {
     {
       slug: 'generalist-case',
       title: "A generalist's case for staying a generalist",
-      date: '2025 · 11',
+      date: '2024 · 09',
       blurb: 'Notes on optimizing for breadth in a world that keeps asking you to specialize.',
       content: [],
     },

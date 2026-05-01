@@ -71,14 +71,14 @@ const VA_CSS = `
   .va-card:hover{ border-color: rgba(124,242,160,0.35); }
   .va-writing-card{ display:flex; gap:18px; align-items:flex-start; }
   .va-writing-thumb{
-    flex:0 0 104px; width:104px; aspect-ratio:1 / 1;
+    flex:0 0 140px; width:140px; aspect-ratio:1 / 1;
     border-radius:3px; overflow:hidden;
   }
-  .va-writing-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .va-writing-thumb img{ width:100%; height:100%; object-fit:contain; display:block; }
   .va-writing-body{ flex:1 1 auto; min-width:0; }
   @media (max-width: 600px){
     .va-writing-card{ flex-direction:column; gap:14px; }
-    .va-writing-thumb{ width:100%; flex:0 0 auto; aspect-ratio:16 / 9; }
+    .va-writing-thumb{ width:100%; flex:0 0 auto; }
   }
   .va-card .corner{ position:absolute; width:8px; height:8px; border-color:#7cf2a0; }
   .va-corner-tl{ top:-1px; left:-1px; border-top:1px solid; border-left:1px solid; }
@@ -382,11 +382,12 @@ function HomeView() {
           <div className="va-stack">
             {data.writings.map(w => {
               const hero = (w.images || []).find(img => img.kind === 'hero');
+              const thumbStyle = hero && hero.aspect ? { aspectRatio: hero.aspect.replace('/', ' / ') } : undefined;
               return (
                 <a key={w.slug} href={`/writings/${w.slug}/`} className="va-card va-writing-card">
                   <span className="corner va-corner-tl" /><span className="corner va-corner-br" />
                   {hero && (
-                    <div className="va-writing-thumb va-media">
+                    <div className="va-writing-thumb va-media" style={thumbStyle}>
                       <img src={hero.src} alt={hero.alt || ''} loading="lazy" />
                     </div>
                   )}
