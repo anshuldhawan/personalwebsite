@@ -22,22 +22,6 @@ const SITE_DATA = {
   ],
   projects: [
     {
-      slug: 'words-with-degens',
-      title: 'Words with Degens',
-      role: 'Builder',
-      tag: 'Game · crypto',
-      blurb: "A scramble game you play with friends, built around crypto lingo. Launched on play.fun with on-chain rewards for winners.",
-      content: [
-        "A scramble game you play with friends, built around crypto lingo. Launched on play.fun with on-chain rewards for winners.",
-        "The bet was that crypto-native vocabulary plus social play could create a wedge in word games. Small surface area, fast loop, easy to share.",
-      ],
-      year: '2025',
-      media: { type: 'image', src: '/assets/images/words-with-degens.png', alt: 'Words with Degens game poster', aspect: '1/1' },
-      links: [
-        { label: 'play.fun', href: 'https://play.fun' },
-      ],
-    },
-    {
       slug: 'poker-tournament',
       title: 'Claude vs ChatGPT vs Gemini vs Grok — Poker Tournament',
       role: 'Builder',
@@ -82,6 +66,39 @@ const SITE_DATA = {
       links: [],
     },
     {
+      slug: 'experimentation-service',
+      title: 'Experimentation & Optimization Service',
+      role: 'Product · Zynga',
+      tag: 'Platform',
+      blurb: "Server-side experimentation and optimization service for Zynga that let PMs and analysts ship experiments without engineering bottlenecks.",
+      content: [
+        "Zynga's edge was testing more ideas than anyone else, but after the mobile transition the old experimentation platform got slow — every test needed a client release.",
+        "I led the build of a server-side experimentation and optimization service that let PMs and analysts configure, segment, and ship experiments without engineering bottlenecks.",
+        "Earned a SPIRIT award (given for setting a new company standard).",
+      ],
+      year: '2014 — 2017',
+      media: null,
+      links: [
+        { label: 'Patent', href: 'https://patents.google.com/patent/US9737815B2' },
+      ],
+    },
+    {
+      slug: 'words-with-degens',
+      title: 'Words with Degens',
+      role: 'Builder',
+      tag: 'Game · crypto',
+      blurb: "A scramble game you play with friends, built around crypto lingo. Launched on play.fun with on-chain rewards for winners.",
+      content: [
+        "A scramble game you play with friends, built around crypto lingo. Launched on play.fun with on-chain rewards for winners.",
+        "The bet was that crypto-native vocabulary plus social play could create a wedge in word games. Small surface area, fast loop, easy to share.",
+      ],
+      year: '2025',
+      media: { type: 'image', src: '/assets/images/words-with-degens.png', alt: 'Words with Degens game poster', aspect: '1/1' },
+      links: [
+        { label: 'play.fun', href: 'https://play.fun' },
+      ],
+    },
+    {
       slug: 'global-learning-xprize',
       title: 'Global Learning XPrize',
       role: 'Builder',
@@ -98,26 +115,9 @@ const SITE_DATA = {
       ],
     },
     {
-      slug: 'experimentation-service',
-      title: 'Experimentation & Optimization Service',
-      role: 'Lead · Zynga',
-      tag: 'Platform',
-      blurb: "Server-side experimentation and optimization service for Zynga that let PMs and analysts ship experiments without engineering bottlenecks.",
-      content: [
-        "Zynga's edge was testing more ideas than anyone else, but after the mobile transition the old experimentation platform got slow — every test needed a client release.",
-        "I led the build of a server-side experimentation and optimization service that let PMs and analysts configure, segment, and ship experiments without engineering bottlenecks.",
-        "Earned a SPIRIT award (given for setting a new company standard).",
-      ],
-      year: '2014 — 2017',
-      media: null,
-      links: [
-        { label: 'Patent', href: 'https://patents.google.com/patent/US9737815B2' },
-      ],
-    },
-    {
       slug: 'player-recommendation',
       title: 'Player Recommendation System',
-      role: 'Builder · Zynga',
+      role: 'Product · Zynga',
       tag: 'Matchmaking',
       blurb: "A skill-based matchmaking system that pairs players for more balanced and engaging sessions.",
       content: [
