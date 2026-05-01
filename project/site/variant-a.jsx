@@ -69,7 +69,7 @@ const VA_CSS = `
     text-decoration:none; color:inherit; display:block;
   }
   .va-card:hover{ border-color: rgba(124,242,160,0.35); }
-  .va-writing-card{ display:flex; gap:18px; align-items:flex-start; }
+  .va-writing-card{ display:flex; gap:18px; align-items:center; }
   .va-writing-thumb{
     flex:0 0 140px; width:140px; aspect-ratio:1 / 1;
     border-radius:3px; overflow:hidden;
