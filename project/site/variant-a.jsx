@@ -409,6 +409,25 @@ function HomeView() {
           <div className="va-prose" style={{ fontSize:18 }}>
             {data.about.map((p, i) => <AboutParagraph key={i} block={p} />)}
           </div>
+          {data.consulting && (
+            <a href={data.consulting.href} target="_blank" rel="noreferrer" style={{
+              display:'block', margin:'28px 0 0', padding:'20px 24px',
+              border:'1px solid rgba(124,242,160,0.35)', borderRadius:4,
+              background:'rgba(124,242,160,0.04)', textDecoration:'none',
+              transition:'border-color .2s, background .2s',
+            }} onMouseEnter={e => { e.currentTarget.style.borderColor='#7cf2a0'; e.currentTarget.style.background='rgba(124,242,160,0.08)'; }}
+               onMouseLeave={e => { e.currentTarget.style.borderColor='rgba(124,242,160,0.35)'; e.currentTarget.style.background='rgba(124,242,160,0.04)'; }}>
+              <span style={{ fontFamily:"'JetBrains Mono', monospace", fontWeight:500, fontSize:11, letterSpacing:'.18em', textTransform:'uppercase', color:'#7cf2a0' }}>
+                {data.consulting.role}
+              </span>
+              <span style={{ display:'block', color:'#e6efe1', fontSize:18, marginTop:6, fontFamily:"'Source Serif 4', Georgia, serif" }}>
+                {data.consulting.company} <span style={{ fontSize:14, color:'#7cf2a0' }}>↗</span>
+              </span>
+              <span style={{ display:'block', color:'#cfd8c9', fontSize:15, marginTop:4, fontFamily:"'Source Serif 4', Georgia, serif" }}>
+                {data.consulting.description}
+              </span>
+            </a>
+          )}
           {data.companyLogos && data.companyLogos.length > 0 && (
             <>
               <div className="va-pixel-divider" style={{ margin:'32px 0 18px' }} />

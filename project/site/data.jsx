@@ -3,17 +3,24 @@ const SITE_DATA = {
   name: 'Anshul Dhawan',
   tagline: 'Generalist & game developer',
   about: [
-    "I'm co-founder of PlayWorlds, where I'm building the first AI-native creation platform for kids. I bring 15 years of experience scaling gaming, social, and AI products across some of the largest live-service and multiplayer platforms in the industry.",
+    "I'm co-founder of PlayWorlds, where I'm building the first AI-native creation platform for kids.",
+    "I bring 15 years of experience scaling gaming, social, and AI products across some of the largest live-service and multiplayer platforms in the industry.",
     "Most recently, I founded Social Pixels, an AI-native gaming studio that achieved 20x efficiency improvements in cost and time-to-market for game production. Before that, I was VP of Product and Analytics at Supernatural VR, which was acquired by Meta in a deal reported at about $400M.",
     "I led product at VRChat, one of the defining social VR platforms, and served as Senior Director of Product and Business Intelligence at Glu Mobile / EA.",
     {
       text: "I spent the first seven-plus years of my career at Zynga, rising from software engineer to Head of Product, Growth, leading the development of ",
-      link: { label: "Zynga's learning machine", href: '/projects/experimentation-service/' },
+      link: { label: "Zynga's learning machine", href: '/projects/experimentation-and-optimization-service/' },
       after: ". I also founded Equally, an AI-powered AR learning platform ",
       secondLink: { label: 'Da Vinci Club AR', href: '/projects/da-vinci-club-ar/' },
       secondAfter: '.',
     },
   ],
+  consulting: {
+    role: 'Fractional AI Product Lead',
+    company: 'AI Growth Engine',
+    href: 'https://ai-growthengine.com',
+    description: 'An independent consulting service helping startup product, marketing, and GTM teams become AI-native.',
+  },
   companyLogos: [
     { name: 'Meta', href: 'https://www.meta.com/', logo: 'https://www.google.com/s2/favicons?domain=meta.com&sz=128' },
     { name: 'Zynga', href: 'https://www.zynga.com/', logo: 'https://www.google.com/s2/favicons?domain=zynga.com&sz=128' },
@@ -66,7 +73,7 @@ const SITE_DATA = {
       links: [],
     },
     {
-      slug: 'experimentation-service',
+      slug: 'experimentation-and-optimization-service',
       title: 'Experimentation & Optimization Service',
       role: 'Product · Zynga',
       tag: 'Platform',
@@ -74,6 +81,7 @@ const SITE_DATA = {
       content: [
         "Zynga's edge was testing more ideas than anyone else, but after the mobile transition the old experimentation platform got slow — every test needed a client release.",
         "I led the build of a server-side experimentation and optimization service that let PMs and analysts configure, segment, and ship experiments without engineering bottlenecks.",
+        "The service was integrated across every Zynga game, touching millions of players and generating hundreds of millions of dollars in revenue.",
         "Earned a SPIRIT award (given for setting a new company standard).",
       ],
       year: '2014 — 2017',
