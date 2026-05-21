@@ -135,6 +135,7 @@ const SITE_DATA = {
     {
       slug: 'ai-native-organization',
       title: 'AI Native Organization',
+      category: 'Technology',
       date: '2026 · 05',
       blurb: 'On the stack, org design, and operating habits required to become AI Native.',
       content: [
@@ -235,31 +236,31 @@ const SITE_DATA = {
         {
           kind: 'hero',
           after: 0,
-          src: '/assets/images/ai-native-organization-hero.png',
+          src: '/assets/images/ai-native-organization-hero.webp',
           alt: 'Dark phosphor-green CRT illustration of an AI Native organization as three connected layers: technology stack, organization design, and team thinking',
           aspect: '3/2',
         },
         {
           after: 14,
-          src: '/assets/images/ai-native-organization-stack.png',
+          src: '/assets/images/ai-native-organization-stack.webp',
           alt: 'Dark phosphor-green CRT system map of an agent-readable company stack connecting code, data, docs, APIs, and processes',
           aspect: '3/2',
         },
         {
           after: 27,
-          src: '/assets/images/ai-native-organization-org-design.png',
+          src: '/assets/images/ai-native-organization-org-design.webp',
           alt: 'Dark phosphor-green CRT workflow showing agents handling structured work and humans reviewing ambiguous exceptions',
           aspect: '3/2',
         },
         {
           after: 40,
-          src: '/assets/images/ai-native-organization-app-hub.png',
+          src: '/assets/images/ai-native-organization-app-hub.webp',
           alt: 'Dark phosphor-green CRT internal app hub where team-built agents and tools converge into a shared platform',
           aspect: '3/2',
         },
         {
           after: 51,
-          src: '/assets/images/ai-native-organization-ground-up.png',
+          src: '/assets/images/ai-native-organization-ground-up.webp',
           alt: 'Dark phosphor-green CRT flywheel showing team-by-team AI Native adoption from task audit to automation to app hub',
           aspect: '3/2',
         },
@@ -268,6 +269,7 @@ const SITE_DATA = {
     {
       slug: 'what-is-spirituality',
       title: 'What is Spirituality?',
+      category: 'Philosophy',
       date: '2025 · 11',
       blurb: 'On spirit, identity, meditation, gratitude, affirmations, and living consciously.',
       content: [
@@ -376,7 +378,7 @@ const SITE_DATA = {
       images: [
         {
           kind: 'hero',
-          src: '/assets/images/what-is-spirituality-mask.png',
+          src: '/assets/images/what-is-spirituality-mask.webp',
           alt: 'Colorful artwork of a figure lifting a mask to reveal a bright landscape with mountains, flowers, and a butterfly',
           aspect: '642/636',
           credit: {
@@ -386,7 +388,7 @@ const SITE_DATA = {
         },
         {
           after: 27,
-          src: '/assets/images/what-is-spirituality-meditation.png',
+          src: '/assets/images/what-is-spirituality-meditation.webp',
           alt: 'A meditating figure in a luminous natural landscape with breath-like light connecting plants, birds, water, and mountains',
           aspect: '3/2',
         },
@@ -395,6 +397,7 @@ const SITE_DATA = {
     {
       slug: 'emotion-and-rationality-of-decision-making',
       title: 'Emotion and Rationality in Decision-Making',
+      category: 'Philosophy',
       date: '2025 · 09',
       blurb: 'On using emotion as signal and rationality as refinement.',
       content: [
@@ -409,13 +412,13 @@ const SITE_DATA = {
       images: [
         {
           kind: 'hero',
-          src: '/assets/images/emotion-and-rationality-decision-making-hero.png',
+          src: '/assets/images/emotion-and-rationality-decision-making-hero.webp',
           alt: 'Thoughtful figure behind a gold balance scale with an amber heart and phosphor-green wireframe brain',
           aspect: '3/2',
         },
         {
           after: 4,
-          src: '/assets/images/emotion-and-rationality-decision-making-prism.png',
+          src: '/assets/images/emotion-and-rationality-decision-making-prism.webp',
           alt: 'Dark CRT-style decision flow with a balance scale, heart, wireframe brain, inquiry prism, and check mark',
           aspect: '3/2',
         },
@@ -424,6 +427,7 @@ const SITE_DATA = {
     {
       slug: 'the-issue-of-neat-categorization',
       title: 'The issue of neat categorization',
+      category: 'Philosophy',
       date: '2025 · 07',
       blurb: 'On why categories help us think, and what they quietly leave out.',
       content: [
@@ -439,19 +443,19 @@ const SITE_DATA = {
       images: [
         {
           kind: 'hero',
-          src: '/assets/images/the-issue-of-neat-categorization-hero.png',
+          src: '/assets/images/the-issue-of-neat-categorization-hero.webp',
           alt: 'Abstract phosphor-green taxonomy grid with organic forms spilling outside the boxes',
           aspect: '3/2',
         },
         {
           after: 2,
-          src: '/assets/images/the-issue-of-neat-categorization-spectrum.png',
+          src: '/assets/images/the-issue-of-neat-categorization-spectrum.webp',
           alt: 'Abstract phosphor-green spectrum of human silhouettes and organic branching lines between categories',
           aspect: '3/2',
         },
         {
           after: 6,
-          src: '/assets/images/the-issue-of-neat-categorization-examples.png',
+          src: '/assets/images/the-issue-of-neat-categorization-examples.webp',
           alt: 'Abstract phosphor-green composition of medicine, maps, culture, politics, language, and algorithms escaping a taxonomy grid',
           aspect: '3/2',
         },
@@ -460,6 +464,7 @@ const SITE_DATA = {
     {
       slug: 'three-perspectives-on-reality',
       title: 'Three Perspectives on Reality',
+      category: 'Philosophy',
       date: '2025 · 04',
       blurb: 'On moving between broad, close, and metaphysical views of reality.',
       content: [
@@ -472,19 +477,19 @@ const SITE_DATA = {
       images: [
         {
           kind: 'hero',
-          src: '/assets/images/three-perspectives-on-reality-birds-eye.png',
+          src: '/assets/images/three-perspectives-on-reality-birds-eye.webp',
           alt: "Abstract phosphor-green bird's-eye map of a forest canopy",
           aspect: '3/2',
         },
         {
           after: 0,
-          src: '/assets/images/three-perspectives-on-reality-worms-eye.png',
+          src: '/assets/images/three-perspectives-on-reality-worms-eye.webp',
           alt: "Abstract phosphor-green close-up of roots and layered earth",
           aspect: '3/2',
         },
         {
           after: 3,
-          src: '/assets/images/three-perspectives-on-reality-metaphysical.png',
+          src: '/assets/images/three-perspectives-on-reality-metaphysical.webp',
           alt: 'Abstract phosphor-green metaphysical geometry around a forest system',
           aspect: '3/2',
         },
@@ -493,6 +498,7 @@ const SITE_DATA = {
     {
       slug: 'generative-games',
       title: 'Generative Games on building systems that generate games',
+      category: 'Technology',
       date: '2025 · 01',
       blurb: 'On building systems that generate games, and what that changes about the medium.',
       content: [
@@ -509,7 +515,7 @@ const SITE_DATA = {
       images: [
         {
           kind: 'hero',
-          src: '/assets/images/generative-games-living-world.png',
+          src: '/assets/images/generative-games-living-world.webp',
           alt: 'A luminous isometric game world being generated from authored systems and adaptive AI particles',
           aspect: '3/2',
         },
@@ -518,6 +524,7 @@ const SITE_DATA = {
     {
       slug: 'generalist-case',
       title: "A generalist's case for staying a generalist",
+      category: 'Philosophy',
       date: '2024 · 09',
       blurb: 'Notes on optimizing for breadth in a world that keeps asking you to specialize.',
       content: [],

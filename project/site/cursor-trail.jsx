@@ -14,21 +14,32 @@ function CursorTrail({ variant = 'spark', color = '#7cf2a0', container = null })
     const ctx = canvas.getContext('2d');
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
     const target = container || canvas.parentElement;
+    const useViewport = !container;
 
     function resize() {
-      const r = target.getBoundingClientRect();
-      canvas.width = r.width * dpr;
-      canvas.height = r.height * dpr;
+      const r = useViewport
+        ? { width: window.innerWidth, height: window.innerHeight }
+        : target.getBoundingClientRect();
+      canvas.width = Math.ceil(r.width * dpr);
+      canvas.height = Math.ceil(r.height * dpr);
       canvas.style.width = r.width + 'px';
       canvas.style.height = r.height + 'px';
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     }
     resize();
     const ro = new ResizeObserver(resize);
-    ro.observe(target);
+    if (useViewport) {
+      window.addEventListener('resize', resize);
+    } else {
+      ro.observe(target);
+    }
+
+    function startTicking() {
+      if (!raf.current) raf.current = requestAnimationFrame(tick);
+    }
 
     function onMove(e) {
-      const r = target.getBoundingClientRect();
+      const r = useViewport ? { left: 0, top: 0 } : target.getBoundingClientRect();
       const x = e.clientX - r.left;
       const y = e.clientY - r.top;
       const now = performance.now();
@@ -50,12 +61,14 @@ function CursorTrail({ variant = 'spark', color = '#7cf2a0', container = null })
             char: variant === 'binary' ? (Math.random() > 0.5 ? '1' : '0') : null,
           });
         }
+        startTicking();
         last.current = { x, y, t: now };
       } else {
         last.current = { ...last.current, x, y };
       }
     }
-    target.addEventListener('mousemove', onMove);
+    const eventTarget = useViewport ? window : target;
+    eventTarget.addEventListener('mousemove', onMove);
 
     function tick() {
       ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
@@ -86,13 +99,13 @@ function CursorTrail({ variant = 'spark', color = '#7cf2a0', container = null })
         }
       }
       ctx.globalAlpha = 1;
-      raf.current = requestAnimationFrame(tick);
+      raf.current = ps.length > 0 ? requestAnimationFrame(tick) : 0;
     }
-    raf.current = requestAnimationFrame(tick);
 
     return () => {
-      cancelAnimationFrame(raf.current);
-      target.removeEventListener('mousemove', onMove);
+      if (raf.current) cancelAnimationFrame(raf.current);
+      eventTarget.removeEventListener('mousemove', onMove);
+      window.removeEventListener('resize', resize);
       ro.disconnect();
     };
   }, [variant, color, container]);
@@ -101,7 +114,7 @@ function CursorTrail({ variant = 'spark', color = '#7cf2a0', container = null })
     <canvas
       ref={canvasRef}
       style={{
-        position: 'absolute',
+        position: container ? 'absolute' : 'fixed',
         inset: 0,
         pointerEvents: 'none',
         zIndex: 5,

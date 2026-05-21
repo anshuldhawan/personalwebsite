@@ -80,6 +80,23 @@ const VA_CSS = `
     .va-writing-card{ flex-direction:column; gap:14px; }
     .va-writing-thumb{ width:100%; flex:0 0 auto; }
   }
+  .va-category-row{
+    display:flex; gap:8px; flex-wrap:wrap; align-items:center;
+    margin:0 0 18px;
+  }
+  .va-category-button{
+    min-height:32px; padding:0 12px; border-radius:4px;
+    border:1px solid rgba(124,242,160,0.22);
+    background:rgba(230,239,225,0.025);
+    color:#7a8a76; cursor:pointer;
+    font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:.08em;
+    text-transform:uppercase;
+  }
+  .va-category-button:hover{ color:#e6efe1; border-color:rgba(124,242,160,0.4); }
+  .va-category-button.on{
+    color:#0b0d0a; background:#7cf2a0; border-color:#7cf2a0;
+    box-shadow:0 0 16px rgba(124,242,160,0.22);
+  }
   .va-card .corner{ position:absolute; width:8px; height:8px; border-color:#7cf2a0; }
   .va-corner-tl{ top:-1px; left:-1px; border-top:1px solid; border-left:1px solid; }
   .va-corner-br{ bottom:-1px; right:-1px; border-bottom:1px solid; border-right:1px solid; }
@@ -261,11 +278,71 @@ const Nav = ({ activeTab, onTabClick }) => {
   );
 };
 
+const WRITING_CATEGORIES = ['All', 'Technology', 'Philosophy'];
+
+const getWritingCategory = (writing) => writing.category || 'Philosophy';
+
+const filterWritings = (writings, category) => (
+  category === 'All' ? writings : writings.filter(w => getWritingCategory(w) === category)
+);
+
+function WritingCategoryFilter({ writings, activeCategory, onCategoryChange }) {
+  return (
+    <div className="va-category-row" role="tablist" aria-label="Writing categories">
+      {WRITING_CATEGORIES.map(category => {
+        const count = filterWritings(writings, category).length;
+        return (
+          <button
+            key={category}
+            type="button"
+            className={`va-category-button ${activeCategory === category ? 'on' : ''}`}
+            onClick={() => onCategoryChange(category)}
+            aria-pressed={activeCategory === category}
+          >
+            {category} {count}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+function WritingCard({ writing, compact = false }) {
+  const hero = (writing.images || []).find(img => img.kind === 'hero');
+  const thumbStyle = hero && hero.aspect ? { aspectRatio: hero.aspect.replace('/', ' / ') } : undefined;
+  if (compact) {
+    return (
+      <a href={`/writings/${writing.slug}/`} className="va-card">
+        <span className="corner va-corner-tl" /><span className="corner va-corner-br" />
+        <div className="va-meta" style={{ marginBottom:6 }}>{writing.date} · {getWritingCategory(writing)}</div>
+        <div style={{ fontFamily:"'JetBrains Mono', monospace", fontSize:18, fontWeight:500, color:'#f1f7ec', marginBottom:6 }}>{writing.title}</div>
+        <p style={{ margin:0, color:'#cfd8c9', fontSize:15 }}>{writing.blurb}</p>
+      </a>
+    );
+  }
+  return (
+    <a href={`/writings/${writing.slug}/`} className="va-card va-writing-card">
+      <span className="corner va-corner-tl" /><span className="corner va-corner-br" />
+      {hero && (
+        <div className="va-writing-thumb va-media" style={thumbStyle}>
+          <img src={hero.src} alt={hero.alt || ''} loading="lazy" />
+        </div>
+      )}
+      <div className="va-writing-body">
+        <div className="va-meta" style={{ marginBottom:8 }}>{writing.date} · {getWritingCategory(writing)}</div>
+        <h3 style={{ margin:'0 0 8px', fontSize:20, fontFamily:"'JetBrains Mono', monospace", fontWeight:500, color:'#f1f7ec' }}>{writing.title}</h3>
+        <p style={{ margin:0, color:'#cfd8c9' }}>{writing.blurb}</p>
+      </div>
+    </a>
+  );
+}
+
 // ----- Home view -----
 
 function HomeView() {
   const data = window.SITE_DATA;
   const validTabs = ['home','projects','writings','about'];
+  const [writingCategory, setWritingCategory] = React.useState('All');
   const [tab, setTab] = React.useState(() => {
     const hash = (typeof location !== 'undefined' && location.hash || '').slice(1);
     return validTabs.includes(hash) ? hash : 'home';
@@ -343,12 +420,7 @@ function HomeView() {
           </div>
           <div className="va-stack">
             {data.writings.map(w => (
-              <a key={w.slug} href={`/writings/${w.slug}/`} className="va-card">
-                <span className="corner va-corner-tl" /><span className="corner va-corner-br" />
-                <div className="va-meta" style={{ marginBottom:6 }}>{w.date}</div>
-                <div style={{ fontFamily:"'JetBrains Mono', monospace", fontSize:18, fontWeight:500, color:'#f1f7ec', marginBottom:6 }}>{w.title}</div>
-                <p style={{ margin:0, color:'#cfd8c9', fontSize:15 }}>{w.blurb}</p>
-              </a>
+              <WritingCard key={w.slug} writing={w} compact />
             ))}
           </div>
         </section>
@@ -379,26 +451,15 @@ function HomeView() {
       {tab === 'writings' && (
         <section className="va-section" style={{ paddingTop:64, paddingBottom:80 }}>
           <h2 className="va-h2">// writings</h2>
+          <WritingCategoryFilter
+            writings={data.writings}
+            activeCategory={writingCategory}
+            onCategoryChange={setWritingCategory}
+          />
           <div className="va-stack">
-            {data.writings.map(w => {
-              const hero = (w.images || []).find(img => img.kind === 'hero');
-              const thumbStyle = hero && hero.aspect ? { aspectRatio: hero.aspect.replace('/', ' / ') } : undefined;
-              return (
-                <a key={w.slug} href={`/writings/${w.slug}/`} className="va-card va-writing-card">
-                  <span className="corner va-corner-tl" /><span className="corner va-corner-br" />
-                  {hero && (
-                    <div className="va-writing-thumb va-media" style={thumbStyle}>
-                      <img src={hero.src} alt={hero.alt || ''} loading="lazy" />
-                    </div>
-                  )}
-                  <div className="va-writing-body">
-                    <div className="va-meta" style={{ marginBottom:8 }}>{w.date}</div>
-                    <h3 style={{ margin:'0 0 8px', fontSize:20, fontFamily:"'JetBrains Mono', monospace", fontWeight:500, color:'#f1f7ec' }}>{w.title}</h3>
-                    <p style={{ margin:0, color:'#cfd8c9' }}>{w.blurb}</p>
-                  </div>
-                </a>
-              );
-            })}
+            {filterWritings(data.writings, writingCategory).map(w => (
+              <WritingCard key={w.slug} writing={w} />
+            ))}
           </div>
         </section>
       )}
