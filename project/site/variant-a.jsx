@@ -557,7 +557,8 @@ function WritingDetail({ writing }) {
   const paragraphs = (writing.content && writing.content.length > 0) ? writing.content : [writing.blurb];
   const images = writing.images || [];
   const heroImage = images.find((image) => image.kind === 'hero');
-  const inlineImages = images.filter((image) => image.kind !== 'hero' && Number.isInteger(image.after));
+  const topHeroImage = heroImage && Number.isInteger(heroImage.after) ? null : heroImage;
+  const inlineImages = images.filter((image) => Number.isInteger(image.after));
   React.useEffect(() => {
     document.title = `${writing.title} · Anshul Dhawan`;
   }, [writing.title]);
@@ -574,12 +575,12 @@ function WritingDetail({ writing }) {
 
           <div className="va-pixel-divider" style={{ margin:'28px 0 24px' }} />
 
-          {heroImage && (
+          {topHeroImage && (
             <>
-              <ProjectMedia media={{ type:'image', ...heroImage }} style={{ marginBottom:30 }} />
-              {heroImage.credit && (
+              <ProjectMedia media={{ type:'image', ...topHeroImage }} style={{ marginBottom:30 }} />
+              {topHeroImage.credit && (
                 <div className="va-caption">
-                  <a href={heroImage.credit.href} target="_blank" rel="noreferrer">{heroImage.credit.label}</a>
+                  <a href={topHeroImage.credit.href} target="_blank" rel="noreferrer">{topHeroImage.credit.label}</a>
                 </div>
               )}
             </>
@@ -590,7 +591,14 @@ function WritingDetail({ writing }) {
               <React.Fragment key={i}>
                 <WritingBlock block={p} />
                 {inlineImages.filter((image) => image.after === i).map((image) => (
-                  <ProjectMedia key={image.src} media={{ type:'image', ...image }} style={{ margin:'26px 0 28px' }} />
+                  <React.Fragment key={image.src}>
+                    <ProjectMedia media={{ type:'image', ...image }} style={{ margin:'26px 0 28px' }} />
+                    {image.credit && (
+                      <div className="va-caption">
+                        <a href={image.credit.href} target="_blank" rel="noreferrer">{image.credit.label}</a>
+                      </div>
+                    )}
+                  </React.Fragment>
                 ))}
               </React.Fragment>
             ))}
