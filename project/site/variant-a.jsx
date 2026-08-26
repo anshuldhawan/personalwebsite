@@ -181,6 +181,24 @@ const VA_CSS = `
   .va-logo-fallback{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; }
   .va-logo-name{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; }
   .va-section{ width:100%; box-sizing:border-box; padding:56px 56px 24px; max-width:760px; margin:0 auto; }
+  .va-hero{ position:relative; }
+  .va-hero-copy{ position:relative; z-index:2; }
+  .va-mascot-stage{
+    position:absolute; width:228px; aspect-ratio:1; right:-148px; top:-62px;
+    pointer-events:none; isolation:isolate; z-index:3;
+    filter:drop-shadow(0 0 18px rgba(124,242,160,.2));
+  }
+  .va-mascot-stage::before{
+    content:''; position:absolute; inset:17%; z-index:-1; border-radius:50%;
+    background:radial-gradient(circle, rgba(124,242,160,.18), rgba(124,242,160,.045) 48%, transparent 72%);
+    filter:blur(13px); opacity:.9;
+  }
+  .va-mascot-sprite{
+    position:absolute; inset:0; width:100%; height:100%;
+    background-image:url('/assets/sprites/pixel-directions/pixel-directions-spritesheet.png');
+    background-repeat:no-repeat; background-size:300% 300%;
+    background-position:var(--sprite-x, 50%) var(--sprite-y, 50%);
+  }
   .va-bracket{ color:#7cf2a0; font-family:'JetBrains Mono', monospace; }
   .va-back{
     font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:.08em;
@@ -198,6 +216,8 @@ const VA_CSS = `
     .va-brand{ flex:1 0 100%; margin-right:0; }
     .va-section{ padding:40px 24px 24px; }
     .va-detail-title{ font-size:26px; }
+    .va-hero .va-h1{ max-width:220px; }
+    .va-mascot-stage{ width:112px; right:-4px; top:-24px; z-index:1; }
   }
 `;
 
@@ -337,6 +357,112 @@ function WritingCard({ writing, compact = false }) {
   );
 }
 
+const clampMascot = (value, min, max) => Math.max(min, Math.min(max, value));
+const MASCOT_SPRITES = {
+  'up-left':{ x:'0%', y:'0%' },
+  up:{ x:'50%', y:'0%' },
+  'up-right':{ x:'100%', y:'0%' },
+  left:{ x:'0%', y:'50%' },
+  center:{ x:'50%', y:'50%' },
+  right:{ x:'100%', y:'50%' },
+  'down-left':{ x:'0%', y:'100%' },
+  down:{ x:'50%', y:'100%' },
+  'down-right':{ x:'100%', y:'100%' },
+};
+
+function MouseFollowingMascot() {
+  const stageRef = React.useRef(null);
+  const spriteRef = React.useRef(null);
+
+  React.useEffect(() => {
+    const stage = stageRef.current;
+    const sprite = spriteRef.current;
+    if (!stage || !sprite) return;
+
+    const motion = { x:0, y:0, vx:0, vy:0, targetX:0, targetY:0 };
+    let currentPose = 'center';
+    let raf = 0;
+
+    const atlas = new Image();
+    atlas.src = '/assets/sprites/pixel-directions/pixel-directions-spritesheet.png';
+
+    const poseForDirection = (x, y) => {
+      if (Math.hypot(x, y) < .12) return 'center';
+      const angle = Math.atan2(y, x) * 180 / Math.PI;
+      if (angle >= -22.5 && angle < 22.5) return 'right';
+      if (angle >= 22.5 && angle < 67.5) return 'down-right';
+      if (angle >= 67.5 && angle < 112.5) return 'down';
+      if (angle >= 112.5 && angle < 157.5) return 'down-left';
+      if (angle >= 157.5 || angle < -157.5) return 'left';
+      if (angle >= -157.5 && angle < -112.5) return 'up-left';
+      if (angle >= -112.5 && angle < -67.5) return 'up';
+      return 'up-right';
+    };
+
+    const renderMotion = () => {
+      motion.vx = (motion.vx + (motion.targetX - motion.x) * .14) * .7;
+      motion.vy = (motion.vy + (motion.targetY - motion.y) * .14) * .7;
+      motion.x += motion.vx;
+      motion.y += motion.vy;
+
+      const nextPose = poseForDirection(motion.x, motion.y);
+      if (nextPose !== currentPose) {
+        currentPose = nextPose;
+        const frame = MASCOT_SPRITES[nextPose];
+        sprite.style.setProperty('--sprite-x', frame.x);
+        sprite.style.setProperty('--sprite-y', frame.y);
+        sprite.dataset.pose = nextPose;
+      }
+
+      const unsettled = Math.abs(motion.targetX - motion.x) > .001 || Math.abs(motion.targetY - motion.y) > .001 || Math.abs(motion.vx) > .001 || Math.abs(motion.vy) > .001;
+      raf = unsettled ? requestAnimationFrame(renderMotion) : 0;
+    };
+
+    const startMotion = () => {
+      if (!raf) raf = requestAnimationFrame(renderMotion);
+    };
+
+    const onPointerMove = (event) => {
+      const rect = stage.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+      const dx = event.clientX - centerX;
+      const dy = event.clientY - centerY;
+      const directionRange = Math.max(160, Math.min(rect.width, rect.height) * .92);
+      motion.targetX = clampMascot(dx / directionRange, -1, 1);
+      motion.targetY = clampMascot(dy / directionRange, -1, 1);
+      startMotion();
+    };
+
+    const reset = () => {
+      motion.targetX = 0;
+      motion.targetY = 0;
+      startMotion();
+    };
+
+    window.addEventListener('pointermove', onPointerMove, { passive:true });
+    window.addEventListener('blur', reset);
+    document.documentElement.addEventListener('mouseleave', reset);
+    return () => {
+      if (raf) cancelAnimationFrame(raf);
+      window.removeEventListener('pointermove', onPointerMove);
+      window.removeEventListener('blur', reset);
+      document.documentElement.removeEventListener('mouseleave', reset);
+    };
+  }, []);
+
+  return (
+    <div
+      ref={stageRef}
+      className="va-mascot-stage"
+      role="img"
+      aria-label="Pixel, a friendly robot mascot who looks toward your pointer"
+    >
+      <span ref={spriteRef} className="va-mascot-sprite" aria-hidden="true" data-pose="center" />
+    </div>
+  );
+}
+
 // ----- Home view -----
 
 function HomeView() {
@@ -374,18 +500,23 @@ function HomeView() {
 
       {tab === 'home' && (
         <section className="va-section" style={{ paddingTop:96, paddingBottom:80 }}>
-          <h1 className="va-h1" style={{ fontSize:44, marginBottom:14 }}>
-            Anshul Dhawan<span className="va-cursor" />
-          </h1>
-          <p style={{ fontSize:19, color:'#cfd8c9', maxWidth:580, margin:'0 0 28px' }}>
-            Generalist and game developer. I work on <span className="va-acc">product, growth, analytics</span>, and <span className="va-acc">AI</span>, usually where game or software are trying to do something new.
-          </p>
-          <div style={{ display:'flex', gap:18, flexWrap:'wrap', marginBottom:8 }}>
-            {data.links.map(l => (
-              <a key={l.label} href={l.href} target="_blank" rel="noreferrer" className="va-link va-mono" style={{ fontSize:12, letterSpacing:'.08em', textTransform:'uppercase' }}>
-                {l.label} ↗
-              </a>
-            ))}
+          <div className="va-hero">
+            <div className="va-hero-copy">
+              <h1 className="va-h1" style={{ fontSize:44, marginBottom:14 }}>
+                Anshul Dhawan<span className="va-cursor" />
+              </h1>
+              <p style={{ fontSize:19, color:'#cfd8c9', maxWidth:580, margin:'0 0 28px' }}>
+                Generalist and game developer. I work on <span className="va-acc">product, growth, analytics</span>, and <span className="va-acc">AI</span>, usually where game or software are trying to do something new.
+              </p>
+              <div style={{ display:'flex', gap:18, flexWrap:'wrap', marginBottom:8 }}>
+                {data.links.map(l => (
+                  <a key={l.label} href={l.href} target="_blank" rel="noreferrer" className="va-link va-mono" style={{ fontSize:12, letterSpacing:'.08em', textTransform:'uppercase' }}>
+                    {l.label} ↗
+                  </a>
+                ))}
+              </div>
+            </div>
+            <MouseFollowingMascot />
           </div>
 
           <div className="va-pixel-divider" style={{ margin:'40px 0 24px' }} />
