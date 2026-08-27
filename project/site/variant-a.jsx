@@ -152,6 +152,67 @@ const VA_CSS = `
   }
   .va-caption a{ color:#cfd8c9; text-decoration:none; border-bottom:1px solid rgba(124,242,160,0.35); }
   .va-caption a:hover{ color:#7cf2a0; border-color:#7cf2a0; }
+  .va-inline-media{ margin:24px 0 30px; }
+  .va-inline-media .va-media{ margin:0; }
+  .va-inline-media .va-caption{ margin:8px 0 0; }
+  .va-asset-grid{
+    display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:12px;
+    margin:24px 0 30px;
+  }
+  .va-asset-grid.two-column{ grid-template-columns:repeat(2, minmax(0, 1fr)); }
+  .va-asset-card{
+    min-width:0; margin:0; overflow:hidden; align-self:start;
+    border:1px solid rgba(124,242,160,0.18); border-radius:3px;
+    background:linear-gradient(180deg, rgba(124,242,160,0.045), rgba(124,242,160,0.012));
+  }
+  .va-asset-visual{ width:100%; background:#0e120c; overflow:hidden; }
+  .va-asset-visual img{ width:100%; height:100%; object-fit:contain; display:block; }
+  .va-asset-card figcaption{
+    padding:9px 11px; color:#7a8a76; font-family:'JetBrains Mono', monospace;
+    font-size:10px; line-height:1.45; letter-spacing:.06em; text-transform:uppercase;
+  }
+  .va-asset-card.featured{
+    grid-column:1 / -1; display:grid; grid-template-columns:minmax(0, .72fr) minmax(0, 1.28fr);
+    align-items:center;
+  }
+  .va-asset-card.featured .va-asset-visual{ max-height:390px; }
+  .va-asset-card.featured figcaption{ padding:24px; text-transform:none; letter-spacing:0; }
+  .va-asset-title{
+    display:block; margin-bottom:8px; color:#7cf2a0; font-size:12px;
+    letter-spacing:.1em; text-transform:uppercase;
+  }
+  .va-asset-description{
+    display:block; color:#cfd8c9; font-family:'Source Serif Pro', 'Source Serif 4', Georgia, serif;
+    font-size:16px; line-height:1.6;
+  }
+  @media (max-width:600px){
+    .va-asset-grid{ grid-template-columns:repeat(2, minmax(0, 1fr)); gap:10px; }
+    .va-asset-grid.two-column{ grid-template-columns:1fr; }
+    .va-asset-card.featured{ grid-template-columns:1fr; }
+    .va-asset-card.featured .va-asset-visual{ max-height:360px; }
+    .va-asset-card.featured figcaption{ padding:16px; }
+  }
+  .va-media-placeholder{
+    min-height:210px; box-sizing:border-box; margin:24px 0 28px;
+    border:1px dashed rgba(124,242,160,0.34); border-radius:4px;
+    background:
+      linear-gradient(rgba(124,242,160,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(124,242,160,0.025) 1px, transparent 1px),
+      rgba(124,242,160,0.018);
+    background-size:24px 24px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    color:#7a8a76; text-align:center;
+  }
+  .va-media-placeholder-mark{ color:#7cf2a0; font-size:25px; margin-bottom:12px; text-shadow:0 0 14px rgba(124,242,160,.42); }
+  .va-media-placeholder-label{ color:#cfd8c9; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:.12em; text-transform:uppercase; }
+  .va-media-placeholder-note{ margin-top:5px; font-family:'JetBrains Mono', monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; }
+  .va-link-status{
+    display:flex; align-items:center; justify-content:space-between; gap:18px;
+    margin-top:28px; padding:16px 18px; border:1px solid rgba(124,242,160,0.2); border-radius:4px;
+    background:rgba(124,242,160,0.025); font-family:'JetBrains Mono', monospace;
+  }
+  .va-link-status-label{ color:#e6efe1; font-size:12px; letter-spacing:.06em; text-transform:uppercase; }
+  .va-link-status-note{ color:#7a8a76; font-size:10px; letter-spacing:.1em; text-transform:uppercase; white-space:nowrap; }
   .va-row{ display:flex; gap:16px; flex-wrap:wrap; }
   .va-stack > * + *{ margin-top:18px; }
   .va-grid{ display:grid; grid-template-columns: 1fr 1fr; gap:16px; }
@@ -221,11 +282,11 @@ const VA_CSS = `
   }
 `;
 
-const VideoOnView = ({ src, poster }) => {
+const VideoOnView = ({ src, poster, autoplay = true, loop = true, controls = false }) => {
   const ref = React.useRef(null);
   React.useEffect(() => {
     const el = ref.current;
-    if (!el) return;
+    if (!el || !autoplay) return;
     const io = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -238,9 +299,18 @@ const VideoOnView = ({ src, poster }) => {
     }, { threshold: 0.35 });
     io.observe(el);
     return () => io.disconnect();
-  }, []);
+  }, [autoplay]);
   return (
-    <video ref={ref} src={src} poster={poster} muted loop playsInline preload="metadata" />
+    <video
+      ref={ref}
+      src={src}
+      poster={poster}
+      muted={autoplay}
+      loop={loop}
+      controls={controls}
+      playsInline
+      preload="metadata"
+    />
   );
 };
 
@@ -257,7 +327,13 @@ const ProjectMedia = ({ media, style }) => {
   if (media.type === 'video') {
     return (
       <div className="va-media" style={containerStyle}>
-        <VideoOnView src={media.src} poster={media.poster} />
+        <VideoOnView
+          src={media.src}
+          poster={media.poster}
+          autoplay={media.autoplay !== false}
+          loop={media.loop !== false}
+          controls={media.controls === true}
+        />
       </div>
     );
   }
@@ -648,6 +724,8 @@ function HomeView() {
 
 function ProjectDetail({ project }) {
   const paragraphs = (project.content && project.content.length > 0) ? project.content : [project.blurb];
+  const images = project.images || [];
+  const inlineImages = images.filter((image) => Number.isInteger(image.after));
   React.useEffect(() => {
     document.title = `${project.title} · Anshul Dhawan`;
   }, [project.title]);
@@ -672,7 +750,21 @@ function ProjectDetail({ project }) {
           <ProjectMedia media={project.media} style={{ marginBottom:32 }} />
 
           <div className="va-prose" style={{ fontSize:17 }}>
-            {paragraphs.map((p, i) => <p key={i}>{p}</p>)}
+            {paragraphs.map((p, i) => (
+              <React.Fragment key={i}>
+                <WritingBlock block={p} />
+                {inlineImages.filter((image) => image.after === i).map((image) => (
+                  <React.Fragment key={image.src}>
+                    <ProjectMedia media={{ type:'image', ...image }} style={{ margin:'26px 0 28px' }} />
+                    {image.credit && (
+                      <div className="va-caption">
+                        <a href={image.credit.href} target="_blank" rel="noreferrer">{image.credit.label}</a>
+                      </div>
+                    )}
+                  </React.Fragment>
+                ))}
+              </React.Fragment>
+            ))}
           </div>
 
           {project.links && project.links.length > 0 && (
@@ -711,6 +803,54 @@ function WritingBlock({ block }) {
 
   if (block.type === 'heading') return <h2>{block.text}</h2>;
   if (block.type === 'subheading') return <h3>{block.text}</h3>;
+  if (block.type === 'leadParagraph') return <p><strong>{block.lead} </strong>{block.text}</p>;
+  if (block.type === 'video') {
+    return (
+      <figure className="va-inline-media">
+        <ProjectMedia media={block} />
+        {block.caption && <figcaption className="va-caption">{block.caption}</figcaption>}
+      </figure>
+    );
+  }
+  if (block.type === 'assetGrid') {
+    const gridClass = block.columns === 2 ? 'va-asset-grid two-column' : 'va-asset-grid';
+    return (
+      <div className={gridClass}>
+        {(block.items || []).map((item) => (
+          <figure key={item.src} className={`va-asset-card${item.featured ? ' featured' : ''}`}>
+            <div className="va-asset-visual" style={{ aspectRatio:item.aspect || '1 / 1' }}>
+              <img src={item.src} alt={item.alt || ''} loading="lazy" />
+            </div>
+            <figcaption>
+              {item.featured ? (
+                <>
+                  <span className="va-asset-title">{item.label}</span>
+                  {item.description && <span className="va-asset-description">{item.description}</span>}
+                </>
+              ) : item.label}
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    );
+  }
+  if (block.type === 'mediaPlaceholder') {
+    return (
+      <div className="va-media-placeholder" aria-label={`${block.label}: ${block.note}`}>
+        <div className="va-media-placeholder-mark" aria-hidden="true">▱</div>
+        <div className="va-media-placeholder-label">{block.label}</div>
+        <div className="va-media-placeholder-note">{block.note}</div>
+      </div>
+    );
+  }
+  if (block.type === 'linkStatus') {
+    return (
+      <div className="va-link-status">
+        <span className="va-link-status-label">{block.label}</span>
+        <span className="va-link-status-note">{block.note}</span>
+      </div>
+    );
+  }
   if (block.type === 'orderedList' || block.type === 'unorderedList') {
     const ListTag = block.type === 'orderedList' ? 'ol' : 'ul';
     return (
