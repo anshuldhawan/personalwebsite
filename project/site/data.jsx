@@ -244,9 +244,14 @@ const SITE_DATA = {
         'The short answer is: not yet, but quite possibly very soon.',
         'Here is a demo of a game built using a real-time generative video model called Lingobot World 2.0 and LTX 2.0.',
         {
-          type: 'mediaPlaceholder',
-          label: 'Video demo',
-          note: 'Coming soon',
+          type: 'video',
+          src: '/assets/videos/open-world-adventure-demo.mp4',
+          poster: '/assets/posters/open-world-adventure-demo.jpg',
+          aspect: '16/9',
+          autoplay: false,
+          loop: false,
+          controls: true,
+          caption: 'Gameplay demo',
         },
         'Lingobot World 2.0 generated the gameplay scenes, and LTX 2.0 generated the real-time speaking avatar.',
         {
@@ -316,11 +321,6 @@ const SITE_DATA = {
           text: "This is a real game you can sit down and play for five minutes, with a beginning, a middle, and an end. The video drifts sometimes, but the architecture absorbs it. The mission stays consistent. That's the point.",
         },
         'The whole thing is about 4,000 lines of TypeScript. No 3D engine. No game assets besides eight seed images and some synthesized audio. The pattern of a deterministic simulation plus generated visuals is what I think will matter as the models get better.',
-        {
-          type: 'linkStatus',
-          label: 'GitHub repository',
-          note: 'Link coming soon',
-        },
       ],
       images: [
         {
