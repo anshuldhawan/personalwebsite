@@ -238,6 +238,7 @@ const SITE_DATA = {
       role: 'Builder',
       tag: 'AI-native game · Generative video',
       year: '2026',
+      featured: true,
       blurb: 'A playable experiment combining a deterministic simulation with real-time generative video.',
       content: [
         'Can you make an open world adventure game like GTA without using a game engine?',
@@ -340,7 +341,7 @@ const SITE_DATA = {
       media: null,
       links: [],
     },
-  ],
+  ].sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured))),
   writings: [
     {
       slug: 'ai-native-organization',
