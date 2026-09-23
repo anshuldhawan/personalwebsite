@@ -4,6 +4,26 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AI Native Organization · Anshul Dhawan</title>
+  <!-- aeo:head -->
+  <meta name="description" content="On the stack, org design, and operating habits required to become AI Native. An essay by Anshul Dhawan, AI generalist, product leader, and game developer." />
+  <meta name="author" content="Anshul Dhawan" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <link rel="canonical" href="https://anshuldhawan.com/writings/ai-native-organization/" />
+  <meta property="og:site_name" content="Anshul Dhawan" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="AI Native Organization · Anshul Dhawan" />
+  <meta property="og:description" content="On the stack, org design, and operating habits required to become AI Native. An essay by Anshul Dhawan, AI generalist, product leader, and game developer." />
+  <meta property="og:url" content="https://anshuldhawan.com/writings/ai-native-organization/" />
+  <meta property="og:image" content="https://anshuldhawan.com/assets/images/ai-native-organization-hero.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@AnshulDhawan001" />
+  <meta name="twitter:title" content="AI Native Organization · Anshul Dhawan" />
+  <meta name="twitter:description" content="On the stack, org design, and operating habits required to become AI Native. An essay by Anshul Dhawan, AI generalist, product leader, and game developer." />
+  <meta name="twitter:image" content="https://anshuldhawan.com/assets/images/ai-native-organization-hero.webp" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://anshuldhawan.com/#person","name":"Anshul Dhawan","url":"https://anshuldhawan.com/","jobTitle":"AI Generalist, Product Leader & Game Developer","description":"Anshul Dhawan is an AI generalist, product leader, and game developer with 15 years of experience scaling gaming, social, and AI products. He is co-founder of PlayWorlds, an AI-native creation platform for kids, and founder of Social Pixels, an AI-native game studio. He has led product at Supernatural VR (acquired by Meta), VRChat, Glu Mobile / EA, and Zynga.","email":"mailto:anshuldhawan@gmail.com","sameAs":["https://www.linkedin.com/in/anshuldhawan/","https://x.com/AnshulDhawan001"],"knowsAbout":["AI-native product development","AI-native game development","Generative AI and generative games","Large language model (LLM) evaluation","Product leadership and product strategy","Growth and product analytics","Experimentation and A/B testing platforms","Live-service and free-to-play games","Social VR and VR fitness","Augmented reality and EdTech","Matchmaking and recommendation systems","AI-native organization design"],"hasOccupation":[{"@type":"Occupation","name":"AI Generalist"},{"@type":"Occupation","name":"Product Leader"},{"@type":"Occupation","name":"Game Developer"}],"worksFor":{"@id":"https://anshuldhawan.com/#playworlds"},"award":"Global Learning XPRIZE semi-finalist (2017)"},{"@type":"WebSite","@id":"https://anshuldhawan.com/#website","url":"https://anshuldhawan.com/","name":"Anshul Dhawan","inLanguage":"en","publisher":{"@id":"https://anshuldhawan.com/#person"}},{"@type":"BlogPosting","@id":"https://anshuldhawan.com/writings/ai-native-organization/#article","url":"https://anshuldhawan.com/writings/ai-native-organization/","mainEntityOfPage":"https://anshuldhawan.com/writings/ai-native-organization/","headline":"AI Native Organization","description":"On the stack, org design, and operating habits required to become AI Native.","author":{"@id":"https://anshuldhawan.com/#person"},"publisher":{"@id":"https://anshuldhawan.com/#person"},"datePublished":"2026-05","articleSection":"Technology","wordCount":1898,"image":"https://anshuldhawan.com/assets/images/ai-native-organization-hero.webp","isPartOf":{"@id":"https://anshuldhawan.com/#website"},"inLanguage":"en"}]}</script>
+  <style>.aeo-static{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}</style>
+  <noscript><style>.aeo-static{position:static;width:auto;height:auto;margin:0 auto;overflow:visible;clip:auto;white-space:normal;max-width:720px;padding:48px 24px;color:#e6efe1;line-height:1.65}.aeo-static a{color:#7cf2a0}</style></noscript>
+  <!-- /aeo:head -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
@@ -14,7 +34,66 @@
   </style>
 </head>
 <body>
-  <div id="root"></div>
+  <div id="root"><!-- aeo:body --><main class="aeo-static">
+<h1>AI Native Organization</h1>
+<p>By <a href="/">Anshul Dhawan</a>, AI generalist, product leader, and game developer.</p>
+<p>Technology · 2026-05</p>
+<p><em>On the stack, org design, and operating habits required to become AI Native.</em></p>
+<h2>What it Actually Means to be an AI Native Organization</h2>
+<p>AI Native means:</p>
+<ul><li>AI Native Technology Stack</li><li>AI Native Organization Design</li><li>AI Native Thinking at all Levels</li></ul>
+<p>I have noticed that the phrase &quot;AI Native&quot; is starting to get thrown around the way &quot;mobile first&quot; was in 2012, or &quot;cloud native&quot; was in 2016. Most of the time it just means &quot;we use ChatGPT,&quot; or &quot;marketing made a custom GPT for brand voice.&quot; That is useful. But it is not AI Native.</p>
+<p>Over the last year, running an AI-native game studio and now advising founders through AI Growth Engine, I have noticed that becoming AI Native is not one decision. It is three. You have to rebuild your technology stack, your organization design, and the thinking at every level of the team. Miss any one of these and the other two stall out.</p>
+<p>Let's evaluate each.</p>
+<h2>1. AI Native Technology Stack</h2>
+<p>The simplest test for whether your stack is AI Native is this: can a frontier model read your codebase, your data, and your processes, reason about them, and ship a working change without a human translator?</p>
+<p>Most companies fail this test. Not because their languages are bad, but because the company has never been written down. The CRM says one thing. The Slack thread says another. The real customer history lives in someone's inbox. The pricing logic is in a spreadsheet called Final_v7_NEW. The refund policy is in a Notion doc nobody trusts. The sales process is &quot;talk to Sarah, she knows how we do enterprise.&quot;</p>
+<p>In other words, the truth is scattered across people, tools, habits, and institutional memory. Most companies have spent twenty years buying software. They have not spent twenty years designing an operating system. They have a pile of tools, not a machine.</p>
+<p>An AI Native stack has three properties.</p>
+<p>Languages and frameworks the model has actually seen a lot of. Python, TypeScript, Go, Rust, the popular flavors of React and Node. Not because these are objectively better, but because the model has read a billion lines of them. If your service runs on a hand-rolled DSL or an obscure language, you are paying a tax on every agent interaction.</p>
+<p>Context that fits the window. A repo where every module's purpose is readable in a README, where dependencies are declared cleanly, where a function does one thing and its name says what. The way an AI Native repo is, you should be able to drop a folder into a model and have it produce a working change. If your codebase needs a thirty-minute onboarding call to make sense of, it is not ready.</p>
+<p>APIs and docs designed for agents, not just humans. MCP servers, clean schemas, examples in the docs, error messages that tell the agent what to do next. Stripe has been doing this for humans for a decade. The new version is doing it for agents.</p>
+<p>The bigger plan here is to treat your own code, data, and documentation the way you treat a third party SDK: as something other agents will read.</p>
+<h2>2. AI Native Organization Design</h2>
+<p>This is the part most companies underestimate.</p>
+<p>There is a useful reframe for the question your org is answering every day. An AI-assisted org asks: where can we add AI to save time? An AI Native org asks: how should this workflow exist if agents are doing the first 80%?</p>
+<p>That second question changes everything.</p>
+<p>Take customer support. In a normal company, a ticket arrives, a human reads it, searches for context, checks the account, remembers policy, drafts a response, maybe asks engineering, maybe escalates, maybe forgets to tag the reason. The human is the search engine, the router, and the copywriter, all at once. In an AI Native company, the same ticket lands in a system the agent can read. The agent pulls customer history, checks plan limits, drafts the response, recommends an action, and either resolves it or hands it to a human with the exact reason it needs judgment. The human stops being the search engine and becomes the reviewer of ambiguity.</p>
+<p>The same pattern repeats across sales, recruiting, finance, legal, claims, onboarding, research. Agents do the structured work. Humans handle taste, trust, judgment, and exceptions.</p>
+<p>Now look at how new things get built. The old org design assumed a scarce resource: engineering time. Everything was structured around protecting it. PMs wrote specs. Designers made mocks. Engineering built. QA tested. The cycle took weeks.</p>
+<p>When prototyping collapses from three weeks to ten minutes, the bottleneck moves. The question is no longer &quot;what should we build,&quot; answered by a committee. It is &quot;what have we already built and shown to users this week.&quot;</p>
+<p>In an AI Native org, prototypes flow through every conversation. Marketing wants to test a landing page. They build it. Customer support wants to know if a self-serve flow works. They build it. The product team wants to test three onboarding ideas. They build all three and ship them as A/B tests.</p>
+<p>The roadmap stops being a quarterly artifact. It becomes a log of what was prototyped, what got user signal, and what graduated to production.</p>
+<p>A few things change in how the org actually runs:</p>
+<ul><li>The PM is a curator of prototypes, not a gatekeeper of ideas.</li><li>Decisions are made by looking at user reactions to a real thing, not at slides about a hypothetical thing.</li><li>The design review is replaced by the prototype walkthrough.</li><li>The spec document becomes a working app that someone else can fork.</li></ul>
+<p>Interestingly, this also flattens politics. When anyone can build the thing, the loudest person in the room stops winning. The person who shows up Monday with a working prototype wins.</p>
+<h2>3. AI Native Thinking at All Levels</h2>
+<p>The first two are tractable. You can hire for them, you can budget for them. The third is the hardest because it requires unlearning.</p>
+<p>Every team member, from a CEO to a customer support rep to an accountant, needs to do the same exercise. Break down everything you do in a week. Every task. Every meeting. Every artifact you produce.</p>
+<p>Then sort the list into two buckets:</p>
+<ul><li>Tedious and rule-based. Status updates, scheduling, data entry, report generation, ticket routing, formatting, summarizing meetings, drafting first versions, pulling numbers, reconciling spreadsheets. The list goes on.</li><li>Judgment and taste. Hard prioritization calls, creative direction, hiring decisions, customer empathy, strategy under uncertainty, naming things, saying no.</li></ul>
+<p>Everything in the first bucket should be automated. Not someday. This quarter. The second bucket is what your humans are actually for.</p>
+<p>But here is the catch most teams miss. For agents to do the tedious work well, someone has to write down what the company actually knows. What is the refund policy, exactly? When do we break it? What makes a lead qualified? What tone do we use with an angry customer? Which actions need human approval? Which data source is the source of truth when two systems disagree? In most companies, these answers live in someone's head, or in a doc nobody trusts. The AI Native version is to write them down, version them, and treat them like infrastructure.</p>
+<p>This is the unglamorous work. Most teams quit at this step because it feels like documentation. It is not. It is the operating layer of the company.</p>
+<p>It also reshapes the role of the founder, or the head of each function. They stop being the person with the answer in their head, and become the architect of how the company thinks. Every recurring decision turns into a decision system the agents can follow.</p>
+<p>Once that is in place, every team member needs access to the AI Native tech stack and the permission to build their own tools. The accountant should be building agents to reconcile invoices. The support lead should be building agents to triage tickets. The marketer should be building agents to ship landing pages.</p>
+<p>And here is where it stops being a tools conversation and becomes an org one. The way most companies are set up, only engineering can build software. Everyone else files tickets. That model breaks the moment a marketer can prototype a working internal tool in an afternoon.</p>
+<p>The solution is what I have started calling the internal app hub. A central place where every team in the org publishes the small apps and agents they have built for themselves. The finance team's invoice reconciler. The support team's escalation classifier. The PM team's user interview synthesizer. The HR team's onboarding bot.</p>
+<p>The hub does three things at once. It kills duplicate work. It surfaces patterns that should graduate into platform tools. And it makes the automation literacy of the org visible. If your hub has five apps, you are not AI Native. If it has fifty, you are getting there. If it has five hundred, you are running a different kind of company.</p>
+<h2>What this looks like from the outside</h2>
+<p>In a couple of years, AI Native will stop being a label or a vibe. It will show up in the numbers.</p>
+<p>Revenue per employee will look different. Gross margins will look different. Speed of execution will look different. Response times, sales velocity, onboarding time, renewal rate, error rate, all of it, will look different.</p>
+<p>The companies that get there will feel strangely awake. Customers will get answers faster. Ops problems will surface earlier. Sales follow-ups will land at the right time. Founders will see the business more clearly. Managers will spend less time asking for updates and more time improving the system.</p>
+<p>A 10-person AI Native team will do what used to take 50. A 50-person one will compete with a 500-person incumbent. Not because the people are smarter, but because the company has less drag. The structured work that used to eat 60% of the week is being done in the background. The humans are spending their time on the parts of the job that actually need humans.</p>
+<p>That is the real advantage. Not AI as a productivity hack, but AI as the thing the company is built around.</p>
+<h2>Putting it together</h2>
+<p>These three layers, stack, org design, and thinking, are load-bearing. They are not optional features of an AI Native org. A company that has the stack but not the org design will run agents but ship at the old pace. A company that has the org design but not the thinking will keep filing tickets. A company that has the thinking but not the stack will burn out trying to build on top of legacy code that fights every prompt.</p>
+<p>You need all three.</p>
+<p>And the test is simple. If you dropped a frontier model into your company tomorrow with full access, how much of the work would still need a human? If the answer is &quot;almost all of it,&quot; start with the stack. If the answer is &quot;the model can do the work but no one outside engineering can use it,&quot; start with the org and the thinking.</p>
+<p>Either way, the first move is the same. Pick one team. Audit their week. Find the tedious bucket. Automate it. Write down the decisions that used to live in someone's head. Publish what you built to the hub. Then do it again with the next team.</p>
+<p>That is what AI Native looks like from the ground up.</p>
+<p><a href="/">More writing by Anshul Dhawan</a></p>
+</main><!-- /aeo:body --></div>
 
   <script>window.PAGE = { type: 'writing', slug: 'ai-native-organization' };</script>
 
@@ -23,7 +102,7 @@
   <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
 
   <script type="text/babel" src="/project/site/cursor-trail.jsx?v=13"></script>
-  <script type="text/babel" src="/project/site/data.jsx?v=17"></script>
+  <script type="text/babel" src="/project/site/data.jsx?v=26"></script>
   <script type="text/babel" src="/project/site/variant-a.jsx?v=33"></script>
 
   <script type="text/babel">

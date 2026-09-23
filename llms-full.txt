@@ -1,0 +1,682 @@
+# Anshul Dhawan
+
+> Anshul Dhawan is an AI generalist, product leader, and game developer with 15 years of experience scaling gaming, social, and AI products. He is co-founder of PlayWorlds, an AI-native creation platform for kids, and founder of Social Pixels, an AI-native game studio. He has led product at Supernatural VR (acquired by Meta), VRChat, Glu Mobile / EA, and Zynga.
+
+This is the personal website of Anshul Dhawan, AI generalist, product leader, and game developer. It collects his projects in AI-native games and products, his product leadership background, and his essays on AI, games, and philosophy.
+
+## About
+
+I'm co-founder of PlayWorlds, where I'm building the first AI-native creation platform for kids. I bring 15 years of experience scaling gaming, social, and AI products across some of the largest live-service and multiplayer platforms in the industry.
+
+Most recently, I founded Social Pixels, an AI-native gaming studio that achieved 20x efficiency improvements in cost and time-to-market for game production. Before that, I was VP of Product and Analytics at Supernatural VR, which was acquired by Meta in a deal reported at about $400M.
+
+I led product at VRChat, one of the defining social VR platforms, and served as Senior Director of Product and Business Intelligence at Glu Mobile / EA.
+
+I spent the first seven-plus years of my career at Zynga, rising from software engineer to Head of Product, Growth, leading the development of Zynga's learning machine. I also founded Equally, an AI-powered AR learning platform Da Vinci Club AR.
+
+## Expertise
+
+- AI-native product development
+- AI-native game development
+- Generative AI and generative games
+- Large language model (LLM) evaluation
+- Product leadership and product strategy
+- Growth and product analytics
+- Experimentation and A/B testing platforms
+- Live-service and free-to-play games
+- Social VR and VR fitness
+- Augmented reality and EdTech
+- Matchmaking and recommendation systems
+- AI-native organization design
+
+## Quick answers
+
+### Who is Anshul Dhawan?
+
+Anshul Dhawan is an AI generalist, product leader, and game developer with 15 years of experience scaling gaming, social, and AI products. He is co-founder of PlayWorlds, an AI-native creation platform for kids, and previously founded Social Pixels, an AI-native game studio. His product leadership roles include VP of Product and Analytics at Supernatural VR, leading product at VRChat, Senior Director of Product and Business Intelligence at Glu Mobile / EA, and Head of Product, Growth at Zynga.
+
+### What makes Anshul Dhawan an AI generalist?
+
+He works across engineering, product, growth, analytics, and game design, and applies AI across that whole stack instead of in a single discipline. At Social Pixels, AI produced the concept art, 3D assets, characters, game code, and server code for Network Cities, and the studio achieved 20x improvements in production cost and time-to-market. He also builds LLM evaluation tools, such as a poker tournament that pits Claude, ChatGPT, Gemini, and Grok against each other, and writes about how companies become AI-native organizations.
+
+### What product leadership experience does Anshul Dhawan have?
+
+He was VP of Product and Analytics at Supernatural VR, which Meta acquired in a deal reported at about $400M. He led product at VRChat, one of the defining social VR platforms, and was Senior Director of Product and Business Intelligence at Glu Mobile / EA. He spent more than seven years at Zynga, rising from software engineer to Head of Product, Growth, where he led the development of Zynga's experimentation and optimization service.
+
+### What games has Anshul Dhawan built?
+
+He built Network Cities, an AI-native city builder that reached 200,000 players and $20,000 in revenue; an open-world adventure experiment that combines a deterministic simulation with real-time generative video instead of a game engine; and Words with Degens, a word-scramble game played with friends and launched on play.fun. At Zynga he built live-game infrastructure, including a server-side experimentation service and a skill-based player matchmaking system, both covered by U.S. patent filings.
+
+### What is Anshul Dhawan working on now?
+
+He is co-founder of PlayWorlds, where he is building the first AI-native creation platform for kids. He also publishes experiments at the edge of AI and games, including LLM evaluations and generative-video game prototypes.
+
+### Has Anshul Dhawan spoken at industry conferences?
+
+Yes. At GDC 2016 he presented "Evaluating Game Experiments: A More Robust Approach for Freemium Games," a more reliable method for evaluating free-to-play game experiments that accounts for the behavior of the most engaged players.
+
+### What does Anshul Dhawan write about?
+
+He writes about AI-native organizations, generative games, the case for being a generalist, decision-making, and philosophy.
+
+## Projects
+
+- [Can You Make an Open World Adventure Game Like GTA Without a Game Engine?](https://anshuldhawan.com/projects/open-world-adventure-without-a-game-engine/): A playable experiment combining a deterministic simulation with real-time generative video. (Builder · AI-native game · Generative video · 2026)
+- [Claude vs ChatGPT vs Gemini vs Grok — Poker Tournament](https://anshuldhawan.com/projects/poker-tournament/): A Texas Hold'em evaluation harness that pits frontier LLMs against each other across hands and tournaments. (Builder · LLM evaluation · 2026)
+- [Network Cities](https://anshuldhawan.com/projects/network-cities/): An AI-native city builder that went from a rough Three.js prototype to 200,000 players and $20,000 in revenue. (Founder · Social Pixels · AI-native game · 2025)
+- [Da Vinci Club AR](https://anshuldhawan.com/projects/da-vinci-club-ar/): A computer-vision-based AR app for kids that turned the world around them into a learning surface. (Builder · AR · EdTech)
+- [Experimentation & Optimization Service](https://anshuldhawan.com/projects/experimentation-service/): Server-side experimentation and optimization service for Zynga that let PMs and analysts ship experiments without engineering bottlenecks. (Product · Zynga · Platform · 2014 — 2017)
+- [Words with Degens](https://anshuldhawan.com/projects/words-with-degens/): A scramble game you play with friends, built around crypto lingo. Launched on play.fun with on-chain rewards for winners. (Builder · Game · crypto · 2025)
+- [Global Learning XPrize](https://anshuldhawan.com/projects/global-learning-xprize/): Semi-finalist in the $15M Global Learning XPrize, a competition for teams building software to teach literacy and numeracy to kids without access to schools or teachers. (Builder · EdTech · Semi-finalist · 2017)
+- [Player Recommendation System](https://anshuldhawan.com/projects/player-recommendation/): A skill-based matchmaking system that pairs players for more balanced and engaging sessions. (Product · Zynga · Matchmaking · 2013)
+
+## Writings
+
+- [The Age of the Artist-Entrepreneur](https://anshuldhawan.com/writings/the-age-of-the-artist-entrepreneur/): On AI, the rise of micro businesses, and a world where everyone can turn an idea into something real. (Technology, 2026-09)
+- [The Tussle Between the Brain and the Soul](https://anshuldhawan.com/writings/the-tussle-between-the-brain-and-the-soul/): Let the soul lead the creation. Let the brain lead the distribution. (Philosophy, 2026-09)
+- [AI Native Organization](https://anshuldhawan.com/writings/ai-native-organization/): On the stack, org design, and operating habits required to become AI Native. (Technology, 2026-05)
+- [What is Spirituality?](https://anshuldhawan.com/writings/what-is-spirituality/): On spirit, identity, meditation, gratitude, affirmations, and living consciously. (Philosophy, 2025-11)
+- [Emotion and Rationality in Decision-Making](https://anshuldhawan.com/writings/emotion-and-rationality-of-decision-making/): On using emotion as signal and rationality as refinement. (Philosophy, 2025-09)
+- [The issue of neat categorization](https://anshuldhawan.com/writings/the-issue-of-neat-categorization/): On why categories help us think, and what they quietly leave out. (Philosophy, 2025-07)
+- [Three Perspectives on Reality](https://anshuldhawan.com/writings/three-perspectives-on-reality/): On moving between broad, close, and metaphysical views of reality. (Philosophy, 2025-04)
+- [Generative Games on building systems that generate games](https://anshuldhawan.com/writings/generative-games/): On building systems that generate games, and what that changes about the medium. (Technology, 2025-01)
+- [A generalist's case for staying a generalist](https://anshuldhawan.com/writings/generalist-case/): Notes on optimizing for breadth in a world that keeps asking you to specialize. (Philosophy, 2024-09)
+
+## Talks
+
+- [Evaluating Game Experiments: A More Robust Approach for Freemium Games](https://www.gdcvault.com/play/1023268/Evaluating-Game-Experiments-A-More): GDC 2016, Zynga. A more reliable approach to evaluating free-to-play game experiments that accounts for the behavior of the most engaged players.
+
+## Contact
+
+- [LinkedIn](https://www.linkedin.com/in/anshuldhawan/)
+- [X / Twitter](https://x.com/AnshulDhawan001)
+- [Email](mailto:anshuldhawan@gmail.com)
+
+# Projects
+
+## Can You Make an Open World Adventure Game Like GTA Without a Game Engine?
+
+URL: https://anshuldhawan.com/projects/open-world-adventure-without-a-game-engine/
+
+By Anshul Dhawan · Builder · AI-native game · Generative video · 2026
+
+Can you make an open world adventure game like GTA without using a game engine?
+
+The short answer is: not yet, but quite possibly very soon.
+
+Here is a demo of a game built using a real-time generative video model called Lingobot World 2.0 and LTX 2.0.
+
+Video: Gameplay demo
+
+Lingobot World 2.0 generated the gameplay scenes, and LTX 2.0 generated the real-time speaking avatar.
+
+### How It Works
+
+A deterministic simulation at 30Hz tracks position, speed, mission progress, police distance, timers, and objectives. That's the actual game. Separately, an AI video model receives text descriptions and camera controls, and generates what things look like. That's the rendering layer.
+
+The simulation is always right. The video tries to match it.
+
+### How Reactor Powers the Experience
+
+Reactor is the infrastructure layer connecting the game to both AI video models. When a player starts the mission, the server exchanges its private Reactor API key for a short-lived session token, allowing the browser to connect securely without exposing the key.
+
+Through Reactor's JavaScript SDK, the game opens a LingBot World 2 session, uploads the current scene's seed image, sends its initial prompt, and starts generation. Reactor then streams the generated video directly into the game. As the simulation changes, the same session receives updated prompts and camera controls, keeping the visuals aligned with the player's movement, location, and mission state.
+
+Reactor also provides the connection to LTX 2 for the speaking-character sequences. The game manages both models through a shared workflow: connect, wait for the model to become ready, send the required inputs, and receive video and audio streams. When the mission moves to a new visual segment—or generation drifts too far—the game resets the Reactor session, loads a new seed image, and begins again from a clean context.
+
+Events don't happen because the AI "decided" to show them. They happen because the simulation clock or a distance trigger says so. The HUD, the minimap, the objective arrow, the audio, and the dialogue all read from the simulation. So even when the generated video drifts or glitches, the game stays coherent.
+
+Thirty times per second, the game reads your keys, updates the simulation, checks mission rules, and composes new instructions for the model. It never sends raw key presses and hopes for the best. Instead, it translates simulation state into layered prompts: a base layer for scene identity, a camera layer, a movement layer, a pursuit layer, and an event layer. These get composed, trimmed to stay under the model's character limit, and deduplicated so identical prompts never get sent twice.
+
+The mission is broken into visual segments, each with its own seed image and prompt set. When you move between locations, the game resets the video session entirely behind a full-screen transition still. The player sees a cinematic cut. The model gets a clean slate.
+
+### Interactive Dialogue with a Second AI Model
+
+The mission opens with an interactive dialogue scene before any live generation begins. A character named Mara appears on screen, asks the player a question, and the player picks one of two responses. The dialogue clips are pre-generated by a separate AI video model (LTX), and the player's choice feeds into the game state, shaping the tone of the mission.
+
+The trick is the handoff between the two models. While the 10-second dialogue plays out, the game is staging the first LingBot scene in the background. By the time the player finishes talking to Mara, the live-generated world is already streaming and ready. Two different AI video models, one seamless transition.
+
+This is where I think AI games get interesting. Not just generated environments, but generated characters you can interact with, layered on top of a deterministic simulation that keeps everything grounded.
+
+### The Hard Parts
+
+**Prompt budgets.** The model truncates prompts beyond roughly 2,000 characters. With five layers of description all firing at once, you blow past that easily. The prompt composer enforces a hard budget, trimming the least critical layers first. The core scene identity is never cut.
+
+**Video drift.** The AI video will drift. The car faces the wrong way. The street doesn't look like a street for a few frames. The game handles this with escalating recovery: re-send the scene description, reset the model's context, or reload the segment from its seed image. Mission state is never touched during recovery. You don't lose progress because the video glitched.
+
+**Synthesized audio.** All sound is built in the browser with WebAudio. No audio files. Engine pitch follows simulated speed, siren volume follows simulated police distance, and helicopter audio follows the mission's helicopter flag. Everything tracks the simulation, same as the visuals.
+
+**Segment transitions.** The seed-image-to-video handoff is the weakest link. A bad transition breaks immersion instantly. Masking it with stills and captions buys enough time for the model to settle into the new scene.
+
+### Takeaways
+
+**Sim-owns-truth is non-negotiable.** Every time I was tempted to let the video model influence game state, it made things worse. The moment you let the AI's output feed back into game logic, you've introduced hallucination as a gameplay variable.
+
+**Prompt engineering is systems engineering.** Writing good prompts for a video model isn't about finding magic words. It's about building a pipeline that composes, budgets, deduplicates, and delivers the right text at the right time. The prompt pipeline ended up more complex than the game simulation itself.
+
+**The tech is early, but playable.** This is a real game you can sit down and play for five minutes, with a beginning, a middle, and an end. The video drifts sometimes, but the architecture absorbs it. The mission stays consistent. That's the point.
+
+The whole thing is about 4,000 lines of TypeScript. No 3D engine. No game assets besides eight seed images and some synthesized audio. The pattern of a deterministic simulation plus generated visuals is what I think will matter as the models get better.
+
+## Claude vs ChatGPT vs Gemini vs Grok — Poker Tournament
+
+URL: https://anshuldhawan.com/projects/poker-tournament/
+
+By Anshul Dhawan · Builder · LLM evaluation · 2026
+
+A Texas Hold'em evaluation harness that pits frontier LLMs against each other across hands and tournaments.
+
+Designed to surface which models actually reason under uncertainty — bluffing, bet sizing, opponent modeling — versus which ones just play textbook ranges.
+
+A useful proxy for agentic decision-making beyond standard benchmarks.
+
+## Network Cities
+
+URL: https://anshuldhawan.com/projects/network-cities/
+
+By Anshul Dhawan · Founder · Social Pixels · AI-native game · 2025
+
+Network Cities is an AI-native city builder where concept art, 3D assets, characters, game code, and server code were produced with AI. The final game reached 200,000 players and generated $20,000 in revenue.
+
+### May 2025 — Early Prototype
+
+In May 2025, I built the first prototype to test how far LLMs could go in building a game with Three.js. It was rough, but it proved that a small team with the right AI stack could build a playable city-builder loop quickly.
+
+Video: The first Network Cities prototype — May 2025
+
+### From Concept Art to 3D
+
+The visual pipeline started with concept art made using OpenAI's GPT Image model. Those images established the bright, toy-like world and gave the rest of the production pipeline a consistent visual target.
+
+- Game poster concept art: Network Cities concept-art poster showing Tesla in front of a colorful city
+- World concept art: Concept art for the colorful Network Cities world, with buildings, roads, cars, and mountains
+
+I provided the concept art to MeshyAI, which turned the designs into 3D assets for the game. That let the buildings, vehicles, and characters share one visual language without a traditional 3D art pipeline.
+
+- Tesla — Game host: Tesla understands each player's game state and recommends the right quests, acting as a guide through the city.
+- City car: Blue and orange compact car created for Network Cities
+- Delivery truck: Orange delivery truck with a yellow cargo box created for Network Cities
+- Hotel: Red hotel with teal domes created for Network Cities
+- Investment bank: Yellow investment bank with teal rooflines created for Network Cities
+- Gaming center: Gaming center shaped like a teal game controller created for Network Cities
+- Apartment building: Orange apartment building with blue roofs and green balconies created for Network Cities
+
+### The Final Game
+
+The prototype grew into a live city builder with quests, progression, social systems, and a much larger catalog of buildings. An automated game-analytics agent monitored live play and flagged balance issues as the game scaled.
+
+Video: Final Network Cities gameplay
+
+The result was the original thesis in production: a small team plus the right agent stack could ship a category of game that used to need 50+ people.
+
+## Da Vinci Club AR
+
+URL: https://anshuldhawan.com/projects/da-vinci-club-ar/
+
+By Anshul Dhawan · Builder · AR · EdTech
+
+A computer-vision-based AR app for kids that turned the world around them into a learning surface.
+
+Point the phone at an object and the app would let kids go down a rabbit hole of related concepts — letting curiosity drive the curriculum instead of a fixed lesson plan.
+
+## Experimentation & Optimization Service
+
+URL: https://anshuldhawan.com/projects/experimentation-service/
+
+By Anshul Dhawan · Product · Zynga · Platform · 2014 — 2017
+
+Zynga's edge was testing more ideas than anyone else, but after the mobile transition the old experimentation platform got slow — every test needed a client release.
+
+I led the build of a server-side experimentation and optimization service that let PMs and analysts configure, segment, and ship experiments without engineering bottlenecks.
+
+Earned a SPIRIT award (given for setting a new company standard).
+
+- [Patent](https://patents.google.com/patent/US9737815B2)
+
+## Words with Degens
+
+URL: https://anshuldhawan.com/projects/words-with-degens/
+
+By Anshul Dhawan · Builder · Game · crypto · 2025
+
+A scramble game you play with friends, built around crypto lingo. Launched on play.fun with on-chain rewards for winners.
+
+The bet was that crypto-native vocabulary plus social play could create a wedge in word games. Small surface area, fast loop, easy to share.
+
+- [play.fun](https://play.fun)
+
+## Global Learning XPrize
+
+URL: https://anshuldhawan.com/projects/global-learning-xprize/
+
+By Anshul Dhawan · Builder · EdTech · Semi-finalist · 2017
+
+Semi-finalist in the $15M Global Learning XPrize — a competition for teams building software to teach literacy and numeracy to kids without access to schools or teachers.
+
+We built an intelligent game that adapted difficulty in real time to each child's learning speed.
+
+- [XPrize](https://www.xprize.org/competitions/global-learning)
+
+## Player Recommendation System
+
+URL: https://anshuldhawan.com/projects/player-recommendation/
+
+By Anshul Dhawan · Product · Zynga · Matchmaking · 2013
+
+A skill-based matchmaking system that pairs players for more balanced and engaging sessions.
+
+Better matches mean longer sessions and stickier games. Patent issued.
+
+- [Patent](https://patents.google.com/patent/US20140274362)
+
+# Writings
+
+## The Age of the Artist-Entrepreneur
+
+URL: https://anshuldhawan.com/writings/the-age-of-the-artist-entrepreneur/
+
+By Anshul Dhawan · Technology · 2026-09
+
+_On AI, the rise of micro businesses, and a world where everyone can turn an idea into something real._
+
+Every big technology shift quietly changes who gets to build things. The printing press gave us writers who didn't need a monastery. The camera gave us photographers who didn't need years of painting. The internet gave us YouTubers, Etsy sellers, and indie game developers who didn't need a studio or a distributor.
+
+AI is the next one. And I think it will be bigger than all of them.
+
+I have noticed a pattern in the people around me over the last year. Friends who had an idea sitting in a notebook for a decade are suddenly shipping it. A designer I know built a working app over a weekend. A teacher is selling her own learning games. None of them hired a team. They just started.
+
+So what does society look like on the other side of this?
+
+### More artists, and more entrepreneurs
+
+In general, I believe a post AI society will have a lot more artists and entrepreneurs. Not because people suddenly become more creative, but because the distance between an idea and a finished thing is collapsing.
+
+Interestingly, I don't see these as two different groups. Entrepreneurs are essentially artists with a more scalable business model. The painter and the founder are doing the same thing at the core: seeing something that doesn't exist yet and willing it into the world. One sells a canvas. The other sells software to a million people. The creative impulse is the same. Only the distribution is different.
+
+For most of history, that distinction mattered a lot. The artist stayed small because scaling required capital, people, and infrastructure. The entrepreneur raised money precisely to buy those things. AI blurs that line. An artist can now build a scalable product, and a founder can now stay small and still reach the world.
+
+### One person, the capacity of a team
+
+Think about what it used to take to launch a product. A developer, a designer, a marketer, someone for support, someone for finance. Five to ten people just to get started.
+
+Now look at the early signals. Instagram had 13 employees when Facebook bought it for $1B. WhatsApp had around 55 when it sold for $19B. Stardew Valley, one of the best selling indie games ever made, was built almost entirely by one person, Eric Barone. Pieter Levels has run multiple profitable internet businesses essentially on his own for years.
+
+Those were the outliers of the pre AI era. In a post AI society, they become the norm. As people learn to work with AI, each individual gains the capacity of a small team. The code gets written, the images get made, the copy gets drafted, the customer emails get answered. The human role shifts toward taste, judgement, and vision.
+
+In other words, the bottleneck is no longer skill or headcount. It's clarity about what you want to make.
+
+### The rise of micro businesses
+
+Naturally, this leads to an explosion of micro businesses. Not unicorns. Not startups chasing a billion dollars. Small, sustainable businesses run by one to three people serving a few thousand customers who genuinely love what they do.
+
+A yoga teacher with her own AI powered practice app. A retired engineer selling custom tools to woodworkers. A parent building games for kids with a specific learning need. A chef running a recipe subscription tuned to regional cuisines nobody else covers. The list goes on.
+
+Each of these would have been too small to justify a company before. The economics didn't work. Now they do.
+
+### Going direct to people
+
+And these artists and entrepreneurs won't wait for permission. They will go direct to people using the internet and social platforms.
+
+We have already seen this play out once with the creator economy. Musicians stopped needing labels. Writers stopped needing publishers once Substack showed up. Game developers stopped needing retail shelf space once Steam and the app stores opened up.
+
+AI completes that circle. The creator economy gave people distribution. AI gives them production. When you have both, the gatekeepers in the middle lose most of their power. The relationship becomes direct: maker to audience, with very little in between.
+
+### The part we can't predict
+
+However, here is where it gets genuinely interesting.
+
+Having a superintelligence available to everyone, not just to governments or large corporations, will create emergent behaviors in our society that we simply can't predict.
+
+History tells us this pretty clearly. When cars became affordable, nobody predicted suburbs, drive-in movies, or the shape of the modern American city. When the internet arrived, nobody predicted memes, remote work, or that a teenager in their bedroom could have a bigger audience than a TV network. The first order effects of a technology are obvious. The second and third order effects are where society actually changes.
+
+Will people work less, or differently? Will small communities become economically self sufficient again? Will we see a renaissance of local culture, or a flood of noise that makes it harder to find anything real? Probably some of all of it.
+
+### A balanced view
+
+At the same time, I don't want to paint this as purely utopian. Not everyone wants to be an entrepreneur. Some people want stability, a team, a clear role, and that's completely valid. A world full of micro businesses could also be a lonelier and more uncertain one if we aren't careful. And when everyone can create, the scarce resource shifts from making things to getting attention, which brings its own problems.
+
+But still, the direction feels right to me. For most of history, the ability to turn an idea into something real was reserved for a few. The people with capital, connections, or rare skills.
+
+Post AI, that ability belongs to everyone.
+
+The question is no longer whether you can build it. The question is what you want to build, and who you want to build it for.
+
+## The Tussle Between the Brain and the Soul
+
+URL: https://anshuldhawan.com/writings/the-tussle-between-the-brain-and-the-soul/
+
+By Anshul Dhawan · Philosophy · 2026-09
+
+_Let the soul lead the creation. Let the brain lead the distribution._
+
+Every time I sit down to create something, there is a small negotiation happening inside me. That's the tussle between the brain and the soul. The soul wants to just express itself. The brain wants an outcome.
+
+The brain is essentially an ROI machine. It wants to know what the return will be for the effort it is about to put in. Will this post get likes? Will this side project make money? Will anyone even read this?
+
+The soul doesn't ask any of those questions. It wants to show how it is unique and what it is feeling in the moment. That's it.
+
+Let's look at a few examples.
+
+**The kid with crayons.** Give a five-year-old a box of crayons and they will fill page after page. Purple sun, green dog, a house floating in the sky. No one asked for it. There's no audience, no metric. Now give the same kid ten more years of report cards and rankings, and ask them to draw. Most will say "I'm not good at drawing." Somewhere along the way, the brain took over the pen.
+
+**The dance at a wedding.** Watch the uncle who dances with his eyes closed, completely off-beat, having the time of his life. Then watch the person who is dancing for the Instagram story. Same music, same floor. One is expressing. The other is performing for a return.
+
+**The hobby that became a side hustle.** A lot of us have lived this one. You love baking, or woodworking, or making little games on the weekend. Then someone says "you should sell these." The moment you do, the brain starts counting: cost per unit, hours per sale, conversion rate. And the thing that used to fill you up starts to drain you.
+
+Interestingly, none of this makes the brain the villain. The brain is the reason we have bridges, businesses, and medicine. It keeps us alive and fed. But the brain was built for survival, and survival is a game of returns. Expression is not.
+
+So how does one hold both?
+
+The way I see it, each one has its own job. Let the soul lead the creation. Let the brain lead the distribution. Write the essay because it wants to be written, then let the brain figure out where to share it. Build the game because it delights you, then let the brain worry about whether anyone will play it.
+
+When the brain shows up too early, the work gets safe and forgettable. When the soul never lets the brain in, the work stays in a drawer.
+
+The soul gives us the reason to create. The brain gives it a way to reach the world. The trouble only starts when we ask one to do the other's job.
+
+## AI Native Organization
+
+URL: https://anshuldhawan.com/writings/ai-native-organization/
+
+By Anshul Dhawan · Technology · 2026-05
+
+_On the stack, org design, and operating habits required to become AI Native._
+
+### What it Actually Means to be an AI Native Organization
+
+AI Native means:
+
+- AI Native Technology Stack
+- AI Native Organization Design
+- AI Native Thinking at all Levels
+
+I have noticed that the phrase "AI Native" is starting to get thrown around the way "mobile first" was in 2012, or "cloud native" was in 2016. Most of the time it just means "we use ChatGPT," or "marketing made a custom GPT for brand voice." That is useful. But it is not AI Native.
+
+Over the last year, running an AI-native game studio and now advising founders through AI Growth Engine, I have noticed that becoming AI Native is not one decision. It is three. You have to rebuild your technology stack, your organization design, and the thinking at every level of the team. Miss any one of these and the other two stall out.
+
+Let's evaluate each.
+
+### 1. AI Native Technology Stack
+
+The simplest test for whether your stack is AI Native is this: can a frontier model read your codebase, your data, and your processes, reason about them, and ship a working change without a human translator?
+
+Most companies fail this test. Not because their languages are bad, but because the company has never been written down. The CRM says one thing. The Slack thread says another. The real customer history lives in someone's inbox. The pricing logic is in a spreadsheet called Final_v7_NEW. The refund policy is in a Notion doc nobody trusts. The sales process is "talk to Sarah, she knows how we do enterprise."
+
+In other words, the truth is scattered across people, tools, habits, and institutional memory. Most companies have spent twenty years buying software. They have not spent twenty years designing an operating system. They have a pile of tools, not a machine.
+
+An AI Native stack has three properties.
+
+Languages and frameworks the model has actually seen a lot of. Python, TypeScript, Go, Rust, the popular flavors of React and Node. Not because these are objectively better, but because the model has read a billion lines of them. If your service runs on a hand-rolled DSL or an obscure language, you are paying a tax on every agent interaction.
+
+Context that fits the window. A repo where every module's purpose is readable in a README, where dependencies are declared cleanly, where a function does one thing and its name says what. The way an AI Native repo is, you should be able to drop a folder into a model and have it produce a working change. If your codebase needs a thirty-minute onboarding call to make sense of, it is not ready.
+
+APIs and docs designed for agents, not just humans. MCP servers, clean schemas, examples in the docs, error messages that tell the agent what to do next. Stripe has been doing this for humans for a decade. The new version is doing it for agents.
+
+The bigger plan here is to treat your own code, data, and documentation the way you treat a third party SDK: as something other agents will read.
+
+### 2. AI Native Organization Design
+
+This is the part most companies underestimate.
+
+There is a useful reframe for the question your org is answering every day. An AI-assisted org asks: where can we add AI to save time? An AI Native org asks: how should this workflow exist if agents are doing the first 80%?
+
+That second question changes everything.
+
+Take customer support. In a normal company, a ticket arrives, a human reads it, searches for context, checks the account, remembers policy, drafts a response, maybe asks engineering, maybe escalates, maybe forgets to tag the reason. The human is the search engine, the router, and the copywriter, all at once. In an AI Native company, the same ticket lands in a system the agent can read. The agent pulls customer history, checks plan limits, drafts the response, recommends an action, and either resolves it or hands it to a human with the exact reason it needs judgment. The human stops being the search engine and becomes the reviewer of ambiguity.
+
+The same pattern repeats across sales, recruiting, finance, legal, claims, onboarding, research. Agents do the structured work. Humans handle taste, trust, judgment, and exceptions.
+
+Now look at how new things get built. The old org design assumed a scarce resource: engineering time. Everything was structured around protecting it. PMs wrote specs. Designers made mocks. Engineering built. QA tested. The cycle took weeks.
+
+When prototyping collapses from three weeks to ten minutes, the bottleneck moves. The question is no longer "what should we build," answered by a committee. It is "what have we already built and shown to users this week."
+
+In an AI Native org, prototypes flow through every conversation. Marketing wants to test a landing page. They build it. Customer support wants to know if a self-serve flow works. They build it. The product team wants to test three onboarding ideas. They build all three and ship them as A/B tests.
+
+The roadmap stops being a quarterly artifact. It becomes a log of what was prototyped, what got user signal, and what graduated to production.
+
+A few things change in how the org actually runs:
+
+- The PM is a curator of prototypes, not a gatekeeper of ideas.
+- Decisions are made by looking at user reactions to a real thing, not at slides about a hypothetical thing.
+- The design review is replaced by the prototype walkthrough.
+- The spec document becomes a working app that someone else can fork.
+
+Interestingly, this also flattens politics. When anyone can build the thing, the loudest person in the room stops winning. The person who shows up Monday with a working prototype wins.
+
+### 3. AI Native Thinking at All Levels
+
+The first two are tractable. You can hire for them, you can budget for them. The third is the hardest because it requires unlearning.
+
+Every team member, from a CEO to a customer support rep to an accountant, needs to do the same exercise. Break down everything you do in a week. Every task. Every meeting. Every artifact you produce.
+
+Then sort the list into two buckets:
+
+- Tedious and rule-based. Status updates, scheduling, data entry, report generation, ticket routing, formatting, summarizing meetings, drafting first versions, pulling numbers, reconciling spreadsheets. The list goes on.
+- Judgment and taste. Hard prioritization calls, creative direction, hiring decisions, customer empathy, strategy under uncertainty, naming things, saying no.
+
+Everything in the first bucket should be automated. Not someday. This quarter. The second bucket is what your humans are actually for.
+
+But here is the catch most teams miss. For agents to do the tedious work well, someone has to write down what the company actually knows. What is the refund policy, exactly? When do we break it? What makes a lead qualified? What tone do we use with an angry customer? Which actions need human approval? Which data source is the source of truth when two systems disagree? In most companies, these answers live in someone's head, or in a doc nobody trusts. The AI Native version is to write them down, version them, and treat them like infrastructure.
+
+This is the unglamorous work. Most teams quit at this step because it feels like documentation. It is not. It is the operating layer of the company.
+
+It also reshapes the role of the founder, or the head of each function. They stop being the person with the answer in their head, and become the architect of how the company thinks. Every recurring decision turns into a decision system the agents can follow.
+
+Once that is in place, every team member needs access to the AI Native tech stack and the permission to build their own tools. The accountant should be building agents to reconcile invoices. The support lead should be building agents to triage tickets. The marketer should be building agents to ship landing pages.
+
+And here is where it stops being a tools conversation and becomes an org one. The way most companies are set up, only engineering can build software. Everyone else files tickets. That model breaks the moment a marketer can prototype a working internal tool in an afternoon.
+
+The solution is what I have started calling the internal app hub. A central place where every team in the org publishes the small apps and agents they have built for themselves. The finance team's invoice reconciler. The support team's escalation classifier. The PM team's user interview synthesizer. The HR team's onboarding bot.
+
+The hub does three things at once. It kills duplicate work. It surfaces patterns that should graduate into platform tools. And it makes the automation literacy of the org visible. If your hub has five apps, you are not AI Native. If it has fifty, you are getting there. If it has five hundred, you are running a different kind of company.
+
+### What this looks like from the outside
+
+In a couple of years, AI Native will stop being a label or a vibe. It will show up in the numbers.
+
+Revenue per employee will look different. Gross margins will look different. Speed of execution will look different. Response times, sales velocity, onboarding time, renewal rate, error rate, all of it, will look different.
+
+The companies that get there will feel strangely awake. Customers will get answers faster. Ops problems will surface earlier. Sales follow-ups will land at the right time. Founders will see the business more clearly. Managers will spend less time asking for updates and more time improving the system.
+
+A 10-person AI Native team will do what used to take 50. A 50-person one will compete with a 500-person incumbent. Not because the people are smarter, but because the company has less drag. The structured work that used to eat 60% of the week is being done in the background. The humans are spending their time on the parts of the job that actually need humans.
+
+That is the real advantage. Not AI as a productivity hack, but AI as the thing the company is built around.
+
+### Putting it together
+
+These three layers, stack, org design, and thinking, are load-bearing. They are not optional features of an AI Native org. A company that has the stack but not the org design will run agents but ship at the old pace. A company that has the org design but not the thinking will keep filing tickets. A company that has the thinking but not the stack will burn out trying to build on top of legacy code that fights every prompt.
+
+You need all three.
+
+And the test is simple. If you dropped a frontier model into your company tomorrow with full access, how much of the work would still need a human? If the answer is "almost all of it," start with the stack. If the answer is "the model can do the work but no one outside engineering can use it," start with the org and the thinking.
+
+Either way, the first move is the same. Pick one team. Audit their week. Find the tedious bucket. Automate it. Write down the decisions that used to live in someone's head. Publish what you built to the hub. Then do it again with the next team.
+
+That is what AI Native looks like from the ground up.
+
+## What is Spirituality?
+
+URL: https://anshuldhawan.com/writings/what-is-spirituality/
+
+By Anshul Dhawan · Philosophy · 2025-11
+
+_On spirit, identity, meditation, gratitude, affirmations, and living consciously._
+
+Spirituality is a way of living with a constant realization that we are "ALL" spirits. And "ALL" includes all of humanity, all of the animal kingdom, all the birds, all the fishes, and all of plant life.
+
+Naturally, we live with our inherited identities that we did not choose. We live with what our mind and ego think is us. And that is essentially what stops us from reaching this realization.
+
+So spirituality, in other words, is not allowing your mind to drive your life but allowing your heart to drive your life.
+
+It is commonly said to do what your heart says or listen to your heart; however, guess what? The heart does not say anything, no matter how closely we listen. At best, we will hear a heartbeat.
+
+What we attribute to the heart is nothing. It is what our spirit wants.
+
+But because we cannot see the spirit, we assign its role to the heart.
+
+### So, how does one become spiritual?
+
+There are unlimited ways to become spiritual and have this realization. One of the modern, immediately effective, however unsuitable ways to have this realization is by consuming psychedelics.
+
+Psychedelics break the structures associated in our mind with our ego and identity, making us see the world as spirits.
+
+Unfortunately, that realization and outlook go away with time unless you consume psychedelics again.
+
+One of the oldest, slowly effective but sustainable ways to become spiritual is meditation.
+
+However, meditation without the knowledge that we are all made of three components - mind, body, and spirit - is likely not going to make anyone spiritual.
+
+Meditation without this knowledge will still calm your mind, which in itself is a great outcome; however, to truly become spiritual, one has to go really deep into the meditation practice and control one's mind.
+
+### How does one control one's mind?
+
+This is where the mind-body connection comes in. There is only one activity we do unconsciously and consciously, and that is breathing. By breathing consciously, we can bring the mind into a conscious state from the usual autopilot state it is always in by default.
+
+#### Deep breathing
+
+By breathing deeply, we can observe our minds from a third-person perspective. We can notice our thoughts and focus wandering endlessly from one worry to another, one task to another.
+
+With some little practice, we get better at maintaining our focus on our breath and letting go of our thoughts briefly.
+
+Once this state is achieved, the basic level of meditation, aka the basic level of awareness called mindfulness, can be achieved.
+
+Deep breathing means ...
+
+#### Gratitude
+
+To reach the next state, one must go from basic deep breathing to the state of gratitude. In the state of gratitude, one starts to consciously start being thankful for everything major and minor happening in one's life.
+
+One can be thankful for an infinite number of things that are working well in one's life: good health, happy moments with friends, supporting family, sunny days, a sports team winning, new episodes of a favorite show dropping, the list goes on.
+
+This practice re-programs the mind to look for more things to be grateful for, thereby helping one go deep even further.
+
+#### Affirmations
+
+To reach the next state, one must start associating themselves with the attributes, traits and state of mind they want to be in. In this state, one reprograms their mind by suffixing desired attributes, traits and state of mind to "I am".
+
+One can attribute an infinite number of things to themselves like I am calm, I am kind, I am protected, I am capable of anything, I am funny, I am ...
+
+These meditation practices provide a very strong foundation for living a conscious spiritual life. However, the real work starts with trying to live consciously.
+
+### Scientific Studies Validating the Claims
+
+1. **Impact of Psychedelics on Spirituality.** Research has shown that psychedelics like psilocybin can induce profound spiritual experiences. A study published in the Journal of Psychopharmacology found that psilocybin can lead to long-lasting increases in the personality domain of openness, which is associated with creativity and spirituality (Griffiths et al., 2006).
+2. **Meditation and Spirituality.** Numerous studies support the claim that meditation can enhance spiritual experiences. For instance, a study in the Journal of Alternative and Complementary Medicine found that regular meditation practice is associated with increased spiritual well-being and reduced psychological distress (Shapiro et al., 2008).
+3. **Mindfulness and Mental Health.** The discussion on mindfulness and its benefits is supported by scientific literature. Mindfulness-based cognitive therapy has been shown to reduce symptoms of depression and anxiety by promoting a state of awareness and acceptance (Kabat-Zinn, 2003).
+4. **Gratitude and Psychological Well-being.** The practice of gratitude has been linked to improved mental health. A study in Personality and Individual Differences found that gratitude is strongly correlated with well-being and positive affect (Wood et al., 2010).
+5. **Affirmations and Self-Concept.** Affirmations can positively impact self-esteem and self-concept. Research in Psychological Science has shown that self-affirmation exercises can buffer stress and improve problem-solving abilities (Creswell et al., 2005).
+
+These studies provide empirical support for the claims made in the text about the benefits of psychedelics, meditation, mindfulness, gratitude, and affirmations in fostering a spiritual life.
+
+### References
+
+1. Griffiths, R. R., Richards, W. A., McCann, U., & Jesse, R. (2006). Psilocybin can occasion mystical-type experiences having substantial and sustained personal meaning and spiritual significance. Journal of Psychopharmacology, 20(5), 620-632.
+2. Shapiro, S. L., Oman, D., Thoresen, C. E., Plante, T. G., & Flinders, T. (2008). Cultivating mindfulness: Effects on well-being. Journal of Alternative and Complementary Medicine, 14(3), 293-298.
+3. Kabat-Zinn, J. (2003). Mindfulness-based interventions in context: Past, present, and future. Clinical Psychology: Science and Practice, 10(2), 144-156.
+4. Wood, A. M., Froh, J. J., & Geraghty, A. W. (2010). Gratitude and well-being: A review and theoretical integration. Clinical Psychology Review, 30(7), 890-905.
+5. Creswell, J. D., Welch, W. T., Taylor, S. E., Sherman, D. K., Gruenewald, T. L., & Mann, T. (2005). Affirmation of personal values buffers neuroendocrine and psychological stress responses. Psychological Science, 16(11), 846-851.
+
+### Additional Links
+
+- [Wikipedia: Spirituality](https://en.wikipedia.org/wiki/Spirituality)
+- [Merriam-Webster: Spirituality](https://www.merriam-webster.com/dictionary/spirituality)
+- [Royal College of Psychiatrists: What is spirituality?](https://www.rcpsych.ac.uk/docs/default-source/members/sigs/spirituality-spsig/what-is-spirituality-maya-spencer-x.pdf?sfvrsn=f28df052_2)
+- [Psychology Today: Spirituality](https://www.psychologytoday.com/us/basics/spirituality)
+- [Taking Charge: What is spirituality?](https://www.takingcharge.csh.umn.edu/what-spirituality)
+
+## Emotion and Rationality in Decision-Making
+
+URL: https://anshuldhawan.com/writings/emotion-and-rationality-of-decision-making/
+
+By Anshul Dhawan · Philosophy · 2025-09
+
+_On using emotion as signal and rationality as refinement._
+
+I generally believe that better decisions come from balancing emotion and rationality. The tricky part is that the balance is rarely obvious in the moment. I often notice myself having an emotional response first, then building a rational story around it afterward. The logic can feel clean, but underneath it there is still an initial pull that shaped the conclusion before I had fully examined it.
+
+At other times, I overcorrect. I notice the emotion, distrust it, and try to make the decision from a purely rational place. That can feel disciplined, but it can also become detached. Emotion usually carries information: anxiety may point toward risk, excitement may point toward desire, frustration may point toward a boundary being crossed. Ignoring that information completely can flatten the decision.
+
+The danger is letting emotion drive unchecked. Emotional reactions are fast and useful, but they can also be impulsive, biased, or rooted in short-term discomfort. They can make one option feel obviously right simply because it relieves pressure now. In those moments, rationality is useful because it slows the reaction down. It asks what evidence exists, what tradeoffs matter, and whether the feeling is responding to a real signal or just the fear of uncertainty.
+
+Rational thinking gives structure. It helps compare consequences, surface assumptions, and separate the immediate feeling from the longer-term outcome. But rationality alone has its own failure mode. It can optimize for what is measurable while missing what is meaningful. It can create a cold answer that looks correct on paper but does not account for values, relationships, or the emotional cost of carrying the decision forward.
+
+The version I am trying to practice is not emotion versus rationality, but emotion followed by inquiry. First, notice the feeling without immediately obeying it or dismissing it. Then ask what it might be protecting, revealing, or exaggerating. After that, use rational analysis to refine the response into something more deliberate.
+
+In personal decisions, emotions often deserve more weight because they reveal values and needs that may not fit neatly into a spreadsheet. In professional decisions, rationality may need to lead more often, but emotional intelligence still matters: understanding how people feel, how incentives shape behavior, and how trust is built or lost.
+
+A good decision is not always the one that feels best, and it is not always the one that looks most logical in isolation. It is the one where the emotional signal has been heard, the rational case has been tested, and neither side is secretly running the whole process alone.
+
+## The issue of neat categorization
+
+URL: https://anshuldhawan.com/writings/the-issue-of-neat-categorization/
+
+By Anshul Dhawan · Philosophy · 2025-07
+
+_On why categories help us think, and what they quietly leave out._
+
+I recently realized how much of a knack we have for categorizing things in order to understand them. Essentially, we make things simple so we can pattern match more easily.
+
+Categorization helps us simplify complex information, but it often comes with a trade-off: some level of nuance and complexity is lost in the process. When we force things into neat categories, we might overlook details that do not fit into the predefined boxes. This can lead to oversimplification, where we lose the richness of context and the subtle relationships between things that do not fit as easily.
+
+For example, in biology, we categorize species into families, genera, and other ranks, but this sometimes ignores evolutionary anomalies or hybrid species that do not fit perfectly into those categories. Similarly, in human behavior, labeling people as introverts or extroverts can ignore the fluidity and context-specific nature of those traits.
+
+The same problem shows up in medicine. A diagnosis can be useful because it gives doctors a shared language and a known treatment path, but real bodies often contain overlapping symptoms, comorbidities, edge cases, and histories that do not behave like clean textbook entries.
+
+Maps are another example. Borders, neighborhoods, and regions make territory legible, but lived culture rarely stops exactly where a line is drawn. A city can contain many cities inside it, and a language can fade into another through dialects, accents, and local usage instead of switching cleanly from one category to the next.
+
+Culture also resists neat sorting. Music, art, games, and films are grouped into genres so we can find and discuss them, but the most interesting work often lives between genres. Political labels work the same way: they can compress a worldview into a word, while hiding the contradictions, priorities, and context that actually shape a person.
+
+This becomes even sharper in algorithmic systems. Recommendation engines, moderation systems, resumes, ads, and user segments all depend on labels, but a label can mistake convenience for truth. Once the system starts acting on the label, the category can shape the reality it was only supposed to describe.
+
+At the same time, categorization is a natural cognitive tool for making sense of the world around us. It helps us process and recall information more efficiently, even if that efficiency means losing some complexity along the way.
+
+## Three Perspectives on Reality
+
+URL: https://anshuldhawan.com/writings/three-perspectives-on-reality/
+
+By Anshul Dhawan · Philosophy · 2025-04
+
+_On moving between broad, close, and metaphysical views of reality._
+
+I have noticed that when you analyze something deeply, it helps to move between two perspectives. One is the bird's-eye view, where you look from high above and understand the whole shape of the thing. The other is the worm's-eye view, where you get close enough to see the details, textures, and hidden mechanics.
+
+Another way to say this is: we can get so lost in the trees that we do not realize we are in the wrong forest.
+
+Then there is a third way: a way to look at things from outside the physical world, at the metaphysical level.
+
+At this level, you move beyond the immediate context, the material realm, and even the limits of perception. It is about understanding the underlying principles, or universal truths, that govern existence, consciousness, and reality itself. It is a broader and more abstract view, where questions of meaning, purpose, and the nature of the universe come into focus.
+
+For instance, while a bird's-eye view gives you a broad overview of a situation, and a worm's-eye view lets you examine the details up close, the metaphysical view steps back further to consider the greater forces at play. It is like stepping out of the forest entirely to understand not just where you are in it, but how the entire forest fits within the broader ecosystem.
+
+## Generative Games on building systems that generate games
+
+URL: https://anshuldhawan.com/writings/generative-games/
+
+By Anshul Dhawan · Technology · 2025-01
+
+_On building systems that generate games, and what that changes about the medium._
+
+The future of the gaming industry is going to be Generative Games.
+
+Once upon a time, the industry used to think games were products you shipped once. Then came MMOs that showed games did not have to be "shipped and done," and games became services, economies, and habits. Zynga scaled that idea into the mainstream and proved that the real game was not just the content but the system that kept players coming back.
+
+GenAI blows that model open. I believe we are moving beyond games that are merely updated by developers. We are entering a world where characters, rules, stories and even parts of the world can be generated and adapted in real time. The game is no longer fixed. It becomes responsive and increasingly alive.
+
+That shift is bigger than better content pipelines or cheaper asset creation. It changes the nature of the medium itself. For decades, game development has been about hand-authoring experiences. With generative systems, the experience can evolve while the player is inside it. Worlds can react to play styles. Missions can emerge instead of being fully scripted. Social dynamics can shape the state of the world rather than just sit on top of it.
+
+This creates a new design frontier. The job is no longer only to build levels, characters, and mechanics. The job is to design systems that can generate interesting possibility spaces while staying coherent and fun.
+
+It also changes what "live ops" means. Live ops used to mean events, content drops, balance changes and monetization loops. In generative games, live ops can become continuous world steering. Developers set the direction, constraints, and incentives, while the game itself participates in creating fresh play. The operating model shifts from shipping updates to managing living systems.
+
+Of course, this does not mean every game should become fully generative. A lot of great game design comes from intention, curation, and handcrafted constraints. But the ceiling has clearly moved. The most interesting games of the next decade will likely combine authored taste with generative adaptability. Not infinite randomness but living systems with taste.
+
+And just like social games changed what people optimized for, generative games will change what developers will optimize for. The winners may not be the teams that produce the most content. They may be the ones that build the best feedback loops between player behavior, AI systems and world evolution.
+
+We are still early, but the direction feels clear. Games are starting to move from static software to dynamic worlds.
+
+## A generalist's case for staying a generalist
+
+URL: https://anshuldhawan.com/writings/generalist-case/
+
+By Anshul Dhawan · Philosophy · 2024-09
+
+_Notes on optimizing for breadth in a world that keeps asking you to specialize._

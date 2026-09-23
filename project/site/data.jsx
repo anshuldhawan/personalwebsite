@@ -1,7 +1,58 @@
 // Shared content for all three site variants.
 const SITE_DATA = {
   name: 'Anshul Dhawan',
-  tagline: 'Generalist & game developer',
+  tagline: 'AI generalist, product leader & game developer',
+  // Answer-first copy for answer engines and LLMs. Shown on the About tab and
+  // compiled into static HTML, JSON-LD, and llms.txt by scripts/build-aeo.mjs.
+  profile: {
+    headline: 'AI Generalist, Product Leader & Game Developer',
+    summary: 'Anshul Dhawan is an AI generalist, product leader, and game developer with 15 years of experience scaling gaming, social, and AI products. He is co-founder of PlayWorlds, an AI-native creation platform for kids, and founder of Social Pixels, an AI-native game studio. He has led product at Supernatural VR (acquired by Meta), VRChat, Glu Mobile / EA, and Zynga.',
+    description: 'Anshul Dhawan is an AI generalist, product leader, and game developer: co-founder of PlayWorlds, founder of Social Pixels, and a product leader at Supernatural (Meta), VRChat, EA, and Zynga.',
+    expertise: [
+      'AI-native product development',
+      'AI-native game development',
+      'Generative AI and generative games',
+      'Large language model (LLM) evaluation',
+      'Product leadership and product strategy',
+      'Growth and product analytics',
+      'Experimentation and A/B testing platforms',
+      'Live-service and free-to-play games',
+      'Social VR and VR fitness',
+      'Augmented reality and EdTech',
+      'Matchmaking and recommendation systems',
+      'AI-native organization design',
+    ],
+    faq: [
+      {
+        q: 'Who is Anshul Dhawan?',
+        a: 'Anshul Dhawan is an AI generalist, product leader, and game developer with 15 years of experience scaling gaming, social, and AI products. He is co-founder of PlayWorlds, an AI-native creation platform for kids, and previously founded Social Pixels, an AI-native game studio. His product leadership roles include VP of Product and Analytics at Supernatural VR, leading product at VRChat, Senior Director of Product and Business Intelligence at Glu Mobile / EA, and Head of Product, Growth at Zynga.',
+      },
+      {
+        q: 'What makes Anshul Dhawan an AI generalist?',
+        a: 'He works across engineering, product, growth, analytics, and game design, and applies AI across that whole stack instead of in a single discipline. At Social Pixels, AI produced the concept art, 3D assets, characters, game code, and server code for Network Cities, and the studio achieved 20x improvements in production cost and time-to-market. He also builds LLM evaluation tools, such as a poker tournament that pits Claude, ChatGPT, Gemini, and Grok against each other, and writes about how companies become AI-native organizations.',
+      },
+      {
+        q: 'What product leadership experience does Anshul Dhawan have?',
+        a: 'He was VP of Product and Analytics at Supernatural VR, which Meta acquired in a deal reported at about $400M. He led product at VRChat, one of the defining social VR platforms, and was Senior Director of Product and Business Intelligence at Glu Mobile / EA. He spent more than seven years at Zynga, rising from software engineer to Head of Product, Growth, where he led the development of Zynga\'s experimentation and optimization service.',
+      },
+      {
+        q: 'What games has Anshul Dhawan built?',
+        a: 'He built Network Cities, an AI-native city builder that reached 200,000 players and $20,000 in revenue; an open-world adventure experiment that combines a deterministic simulation with real-time generative video instead of a game engine; and Words with Degens, a word-scramble game played with friends and launched on play.fun. At Zynga he built live-game infrastructure, including a server-side experimentation service and a skill-based player matchmaking system, both covered by U.S. patent filings.',
+      },
+      {
+        q: 'What is Anshul Dhawan working on now?',
+        a: 'He is co-founder of PlayWorlds, where he is building the first AI-native creation platform for kids. He also publishes experiments at the edge of AI and games, including LLM evaluations and generative-video game prototypes.',
+      },
+      {
+        q: 'Has Anshul Dhawan spoken at industry conferences?',
+        a: 'Yes. At GDC 2016 he presented "Evaluating Game Experiments: A More Robust Approach for Freemium Games," a more reliable method for evaluating free-to-play game experiments that accounts for the behavior of the most engaged players.',
+      },
+      {
+        q: 'What does Anshul Dhawan write about?',
+        a: 'He writes about AI-native organizations, generative games, the case for being a generalist, decision-making, and philosophy.',
+      },
+    ],
+  },
   about: [
     "I'm co-founder of PlayWorlds, where I'm building the first AI-native creation platform for kids. I bring 15 years of experience scaling gaming, social, and AI products across some of the largest live-service and multiplayer platforms in the industry.",
     "Most recently, I founded Social Pixels, an AI-native gaming studio that achieved 20x efficiency improvements in cost and time-to-market for game production. Before that, I was VP of Product and Analytics at Supernatural VR, which was acquired by Meta in a deal reported at about $400M.",
@@ -12,6 +63,15 @@ const SITE_DATA = {
       after: ". I also founded Equally, an AI-powered AR learning platform ",
       secondLink: { label: 'Da Vinci Club AR', href: '/projects/da-vinci-club-ar/' },
       secondAfter: '.',
+    },
+  ],
+  talks: [
+    {
+      title: 'Evaluating Game Experiments: A More Robust Approach for Freemium Games',
+      event: 'GDC 2016',
+      company: 'Zynga',
+      blurb: 'A more reliable approach to evaluating free-to-play game experiments that accounts for the behavior of the most engaged players.',
+      href: 'https://www.gdcvault.com/play/1023268/Evaluating-Game-Experiments-A-More',
     },
   ],
   companyLogos: [
@@ -343,6 +403,96 @@ const SITE_DATA = {
     },
   ].sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured))),
   writings: [
+    {
+      "slug": "the-age-of-the-artist-entrepreneur",
+      "title": "The Age of the Artist-Entrepreneur",
+      "category": "Technology",
+      "date": "2026 · 09",
+      "blurb": "On AI, the rise of micro businesses, and a world where everyone can turn an idea into something real.",
+      "content": [
+        "Every big technology shift quietly changes who gets to build things. The printing press gave us writers who didn't need a monastery. The camera gave us photographers who didn't need years of painting. The internet gave us YouTubers, Etsy sellers, and indie game developers who didn't need a studio or a distributor.",
+        "AI is the next one. And I think it will be bigger than all of them.",
+        "I have noticed a pattern in the people around me over the last year. Friends who had an idea sitting in a notebook for a decade are suddenly shipping it. A designer I know built a working app over a weekend. A teacher is selling her own learning games. None of them hired a team. They just started.",
+        "So what does society look like on the other side of this?",
+        {
+          "type": "heading",
+          "text": "More artists, and more entrepreneurs"
+        },
+        "In general, I believe a post AI society will have a lot more artists and entrepreneurs. Not because people suddenly become more creative, but because the distance between an idea and a finished thing is collapsing.",
+        "Interestingly, I don't see these as two different groups. Entrepreneurs are essentially artists with a more scalable business model. The painter and the founder are doing the same thing at the core: seeing something that doesn't exist yet and willing it into the world. One sells a canvas. The other sells software to a million people. The creative impulse is the same. Only the distribution is different.",
+        "For most of history, that distinction mattered a lot. The artist stayed small because scaling required capital, people, and infrastructure. The entrepreneur raised money precisely to buy those things. AI blurs that line. An artist can now build a scalable product, and a founder can now stay small and still reach the world.",
+        {
+          "type": "heading",
+          "text": "One person, the capacity of a team"
+        },
+        "Think about what it used to take to launch a product. A developer, a designer, a marketer, someone for support, someone for finance. Five to ten people just to get started.",
+        "Now look at the early signals. Instagram had 13 employees when Facebook bought it for $1B. WhatsApp had around 55 when it sold for $19B. Stardew Valley, one of the best selling indie games ever made, was built almost entirely by one person, Eric Barone. Pieter Levels has run multiple profitable internet businesses essentially on his own for years.",
+        "Those were the outliers of the pre AI era. In a post AI society, they become the norm. As people learn to work with AI, each individual gains the capacity of a small team. The code gets written, the images get made, the copy gets drafted, the customer emails get answered. The human role shifts toward taste, judgement, and vision.",
+        "In other words, the bottleneck is no longer skill or headcount. It's clarity about what you want to make.",
+        {
+          "type": "heading",
+          "text": "The rise of micro businesses"
+        },
+        "Naturally, this leads to an explosion of micro businesses. Not unicorns. Not startups chasing a billion dollars. Small, sustainable businesses run by one to three people serving a few thousand customers who genuinely love what they do.",
+        "A yoga teacher with her own AI powered practice app. A retired engineer selling custom tools to woodworkers. A parent building games for kids with a specific learning need. A chef running a recipe subscription tuned to regional cuisines nobody else covers. The list goes on.",
+        "Each of these would have been too small to justify a company before. The economics didn't work. Now they do.",
+        {
+          "type": "heading",
+          "text": "Going direct to people"
+        },
+        "And these artists and entrepreneurs won't wait for permission. They will go direct to people using the internet and social platforms.",
+        "We have already seen this play out once with the creator economy. Musicians stopped needing labels. Writers stopped needing publishers once Substack showed up. Game developers stopped needing retail shelf space once Steam and the app stores opened up.",
+        "AI completes that circle. The creator economy gave people distribution. AI gives them production. When you have both, the gatekeepers in the middle lose most of their power. The relationship becomes direct: maker to audience, with very little in between.",
+        {
+          "type": "heading",
+          "text": "The part we can't predict"
+        },
+        "However, here is where it gets genuinely interesting.",
+        "Having a superintelligence available to everyone, not just to governments or large corporations, will create emergent behaviors in our society that we simply can't predict.",
+        "History tells us this pretty clearly. When cars became affordable, nobody predicted suburbs, drive-in movies, or the shape of the modern American city. When the internet arrived, nobody predicted memes, remote work, or that a teenager in their bedroom could have a bigger audience than a TV network. The first order effects of a technology are obvious. The second and third order effects are where society actually changes.",
+        "Will people work less, or differently? Will small communities become economically self sufficient again? Will we see a renaissance of local culture, or a flood of noise that makes it harder to find anything real? Probably some of all of it.",
+        {
+          "type": "heading",
+          "text": "A balanced view"
+        },
+        "At the same time, I don't want to paint this as purely utopian. Not everyone wants to be an entrepreneur. Some people want stability, a team, a clear role, and that's completely valid. A world full of micro businesses could also be a lonelier and more uncertain one if we aren't careful. And when everyone can create, the scarce resource shifts from making things to getting attention, which brings its own problems.",
+        "But still, the direction feels right to me. For most of history, the ability to turn an idea into something real was reserved for a few. The people with capital, connections, or rare skills.",
+        "Post AI, that ability belongs to everyone.",
+        "The question is no longer whether you can build it. The question is what you want to build, and who you want to build it for."
+      ],
+      "images": [
+        {
+          "kind": "hero",
+          "src": "/assets/images/artist-entrepreneur-hero.webp",
+          "alt": "An artist at a sketchbook and laptop imagines a luminous world of art, games, and handmade objects",
+          "aspect": "3/2"
+        },
+        {
+          "after": 12,
+          "src": "/assets/images/artist-entrepreneur-one-person-team.webp",
+          "alt": "A solo creator directs connected tools for software, illustration, writing, and correspondence from a home studio",
+          "aspect": "3/2"
+        },
+        {
+          "after": 16,
+          "src": "/assets/images/artist-entrepreneur-micro-businesses.webp",
+          "alt": "Four warmly lit small businesses form a neighborhood of independent teachers, makers, and chefs",
+          "aspect": "3/2"
+        },
+        {
+          "after": 20,
+          "src": "/assets/images/artist-entrepreneur-maker-to-audience.webp",
+          "alt": "Branching paths connect a maker directly to people reading, listening, and playing in their homes",
+          "aspect": "3/2"
+        },
+        {
+          "after": 25,
+          "src": "/assets/images/artist-entrepreneur-open-future.webp",
+          "alt": "A person with a glowing sketchbook considers paths toward creative communities and an uncertain horizon",
+          "aspect": "3/2"
+        }
+      ]
+    },
     {
       slug: 'the-tussle-between-the-brain-and-the-soul',
       title: 'The Tussle Between the Brain and the Soul',
@@ -797,6 +947,7 @@ const SITE_DATA = {
   links: [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/anshuldhawan/' },
     { label: 'X / Twitter', href: 'https://x.com/AnshulDhawan001' },
+    { label: 'Email', href: 'mailto:anshuldhawan@gmail.com' },
   ],
 };
 

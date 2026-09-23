@@ -25,6 +25,9 @@ const VA_CSS = `
     .va-world::after{ background:rgba(7,14,12,.76); }
   }
   .va-mono{ font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; }
+  .va-faq h3{ font-family:'JetBrains Mono', monospace; font-weight:500; font-size:15px; line-height:1.4; color:#f1f7ec; margin:0 0 8px; }
+  .va-faq p{ margin:0 0 26px; color:#cfd8c9; }
+  .va-faq > div:last-child p{ margin-bottom:0; }
   .va-scanlines::before{
     content:''; position:absolute; inset:0; pointer-events:none; z-index:3;
     background: repeating-linear-gradient(
@@ -593,7 +596,7 @@ function HomeView() {
                 Anshul Dhawan<span className="va-cursor" />
               </h1>
               <p style={{ fontSize:19, color:'#cfd8c9', maxWidth:580, margin:'0 0 28px' }}>
-                Generalist and game developer. I work on <span className="va-acc">product, growth, analytics</span>, and <span className="va-acc">AI</span>, usually where game or software are trying to do something new.
+                AI generalist, product leader, and game developer. I work on <span className="va-acc">product, growth, analytics</span>, and <span className="va-acc">AI</span>, usually where games or software are trying to do something new.
               </p>
               <div style={{ display:'flex', gap:18, flexWrap:'wrap', marginBottom:8 }}>
                 {data.links.map(l => (
@@ -714,6 +717,32 @@ function HomeView() {
               </div>
             </>
           )}
+          {data.profile && data.profile.faq.length > 0 && (
+            <>
+              <div className="va-pixel-divider" style={{ margin:'32px 0' }} />
+              <h2 className="va-h2">// quick answers</h2>
+              <div className="va-faq">
+                {data.profile.faq.map(item => (
+                  <div key={item.q}>
+                    <h3>{item.q}</h3>
+                    <p>{item.a}</p>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+          <div className="va-pixel-divider" style={{ margin:'32px 0' }} />
+          <h2 className="va-h2">// talks</h2>
+          <div className="va-stack">
+            {(data.talks || []).map(talk => (
+              <a key={talk.href} href={talk.href} target="_blank" rel="noreferrer" className="va-card">
+                <div className="va-meta" style={{ marginBottom:8 }}>{talk.event} · {talk.company}</div>
+                <h3 style={{ fontSize:20, fontWeight:500, color:'#f1f7ec', lineHeight:1.4, margin:'0 0 10px' }}>{talk.title}</h3>
+                <p style={{ margin:'0 0 14px', color:'#cfd8c9' }}>{talk.blurb}</p>
+                <span className="va-link va-mono" style={{ fontSize:12 }}>Watch on GDC Vault ↗</span>
+              </a>
+            ))}
+          </div>
           <div className="va-pixel-divider" style={{ margin:'32px 0' }} />
           <div className="va-meta" style={{ marginBottom:10 }}>// elsewhere</div>
           <div style={{ display:'flex', gap:18, flexWrap:'wrap' }}>

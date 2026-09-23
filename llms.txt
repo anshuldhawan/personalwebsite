@@ -1,0 +1,97 @@
+# Anshul Dhawan
+
+> Anshul Dhawan is an AI generalist, product leader, and game developer with 15 years of experience scaling gaming, social, and AI products. He is co-founder of PlayWorlds, an AI-native creation platform for kids, and founder of Social Pixels, an AI-native game studio. He has led product at Supernatural VR (acquired by Meta), VRChat, Glu Mobile / EA, and Zynga.
+
+This is the personal website of Anshul Dhawan, AI generalist, product leader, and game developer. It collects his projects in AI-native games and products, his product leadership background, and his essays on AI, games, and philosophy.
+
+## About
+
+I'm co-founder of PlayWorlds, where I'm building the first AI-native creation platform for kids. I bring 15 years of experience scaling gaming, social, and AI products across some of the largest live-service and multiplayer platforms in the industry.
+
+Most recently, I founded Social Pixels, an AI-native gaming studio that achieved 20x efficiency improvements in cost and time-to-market for game production. Before that, I was VP of Product and Analytics at Supernatural VR, which was acquired by Meta in a deal reported at about $400M.
+
+I led product at VRChat, one of the defining social VR platforms, and served as Senior Director of Product and Business Intelligence at Glu Mobile / EA.
+
+I spent the first seven-plus years of my career at Zynga, rising from software engineer to Head of Product, Growth, leading the development of Zynga's learning machine. I also founded Equally, an AI-powered AR learning platform Da Vinci Club AR.
+
+## Expertise
+
+- AI-native product development
+- AI-native game development
+- Generative AI and generative games
+- Large language model (LLM) evaluation
+- Product leadership and product strategy
+- Growth and product analytics
+- Experimentation and A/B testing platforms
+- Live-service and free-to-play games
+- Social VR and VR fitness
+- Augmented reality and EdTech
+- Matchmaking and recommendation systems
+- AI-native organization design
+
+## Quick answers
+
+### Who is Anshul Dhawan?
+
+Anshul Dhawan is an AI generalist, product leader, and game developer with 15 years of experience scaling gaming, social, and AI products. He is co-founder of PlayWorlds, an AI-native creation platform for kids, and previously founded Social Pixels, an AI-native game studio. His product leadership roles include VP of Product and Analytics at Supernatural VR, leading product at VRChat, Senior Director of Product and Business Intelligence at Glu Mobile / EA, and Head of Product, Growth at Zynga.
+
+### What makes Anshul Dhawan an AI generalist?
+
+He works across engineering, product, growth, analytics, and game design, and applies AI across that whole stack instead of in a single discipline. At Social Pixels, AI produced the concept art, 3D assets, characters, game code, and server code for Network Cities, and the studio achieved 20x improvements in production cost and time-to-market. He also builds LLM evaluation tools, such as a poker tournament that pits Claude, ChatGPT, Gemini, and Grok against each other, and writes about how companies become AI-native organizations.
+
+### What product leadership experience does Anshul Dhawan have?
+
+He was VP of Product and Analytics at Supernatural VR, which Meta acquired in a deal reported at about $400M. He led product at VRChat, one of the defining social VR platforms, and was Senior Director of Product and Business Intelligence at Glu Mobile / EA. He spent more than seven years at Zynga, rising from software engineer to Head of Product, Growth, where he led the development of Zynga's experimentation and optimization service.
+
+### What games has Anshul Dhawan built?
+
+He built Network Cities, an AI-native city builder that reached 200,000 players and $20,000 in revenue; an open-world adventure experiment that combines a deterministic simulation with real-time generative video instead of a game engine; and Words with Degens, a word-scramble game played with friends and launched on play.fun. At Zynga he built live-game infrastructure, including a server-side experimentation service and a skill-based player matchmaking system, both covered by U.S. patent filings.
+
+### What is Anshul Dhawan working on now?
+
+He is co-founder of PlayWorlds, where he is building the first AI-native creation platform for kids. He also publishes experiments at the edge of AI and games, including LLM evaluations and generative-video game prototypes.
+
+### Has Anshul Dhawan spoken at industry conferences?
+
+Yes. At GDC 2016 he presented "Evaluating Game Experiments: A More Robust Approach for Freemium Games," a more reliable method for evaluating free-to-play game experiments that accounts for the behavior of the most engaged players.
+
+### What does Anshul Dhawan write about?
+
+He writes about AI-native organizations, generative games, the case for being a generalist, decision-making, and philosophy.
+
+## Projects
+
+- [Can You Make an Open World Adventure Game Like GTA Without a Game Engine?](https://anshuldhawan.com/projects/open-world-adventure-without-a-game-engine/): A playable experiment combining a deterministic simulation with real-time generative video. (Builder · AI-native game · Generative video · 2026)
+- [Claude vs ChatGPT vs Gemini vs Grok — Poker Tournament](https://anshuldhawan.com/projects/poker-tournament/): A Texas Hold'em evaluation harness that pits frontier LLMs against each other across hands and tournaments. (Builder · LLM evaluation · 2026)
+- [Network Cities](https://anshuldhawan.com/projects/network-cities/): An AI-native city builder that went from a rough Three.js prototype to 200,000 players and $20,000 in revenue. (Founder · Social Pixels · AI-native game · 2025)
+- [Da Vinci Club AR](https://anshuldhawan.com/projects/da-vinci-club-ar/): A computer-vision-based AR app for kids that turned the world around them into a learning surface. (Builder · AR · EdTech)
+- [Experimentation & Optimization Service](https://anshuldhawan.com/projects/experimentation-service/): Server-side experimentation and optimization service for Zynga that let PMs and analysts ship experiments without engineering bottlenecks. (Product · Zynga · Platform · 2014 — 2017)
+- [Words with Degens](https://anshuldhawan.com/projects/words-with-degens/): A scramble game you play with friends, built around crypto lingo. Launched on play.fun with on-chain rewards for winners. (Builder · Game · crypto · 2025)
+- [Global Learning XPrize](https://anshuldhawan.com/projects/global-learning-xprize/): Semi-finalist in the $15M Global Learning XPrize, a competition for teams building software to teach literacy and numeracy to kids without access to schools or teachers. (Builder · EdTech · Semi-finalist · 2017)
+- [Player Recommendation System](https://anshuldhawan.com/projects/player-recommendation/): A skill-based matchmaking system that pairs players for more balanced and engaging sessions. (Product · Zynga · Matchmaking · 2013)
+
+## Writings
+
+- [The Age of the Artist-Entrepreneur](https://anshuldhawan.com/writings/the-age-of-the-artist-entrepreneur/): On AI, the rise of micro businesses, and a world where everyone can turn an idea into something real. (Technology, 2026-09)
+- [The Tussle Between the Brain and the Soul](https://anshuldhawan.com/writings/the-tussle-between-the-brain-and-the-soul/): Let the soul lead the creation. Let the brain lead the distribution. (Philosophy, 2026-09)
+- [AI Native Organization](https://anshuldhawan.com/writings/ai-native-organization/): On the stack, org design, and operating habits required to become AI Native. (Technology, 2026-05)
+- [What is Spirituality?](https://anshuldhawan.com/writings/what-is-spirituality/): On spirit, identity, meditation, gratitude, affirmations, and living consciously. (Philosophy, 2025-11)
+- [Emotion and Rationality in Decision-Making](https://anshuldhawan.com/writings/emotion-and-rationality-of-decision-making/): On using emotion as signal and rationality as refinement. (Philosophy, 2025-09)
+- [The issue of neat categorization](https://anshuldhawan.com/writings/the-issue-of-neat-categorization/): On why categories help us think, and what they quietly leave out. (Philosophy, 2025-07)
+- [Three Perspectives on Reality](https://anshuldhawan.com/writings/three-perspectives-on-reality/): On moving between broad, close, and metaphysical views of reality. (Philosophy, 2025-04)
+- [Generative Games on building systems that generate games](https://anshuldhawan.com/writings/generative-games/): On building systems that generate games, and what that changes about the medium. (Technology, 2025-01)
+- [A generalist's case for staying a generalist](https://anshuldhawan.com/writings/generalist-case/): Notes on optimizing for breadth in a world that keeps asking you to specialize. (Philosophy, 2024-09)
+
+## Talks
+
+- [Evaluating Game Experiments: A More Robust Approach for Freemium Games](https://www.gdcvault.com/play/1023268/Evaluating-Game-Experiments-A-More): GDC 2016, Zynga. A more reliable approach to evaluating free-to-play game experiments that accounts for the behavior of the most engaged players.
+
+## Contact
+
+- [LinkedIn](https://www.linkedin.com/in/anshuldhawan/)
+- [X / Twitter](https://x.com/AnshulDhawan001)
+- [Email](mailto:anshuldhawan@gmail.com)
+
+## Optional
+
+- [Full text of every project and essay](https://anshuldhawan.com/llms-full.txt)
