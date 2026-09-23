@@ -13,6 +13,17 @@ const VA_CSS = `
     font-size:16.5px; line-height:1.65;
     -webkit-font-smoothing:antialiased;
   }
+  .va-world{ position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden; }
+  .va-world canvas{ display:block; width:100%; height:100%; }
+  .va-world::after{
+    content:''; position:absolute; inset:0;
+    background:linear-gradient(90deg, transparent, rgba(7,14,12,.78) calc(50% - 330px), rgba(7,14,12,.88) 50%, rgba(7,14,12,.78) calc(50% + 330px), transparent);
+  }
+  .va-world-active .va-card{ background:rgba(9,20,16,.82); backdrop-filter:blur(8px); }
+  .va-world-active .va-flicker{ animation:none; }
+  @media (max-width:600px){
+    .va-world::after{ background:rgba(7,14,12,.76); }
+  }
   .va-mono{ font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; }
   .va-scanlines::before{
     content:''; position:absolute; inset:0; pointer-events:none; z-index:3;
@@ -964,8 +975,46 @@ function NotFound({ kind }) {
 
 // ----- Top-level dispatch -----
 
+let worldRendererPromise;
+function loadWorldRenderer() {
+  if (window.createSiteWorld) return Promise.resolve(window.createSiteWorld);
+  if (!worldRendererPromise) {
+    worldRendererPromise = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = '/project/site/world-background.js?v=1';
+      script.onload = () => {
+        if (window.createSiteWorld) resolve(window.createSiteWorld);
+        else reject(new Error('World renderer unavailable'));
+        script.remove();
+      };
+      script.onerror = () => { script.remove(); reject(new Error('World renderer unavailable')); };
+      document.head.appendChild(script);
+    }).catch(error => { worldRendererPromise = null; throw error; });
+  }
+  return worldRendererPromise;
+}
+
+function WorldBackground({ onError }) {
+  const canvasRef = React.useRef(null);
+  React.useEffect(() => {
+    let cancelled = false;
+    let dispose;
+    // Load the decorative world without delaying the page content.
+    loadWorldRenderer().then(createWorld => {
+      if (!cancelled) dispose = createWorld(canvasRef.current);
+    }).catch(() => { if (!cancelled) onError(); });
+    return () => { cancelled = true; if (dispose) dispose(); };
+  }, [onError]);
+  return <div className="va-world" aria-hidden="true"><canvas ref={canvasRef} /></div>;
+}
+
 function VariantA() {
   const containerRef = React.useRef(null);
+  const [worldEnabled, setWorldEnabled] = React.useState(true);
+  const handleWorldError = React.useCallback(() => {
+    // Keep the page usable if the decorative renderer cannot load.
+    setWorldEnabled(false);
+  }, []);
   const data = window.SITE_DATA;
   const page = window.PAGE || { type: 'home' };
 
@@ -981,10 +1030,12 @@ function VariantA() {
   }
 
   return (
-    <div ref={containerRef} className="va-root va-scanlines va-vignette">
+    <div ref={containerRef} className={`va-root va-scanlines va-vignette${worldEnabled ? ' va-world-active' : ''}`}>
       <style>{VA_CSS}</style>
-      {window.CursorTrail && <window.CursorTrail variant="spark" color="#7cf2a0" />}
+      {worldEnabled && <WorldBackground onError={handleWorldError} />}
+      {!worldEnabled && window.CursorTrail && <window.CursorTrail variant="spark" color="#7cf2a0" />}
       {body}
+
     </div>
   );
 }
