@@ -344,6 +344,59 @@ const SITE_DATA = {
   ].sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured))),
   writings: [
     {
+      slug: 'the-tussle-between-the-brain-and-the-soul',
+      title: 'The Tussle Between the Brain and the Soul',
+      category: 'Philosophy',
+      date: '2026 · 09',
+      blurb: 'Let the soul lead the creation. Let the brain lead the distribution.',
+      content: [
+        "Every time I sit down to create something, there is a small negotiation happening inside me. That's the tussle between the brain and the soul. The soul wants to just express itself. The brain wants an outcome.",
+        'The brain is essentially an ROI machine. It wants to know what the return will be for the effort it is about to put in. Will this post get likes? Will this side project make money? Will anyone even read this?',
+        "The soul doesn't ask any of those questions. It wants to show how it is unique and what it is feeling in the moment. That's it.",
+        "Let's look at a few examples.",
+        {
+          type: 'leadParagraph',
+          lead: 'The kid with crayons.',
+          text: 'Give a five-year-old a box of crayons and they will fill page after page. Purple sun, green dog, a house floating in the sky. No one asked for it. There\'s no audience, no metric. Now give the same kid ten more years of report cards and rankings, and ask them to draw. Most will say "I\'m not good at drawing." Somewhere along the way, the brain took over the pen.',
+        },
+        {
+          type: 'leadParagraph',
+          lead: 'The dance at a wedding.',
+          text: 'Watch the uncle who dances with his eyes closed, completely off-beat, having the time of his life. Then watch the person who is dancing for the Instagram story. Same music, same floor. One is expressing. The other is performing for a return.',
+        },
+        {
+          type: 'leadParagraph',
+          lead: 'The hobby that became a side hustle.',
+          text: 'A lot of us have lived this one. You love baking, or woodworking, or making little games on the weekend. Then someone says "you should sell these." The moment you do, the brain starts counting: cost per unit, hours per sale, conversion rate. And the thing that used to fill you up starts to drain you.',
+        },
+        'Interestingly, none of this makes the brain the villain. The brain is the reason we have bridges, businesses, and medicine. It keeps us alive and fed. But the brain was built for survival, and survival is a game of returns. Expression is not.',
+        'So how does one hold both?',
+        'The way I see it, each one has its own job. Let the soul lead the creation. Let the brain lead the distribution. Write the essay because it wants to be written, then let the brain figure out where to share it. Build the game because it delights you, then let the brain worry about whether anyone will play it.',
+        'When the brain shows up too early, the work gets safe and forgettable. When the soul never lets the brain in, the work stays in a drawer.',
+        "The soul gives us the reason to create. The brain gives it a way to reach the world. The trouble only starts when we ask one to do the other's job.",
+      ],
+      images: [
+        {
+          kind: 'hero',
+          src: '/assets/images/brain-and-soul-hero.webp',
+          alt: 'A creator at a notebook where flowing amber light and a geometric green brain converge at the pen',
+          aspect: '3/2',
+        },
+        {
+          after: 4,
+          src: '/assets/images/brain-and-soul-crayons.webp',
+          alt: 'A child drawing with crayons as a purple sun, green dog, and floating house come alive above the page',
+          aspect: '3/2',
+        },
+        {
+          after: 9,
+          src: '/assets/images/brain-and-soul-creation-and-distribution.webp',
+          alt: 'Amber creative light flows from a notebook along green branching paths to people in the distance',
+          aspect: '3/2',
+        },
+      ],
+    },
+    {
       slug: 'ai-native-organization',
       title: 'AI Native Organization',
       category: 'Technology',
