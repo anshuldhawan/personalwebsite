@@ -72,6 +72,7 @@ He writes about AI-native organizations, generative games, the case for being a 
 
 ## Writings
 
+- [Can You Build a Time Machine with AI?](https://anshuldhawan.com/writings/can-you-build-a-time-machine-with-ai/): On turning a city and a year into a world you can explore, and what happens when you look around the corner. (Technology, 2026-09)
 - [The Age of the Artist-Entrepreneur](https://anshuldhawan.com/writings/the-age-of-the-artist-entrepreneur/): On AI, the rise of micro businesses, and a world where everyone can turn an idea into something real. (Technology, 2026-09)
 - [The Tussle Between the Brain and the Soul](https://anshuldhawan.com/writings/the-tussle-between-the-brain-and-the-soul/): Let the soul lead the creation. Let the brain lead the distribution. (Philosophy, 2026-09)
 - [AI Native Organization](https://anshuldhawan.com/writings/ai-native-organization/): On the stack, org design, and operating habits required to become AI Native. (Technology, 2026-05)

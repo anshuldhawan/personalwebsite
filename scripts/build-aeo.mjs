@@ -33,12 +33,15 @@ const aboutText = block => (typeof block === 'string' ? block : [
 
 // ----- Content blocks, shared by the HTML and Markdown renderers -----
 
-function blocksToHtml(blocks) {
-  return blocks.map(block => {
+function blocksToHtml(blocks, images = []) {
+  return blocks.flatMap((block, index) => [block, ...images.filter(image => image.after === index).map(image => ({ type: 'image', ...image }))]).map(block => {
     if (typeof block === 'string') return `<p>${escapeHtml(block)}</p>`;
     switch (block.type) {
       case 'heading': return `<h2>${escapeHtml(block.text)}</h2>`;
       case 'subheading': return `<h3>${escapeHtml(block.text)}</h3>`;
+      case 'emphasis': return `<p><em>${escapeHtml(block.text)}</em></p>`;
+      case 'linkedParagraph': return `<p>${escapeHtml(block.before)}<a href="${escapeHtml(block.href)}">${escapeHtml(block.label)}</a>${escapeHtml(block.after)}</p>`;
+      case 'image': return `<figure><img src="${escapeHtml(block.src)}" alt="${escapeHtml(block.alt || '')}" style="max-width:100%;height:auto" loading="lazy" />${block.caption ? `<figcaption>${escapeHtml(block.caption)}</figcaption>` : ''}</figure>`;
       case 'leadParagraph': return `<p><strong>${escapeHtml(block.lead)}</strong> ${escapeHtml(block.text)}</p>`;
       case 'unorderedList':
       case 'orderedList': {
@@ -64,6 +67,8 @@ function blocksToMarkdown(blocks) {
     switch (block.type) {
       case 'heading': return `### ${block.text}`;
       case 'subheading': return `#### ${block.text}`;
+      case 'emphasis': return `*${block.text}*`;
+      case 'linkedParagraph': return `${block.before}[${block.label}](${block.href})${block.after}`;
       case 'leadParagraph': return `**${block.lead}** ${block.text}`;
       case 'unorderedList':
       case 'orderedList':
@@ -201,8 +206,8 @@ function writingPage(writing) {
     `<h1>${escapeHtml(writing.title)}</h1>`,
     bylineHtml,
     `<p>${escapeHtml([writing.category, monthOf(writing.date)].filter(Boolean).join(' · '))}</p>`,
-    `<p><em>${escapeHtml(writing.blurb)}</em></p>`,
-    blocksToHtml(blocks),
+    blocks[0]?.text === writing.blurb ? '' : `<p><em>${escapeHtml(writing.blurb)}</em></p>`,
+    blocksToHtml(blocks, writing.images),
     `<p><a href="/">More writing by ${escapeHtml(data.name)}</a></p>`,
   ].join('\n');
   const graph = [person, website, {

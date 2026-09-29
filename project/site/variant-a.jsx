@@ -843,6 +843,8 @@ function WritingBlock({ block }) {
 
   if (block.type === 'heading') return <h2>{block.text}</h2>;
   if (block.type === 'subheading') return <h3>{block.text}</h3>;
+  if (block.type === 'emphasis') return <p><em>{block.text}</em></p>;
+  if (block.type === 'linkedParagraph') return <p>{block.before}<a href={block.href}>{block.label}</a>{block.after}</p>;
   if (block.type === 'leadParagraph') return <p><strong>{block.lead} </strong>{block.text}</p>;
   if (block.type === 'video') {
     return (
@@ -965,6 +967,7 @@ function WritingDetail({ writing }) {
                 {inlineImages.filter((image) => image.after === i).map((image) => (
                   <React.Fragment key={image.src}>
                     <ProjectMedia media={{ type:'image', ...image }} style={{ margin:'26px 0 28px' }} />
+                    {image.caption && <p className="va-caption">{image.caption}</p>}
                     {image.credit && (
                       <div className="va-caption">
                         <a href={image.credit.href} target="_blank" rel="noreferrer">{image.credit.label}</a>

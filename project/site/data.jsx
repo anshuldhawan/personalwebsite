@@ -404,6 +404,93 @@ const SITE_DATA = {
   ].sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured))),
   writings: [
     {
+      "slug": "can-you-build-a-time-machine-with-ai",
+      "title": "Can You Build a Time Machine with AI?",
+      "category": "Technology",
+      "date": "2026 · 09",
+      "blurb": "On turning a city and a year into a world you can explore, and what happens when you look around the corner.",
+      "content": [
+        {
+          "type": "emphasis",
+          "text": "On turning a city and a year into a world you can explore, and what happens when you look around the corner."
+        },
+        "What if you could type in a city and a year, and walk around?",
+        "San Francisco in 1920. Kyoto in 1600. Paris in 2200. A place you know, at a time you don't.",
+        "I built an experiment called Timetravel around that idea. You picked a destination, AI generated a starting image, and a world model turned that image into an environment you could explore with your arrow keys. Each journey lasted thirty seconds.",
+        "The interesting part was the step between looking at an image and moving through it. The moment you can turn left, the image has to become something more. There has to be a world outside the frame.",
+        {
+          "type": "heading",
+          "text": "From a destination to a world"
+        },
+        "The experience had three parts: decide what belongs in the scene, generate the starting image, and open an interactive video session.",
+        "First, a text model prepared a scene plan for the chosen place and year. That plan described the viewpoint, the geography, the kinds of buildings and objects that could appear, and the landmarks to include or leave out. GPT Image generated the starting view through Vercel AI Gateway. Reactor connected the browser to the world model and streamed the resulting video back as you moved.",
+        "The project includes two versions: LingBot World 2 and Happy Oyster Adventure, which became the default. Both start from an image and let you explore through keyboard or touch controls. Their session behavior is different, but the basic invitation is the same: pick somewhere, pick sometime, step inside.",
+        "You could also upload your own image. That skipped image generation and used the photo as the starting point. The selected year guided newly revealed details, while the instructions asked the model to preserve the image's location and visual identity.",
+        "That opens up another possibility. The starting point for an experience could be a photograph you already have. The world begins with something personal, and generation takes over at its edges.",
+        {
+          "type": "heading",
+          "text": "A convincing street is only the beginning"
+        },
+        "A historical scene has a lot of ways to be wrong while still looking convincing.",
+        "A building can belong to the right city and the wrong year. A landmark can exist at that date but be invisible from where you are standing. A waterfront can look plausible while following a shoreline that did not exist yet. Even the assumption that there should be a city there can be wrong.",
+        "So the problem becomes more specific than asking for an old-looking street. What actually belongs in this place, from this viewpoint, at this time?",
+        "Timetravel's scene planner gives landmark candidates a date range, a location, a sightline, and a confidence level. The code filters candidates against those fields before the image is generated. When the plan is uncertain or invalid, the fallback uses a restricted view and avoids recognizable landmarks or an invented skyline.",
+        "The useful design choice here is to let uncertainty make the scene smaller. There is no need to fill every horizon.",
+        "The image and the world model also receive the same scene plan. Otherwise, two models can take the same city and year and imagine two different places. Sharing the plan gives them a common starting point.",
+        "These constraints still depend on model knowledge. The system does not retrieve archival evidence for every scene or inspect the generated frames to verify them. A plan can pass validation and still contain a historical mistake. These are imagined reconstructions, with safeguards around what the models are asked to invent.",
+        {
+          "type": "heading",
+          "text": "The world has to survive a turn"
+        },
+        "A still image can leave everything beyond its border unresolved. An interactive world cannot.",
+        "When the player turns, the model has to continue the street, preserve the surroundings, and keep the scene in the same period. Movement should change the camera without changing the identity of the place.",
+        "The two versions approach guidance differently. In the LingBot version, the app can reinforce the scene constraints during movement. Happy Oyster Adventure takes its guidance when the world is created; this integration has no live text steering. That makes the initial image and prompt especially consequential.",
+        "For me, this is one of the central design problems in generative worlds. Every movement asks the system to make another decision about what exists. Those decisions need to add up to a place.",
+        "More detail alone will not solve that. The systems around the model need to carry the facts and constraints that should remain stable, and the model needs to respect them as it generates what comes next.",
+        {
+          "type": "heading",
+          "text": "Thirty seconds, and the plumbing behind them"
+        },
+        "The application limited each journey to thirty seconds of exploration. It also had to handle everything around those thirty seconds: preparing the image, connecting the session, waiting for live video, releasing movement controls, and ending the connection.",
+        "An image can generate successfully while the world service has no available capacity. A world can report that it is ready before the browser receives playable video. Those are different states, and the interface needs to explain them differently.",
+        "The app kept the starting image in browser memory so a retry could reuse it. In the Happy Oyster version, it could also reattach to a saved world within the same page session. A failed connection should not automatically mean paying to generate the same starting image again.",
+        "Journeys could be recorded locally in the browser and downloaded afterward. The app did not upload those recordings. A short, temporary experience could leave you with something to keep.",
+        "This is the product work around a generative model: making the wait understandable, preserving what already worked, and giving the user a sensible next step when something fails.",
+        {
+          "type": "heading",
+          "text": "Where this could go"
+        },
+        {
+          "type": "linkedParagraph",
+          "before": "I have written before about ",
+          "label": "generative games",
+          "href": "https://anshuldhawan.com/writings/generative-games/",
+          "after": ", where parts of the experience take shape while the player is inside it. Timetravel is a small exploration of that idea, with a city and a year as the inputs."
+        },
+        "The possibilities are easy to imagine. A history lesson that begins on a street. A family photograph that becomes a place to explore. A possible future for a familiar neighborhood. Each would need a different standard of evidence and a different set of boundaries around generation.",
+        "The experiment is now closed. It was a prototype, and its historical scenes were speculative. But the question behind it still interests me.",
+        "We have become used to typing a prompt and receiving something to look at. Being able to move through the result creates a different relationship with it. You bring your own curiosity. You choose where to go next.",
+        "And the next thing you want to know is what is around the corner."
+      ],
+      "images": [
+        {
+          "after": 4,
+          "src": "/assets/images/timetravel-hero.webp",
+          "alt": "An imagined period street extends from a luminous window into a dark room.",
+          "aspect": "3/2",
+          "caption": "AI-generated editorial illustration of stepping inside an image. Not a product screenshot or historical record.",
+          "kind": "hero"
+        },
+        {
+          "after": 19,
+          "src": "/assets/images/timetravel-beyond-the-frame.webp",
+          "alt": "A period street unfolds from a flat image, with its distant buildings fading into mint-green outlines.",
+          "aspect": "3/2",
+          "caption": "AI-generated conceptual illustration: the starting image is defined; the space beyond it has to be generated."
+        }
+      ]
+    },
+    {
       "slug": "the-age-of-the-artist-entrepreneur",
       "title": "The Age of the Artist-Entrepreneur",
       "category": "Technology",
