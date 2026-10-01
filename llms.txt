@@ -18,6 +18,8 @@ I started at Zynga as a software engineer building backend systems for Zynga Pok
 
 I also founded Equally and raised venture capital to build Da Vinci Club AR, an AI-powered AR learning platform that turned real-world objects into interactive play and reached 100,000 kids. We were semifinalists in the Global Learning XPRIZE. I hold a master's in computer science from USC and have patented work in experimentation and player recommendations.
 
+Patents: Experimentation & Optimization Service and Player Recommendation for Playing Online Game.
+
 On nights and weekends, I build projects and hack on new ideas, especially at the intersection of AI and games. I also regularly participate in hackathons.
 
 ## Expertise

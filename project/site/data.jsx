@@ -76,6 +76,13 @@ const SITE_DATA = {
         "secondLink": { "label": "Global Learning XPRIZE", "href": "/projects/global-learning-xprize/" },
         "secondAfter": ". I hold a master's in computer science from USC and have patented work in experimentation and player recommendations."
     },
+    {
+        "text": "Patents: ",
+        "link": { "label": "Experimentation & Optimization Service", "href": "https://patents.google.com/patent/US9737815B2" },
+        "after": " and ",
+        "secondLink": { "label": "Player Recommendation for Playing Online Game", "href": "https://patents.google.com/patent/US20140274362" },
+        "secondAfter": "."
+    },
     "On nights and weekends, I build projects and hack on new ideas, especially at the intersection of AI and games. I also regularly participate in hackathons."
 ],
   talks: [
