@@ -2,12 +2,12 @@
 const SITE_DATA = {
   name: 'Anshul Dhawan',
   tagline: 'AI generalist, product leader & game developer',
-  // Answer-first copy for answer engines and LLMs. Shown on the About tab and
+  // Answer-first copy for answer engines and LLMs.
   // compiled into static HTML, JSON-LD, and llms.txt by scripts/build-aeo.mjs.
   profile: {
     headline: 'AI Generalist, Product Leader & Game Developer',
-    summary: 'Anshul Dhawan is an AI generalist, product leader, and game developer with 15 years of experience scaling gaming, social, and AI products. He is co-founder of PlayWorlds, an AI-native creation platform for kids, and founder of Social Pixels, an AI-native game studio. He has led product at Supernatural VR (acquired by Meta), VRChat, Glu Mobile / EA, and Zynga.',
-    description: 'Anshul Dhawan is an AI generalist, product leader, and game developer: co-founder of PlayWorlds, founder of Social Pixels, and a product leader at Supernatural (Meta), VRChat, EA, and Zynga.',
+    summary: 'Anshul Dhawan is an AI generalist, product leader, and game developer with 12+ years leading growth and monetization for consumer products. He is founder of Social Pixels, an AI-native game studio. He has led product at Supernatural VR (acquired by Meta), VRChat, Glu Mobile / EA, and Zynga.',
+    description: 'Anshul Dhawan is an AI generalist, product leader, and game developer: founder of Social Pixels, and a product leader at Supernatural (Meta), VRChat, EA, and Zynga.',
     expertise: [
       'AI-native product development',
       'AI-native game development',
@@ -25,7 +25,7 @@ const SITE_DATA = {
     faq: [
       {
         q: 'Who is Anshul Dhawan?',
-        a: 'Anshul Dhawan is an AI generalist, product leader, and game developer with 15 years of experience scaling gaming, social, and AI products. He is co-founder of PlayWorlds, an AI-native creation platform for kids, and previously founded Social Pixels, an AI-native game studio. His product leadership roles include VP of Product and Analytics at Supernatural VR, leading product at VRChat, Senior Director of Product and Business Intelligence at Glu Mobile / EA, and Head of Product, Growth at Zynga.',
+        a: 'Anshul Dhawan is an AI generalist, product leader, and game developer with 12+ years leading growth and monetization for consumer products. He is founder of Social Pixels, an AI-native game studio. His product leadership roles include VP of Product and Analytics at Supernatural VR, leading product at VRChat, Senior Director of Product and Business Intelligence at Glu Mobile / EA, and Head of Product, Growth at Zynga.',
       },
       {
         q: 'What makes Anshul Dhawan an AI generalist?',
@@ -41,7 +41,7 @@ const SITE_DATA = {
       },
       {
         q: 'What is Anshul Dhawan working on now?',
-        a: 'He is co-founder of PlayWorlds, where he is building the first AI-native creation platform for kids. He also publishes experiments at the edge of AI and games, including LLM evaluations and generative-video game prototypes.',
+        a: 'He is founder of Social Pixels, where he builds AI-powered games and product analytics workflows. On nights and weekends, he builds projects, experiments with new ideas, and regularly participates in hackathons.',
       },
       {
         q: 'Has Anshul Dhawan spoken at industry conferences?',
@@ -54,17 +54,30 @@ const SITE_DATA = {
     ],
   },
   about: [
-    "I'm co-founder of PlayWorlds, where I'm building the first AI-native creation platform for kids. I bring 15 years of experience scaling gaming, social, and AI products across some of the largest live-service and multiplayer platforms in the industry.",
-    "Most recently, I founded Social Pixels, an AI-native gaming studio that achieved 20x efficiency improvements in cost and time-to-market for game production. Before that, I was VP of Product and Analytics at Supernatural VR, which was acquired by Meta in a deal reported at about $400M.",
-    "I led product at VRChat, one of the defining social VR platforms, and served as Senior Director of Product and Business Intelligence at Glu Mobile / EA.",
+    "I'm a product leader and the founder of Social Pixels. My career spans software engineering, product leadership, and entrepreneurship, with 12+ years leading growth and monetization for consumer products used by millions. I work across acquisition, engagement, retention, and revenue, partnering with engineering, data, design, and marketing to build products and teams that scale.",
+    "At Social Pixels, I launched four social games and built generative AI workflows across the development process, from concept and production to live operations. I also built agentic product analytics workflows that identified bugs, onboarding problems, and frustrating gameplay loops, improving retention by 25% in the first week.",
+    "I've led product and growth across VR, subscriptions, and gaming. At VRChat, I owned growth and the expansion to mobile, launching an alpha with creators and players and reducing the app's crash rate by 50%. At Supernatural, acquired by Meta, I led product teams responsible for engagement, subscriber growth, and revenue, and established its analytics and machine learning function.",
+    "At VersusGame, I led product, analytics, and design, including an evaluation platform for a fine-tuned LLM product that increased time spent on partner products by 280%. I helped scale the product engineering organization threefold by restructuring it into squads. At Glu Mobile / EA, I led a centralized product group focused on ad optimization and return on ad spend (ROAS), payer conversion, revenue per user, and organic growth, and introduced a career progression framework for product managers.",
     {
-      text: "I spent the first seven-plus years of my career at Zynga, rising from software engineer to Head of Product, Growth, leading the development of ",
-      link: { label: "Zynga's learning machine", href: '/projects/experimentation-service/' },
-      after: ". I also founded Equally, an AI-powered AR learning platform ",
-      secondLink: { label: 'Da Vinci Club AR', href: '/projects/da-vinci-club-ar/' },
-      secondAfter: '.',
+        "text": "I started at Zynga as a software engineer building backend systems for Zynga Poker and grew into Head of Product, Growth. I led messaging-platform launches for Words With Friends and the development of ",
+        "link": {
+            "label": "Zynga's learning machine",
+            "href": "/projects/experimentation-service/"
+        },
+        "after": ", including an experimentation platform that tripled experiment volume and a segmentation tool that increased revenue by 30% for some game studios. For this work, I received Zynga's Spirit Award, which recognizes individuals who go above and beyond their responsibilities to set new standards for the company."
     },
-  ],
+    {
+        "text": "I also founded Equally and raised venture capital to build ",
+        "link": {
+            "label": "Da Vinci Club AR",
+            "href": "/projects/da-vinci-club-ar/"
+        },
+        "after": ", an AI-powered AR learning platform that turned real-world objects into interactive play and reached 100,000 kids. We were semifinalists in the ",
+        "secondLink": { "label": "Global Learning XPRIZE", "href": "/projects/global-learning-xprize/" },
+        "secondAfter": ". I hold a master's in computer science from USC and have patented work in experimentation and player recommendations."
+    },
+    "On nights and weekends, I build projects and hack on new ideas, especially at the intersection of AI and games. I also regularly participate in hackathons."
+],
   talks: [
     {
       title: 'Evaluating Game Experiments: A More Robust Approach for Freemium Games',
@@ -129,15 +142,15 @@ const SITE_DATA = {
           columns: 2,
           items: [
             {
-              src: '/assets/images/network-cities-concept-poster.webp',
-              alt: 'Network Cities concept-art poster showing Tesla in front of a colorful city',
-              label: 'Game poster concept art',
+              src: "/assets/images/upgrades/network-cities-concept-poster.webp",
+              alt: "Updated Network Cities concept poster with its orange-jacketed guide and colorful toy-like city.",
+              label: 'Game poster concept art — refreshed',
               aspect: '1366/768',
             },
             {
-              src: '/assets/images/network-cities-concept-city.webp',
-              alt: 'Concept art for the colorful Network Cities world, with buildings, roads, cars, and mountains',
-              label: 'World concept art',
+              src: "/assets/images/upgrades/network-cities-concept-city.webp",
+              alt: "Updated colorful Network Cities world concept with toy-like buildings, roads, small cars, and mountains.",
+              label: 'World concept art — refreshed',
               aspect: '1/1',
             },
           ],
@@ -398,18 +411,21 @@ const SITE_DATA = {
           aspect: '1128/636',
         },
       ],
-      media: null,
+      media: { type: 'video', src: '/assets/videos/open-world-adventure-demo.mp4', poster: '/assets/posters/open-world-adventure-demo.jpg', aspect: '16/9' },
       links: [],
     },
-  ].sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured))),
-  writings: [
     {
       "slug": "can-you-build-a-time-machine-with-ai",
       "title": "Can You Build a Time Machine with AI?",
-      "category": "Technology",
-      "date": "2026 · 09",
+      role: "Builder",
+      tag: "AI-native experiment · Generative worlds",
+      year: "2026",
+      featured: true,
+      media: { type: "video", src: "/assets/videos/timetravel-demo.mp4", poster: "/assets/posters/timetravel-demo.jpg", aspect: "16/9" },
+      links: [],
       "blurb": "On turning a city and a year into a world you can explore, and what happens when you look around the corner.",
       "content": [
+        { type: "video", src: "/assets/videos/timetravel-demo.mp4", poster: "/assets/posters/timetravel-demo.jpg", aspect: "16/9", autoplay: false, loop: false, controls: true, caption: "Timetravel experiment demo" },
         {
           "type": "emphasis",
           "text": "On turning a city and a year into a world you can explore, and what happens when you look around the corner."
@@ -474,22 +490,25 @@ const SITE_DATA = {
       ],
       "images": [
         {
-          "after": 4,
-          "src": "/assets/images/timetravel-hero.webp",
-          "alt": "An imagined period street extends from a luminous window into a dark room.",
+          "after": 5,
+          "src": "/assets/images/upgrades/timetravel-hero.webp",
+          "alt": "An imagined historical street extends through a luminous picture frame into a quiet dark room.",
+          thumbnail: "/assets/images/upgrades/timetravel-hero-thumb.webp",
           "aspect": "3/2",
           "caption": "AI-generated editorial illustration of stepping inside an image. Not a product screenshot or historical record.",
           "kind": "hero"
         },
         {
-          "after": 19,
-          "src": "/assets/images/timetravel-beyond-the-frame.webp",
-          "alt": "A period street unfolds from a flat image, with its distant buildings fading into mint-green outlines.",
+          "after": 20,
+          "src": "/assets/images/upgrades/timetravel-beyond-the-frame.webp",
+          "alt": "A period street continues beyond a picture frame into lightly drawn architectural outlines.",
           "aspect": "3/2",
           "caption": "AI-generated conceptual illustration: the starting image is defined; the space beyond it has to be generated."
         }
       ]
     },
+  ].sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured))),
+  writings: [
     {
       "slug": "the-age-of-the-artist-entrepreneur",
       "title": "The Age of the Artist-Entrepreneur",
@@ -550,32 +569,33 @@ const SITE_DATA = {
       "images": [
         {
           "kind": "hero",
-          "src": "/assets/images/artist-entrepreneur-hero.webp",
-          "alt": "An artist at a sketchbook and laptop imagines a luminous world of art, games, and handmade objects",
+          "src": "/assets/images/upgrades/artist-entrepreneur-hero.webp",
+          "alt": "An artist’s sketchbook opens into a miniature world of games, useful tools, and handmade objects.",
+          thumbnail: "/assets/images/upgrades/artist-entrepreneur-hero-thumb.webp",
           "aspect": "3/2"
         },
         {
           "after": 12,
-          "src": "/assets/images/artist-entrepreneur-one-person-team.webp",
-          "alt": "A solo creator directs connected tools for software, illustration, writing, and correspondence from a home studio",
+          "src": "/assets/images/upgrades/artist-entrepreneur-one-person-team.webp",
+          "alt": "A solo creator works at a studio bench connected to tools for art, software, writing, and correspondence.",
           "aspect": "3/2"
         },
         {
           "after": 16,
-          "src": "/assets/images/artist-entrepreneur-micro-businesses.webp",
-          "alt": "Four warmly lit small businesses form a neighborhood of independent teachers, makers, and chefs",
+          "src": "/assets/images/upgrades/artist-entrepreneur-micro-businesses.webp",
+          "alt": "Four small workshops form a neighborhood of independent teaching, woodworking, learning games, and cooking.",
           "aspect": "3/2"
         },
         {
           "after": 20,
-          "src": "/assets/images/artist-entrepreneur-maker-to-audience.webp",
-          "alt": "Branching paths connect a maker directly to people reading, listening, and playing in their homes",
+          "src": "/assets/images/upgrades/artist-entrepreneur-maker-to-audience.webp",
+          "alt": "Paths connect a maker’s desk directly to people reading, listening, and playing.",
           "aspect": "3/2"
         },
         {
           "after": 25,
-          "src": "/assets/images/artist-entrepreneur-open-future.webp",
-          "alt": "A person with a glowing sketchbook considers paths toward creative communities and an uncertain horizon",
+          "src": "/assets/images/upgrades/artist-entrepreneur-open-future.webp",
+          "alt": "A person with a sketchbook looks across branching paths toward small creative communities and an uncertain horizon.",
           "aspect": "3/2"
         }
       ]
@@ -615,20 +635,21 @@ const SITE_DATA = {
       images: [
         {
           kind: 'hero',
-          src: '/assets/images/brain-and-soul-hero.webp',
-          alt: 'A creator at a notebook where flowing amber light and a geometric green brain converge at the pen',
+          src: "/assets/images/upgrades/brain-and-soul-hero.webp",
+          alt: "Flowing gold and structured green forms meet at the pen of a thoughtful creator.",
+          thumbnail: "/assets/images/upgrades/brain-and-soul-hero-thumb.webp",
           aspect: '3/2',
         },
         {
           after: 4,
-          src: '/assets/images/brain-and-soul-crayons.webp',
-          alt: 'A child drawing with crayons as a purple sun, green dog, and floating house come alive above the page',
+          src: "/assets/images/upgrades/brain-and-soul-crayons.webp",
+          alt: "A child’s crayon drawing becomes a playful purple sun, green dog, and floating house.",
           aspect: '3/2',
         },
         {
           after: 9,
-          src: '/assets/images/brain-and-soul-creation-and-distribution.webp',
-          alt: 'Amber creative light flows from a notebook along green branching paths to people in the distance',
+          src: "/assets/images/upgrades/brain-and-soul-creation-and-distribution.webp",
+          alt: "An imaginative drawing grows into an orderly set of paths reaching an audience.",
           aspect: '3/2',
         },
       ],
@@ -737,32 +758,33 @@ const SITE_DATA = {
         {
           kind: 'hero',
           after: 0,
-          src: '/assets/images/ai-native-organization-hero.webp',
-          alt: 'Dark phosphor-green CRT illustration of an AI Native organization as three connected layers: technology stack, organization design, and team thinking',
+          src: "/assets/images/upgrades/ai-native-organization-hero.webp",
+          alt: "An exploded architectural model connects tools and data, a collaborating team, and a living tree through three interdependent layers.",
+          thumbnail: "/assets/images/upgrades/ai-native-organization-hero-thumb.webp",
           aspect: '3/2',
         },
         {
           after: 14,
-          src: '/assets/images/ai-native-organization-stack.webp',
-          alt: 'Dark phosphor-green CRT system map of an agent-readable company stack connecting code, data, docs, APIs, and processes',
+          src: "/assets/images/upgrades/ai-native-organization-stack.webp",
+          alt: "Books, data blocks, code panels, and tools connect through an orderly shared workspace.",
           aspect: '3/2',
         },
         {
           after: 27,
-          src: '/assets/images/ai-native-organization-org-design.webp',
-          alt: 'Dark phosphor-green CRT workflow showing agents handling structured work and humans reviewing ambiguous exceptions',
+          src: "/assets/images/upgrades/ai-native-organization-org-design.webp",
+          alt: "An organized workflow routes routine tasks through tools while a small team examines an unusual case.",
           aspect: '3/2',
         },
         {
           after: 40,
-          src: '/assets/images/ai-native-organization-app-hub.webp',
-          alt: 'Dark phosphor-green CRT internal app hub where team-built agents and tools converge into a shared platform',
+          src: "/assets/images/upgrades/ai-native-organization-app-hub.webp",
+          alt: "Distinct tools built by small teams connect to a shared, illuminated central workspace.",
           aspect: '3/2',
         },
         {
           after: 51,
-          src: '/assets/images/ai-native-organization-ground-up.webp',
-          alt: 'Dark phosphor-green CRT flywheel showing team-by-team AI Native adoption from task audit to automation to app hub',
+          src: "/assets/images/upgrades/ai-native-organization-ground-up.webp",
+          alt: "Small workshops share useful tools along a rising circular path of learning and improvement.",
           aspect: '3/2',
         },
       ],
@@ -889,8 +911,8 @@ const SITE_DATA = {
         },
         {
           after: 27,
-          src: '/assets/images/what-is-spirituality-meditation.webp',
-          alt: 'A meditating figure in a luminous natural landscape with breath-like light connecting plants, birds, water, and mountains',
+          src: "/assets/images/upgrades/what-is-spirituality-meditation.webp",
+          alt: "A seated person meditates beside water as a subtle breath-like current connects the surrounding life.",
           aspect: '3/2',
         },
       ],
@@ -913,14 +935,15 @@ const SITE_DATA = {
       images: [
         {
           kind: 'hero',
-          src: '/assets/images/emotion-and-rationality-decision-making-hero.webp',
-          alt: 'Thoughtful figure behind a gold balance scale with an amber heart and phosphor-green wireframe brain',
+          src: "/assets/images/upgrades/emotion-and-rationality-decision-making-hero.webp",
+          alt: "A thoughtful person weighs a warm heart and a cool geometric brain on a balanced scale.",
+          thumbnail: "/assets/images/upgrades/emotion-and-rationality-decision-making-hero-thumb.webp",
           aspect: '3/2',
         },
         {
           after: 4,
-          src: '/assets/images/emotion-and-rationality-decision-making-prism.webp',
-          alt: 'Dark CRT-style decision flow with a balance scale, heart, wireframe brain, inquiry prism, and check mark',
+          src: "/assets/images/upgrades/emotion-and-rationality-decision-making-prism.webp",
+          alt: "A warm emotional signal passes through a clear prism and emerges as a deliberate path.",
           aspect: '3/2',
         },
       ],
@@ -944,20 +967,21 @@ const SITE_DATA = {
       images: [
         {
           kind: 'hero',
-          src: '/assets/images/the-issue-of-neat-categorization-hero.webp',
-          alt: 'Abstract phosphor-green taxonomy grid with organic forms spilling outside the boxes',
+          src: "/assets/images/upgrades/the-issue-of-neat-categorization-hero.webp",
+          alt: "Leaves, shells, and branches grow beyond the divisions of an orderly specimen drawer.",
+          thumbnail: "/assets/images/upgrades/the-issue-of-neat-categorization-hero-thumb.webp",
           aspect: '3/2',
         },
         {
           after: 2,
-          src: '/assets/images/the-issue-of-neat-categorization-spectrum.webp',
-          alt: 'Abstract phosphor-green spectrum of human silhouettes and organic branching lines between categories',
+          src: "/assets/images/upgrades/the-issue-of-neat-categorization-spectrum.webp",
+          alt: "A continuous ribbon of varied human figures crosses the boundaries of geometric compartments.",
           aspect: '3/2',
         },
         {
           after: 6,
-          src: '/assets/images/the-issue-of-neat-categorization-examples.webp',
-          alt: 'Abstract phosphor-green composition of medicine, maps, culture, politics, language, and algorithms escaping a taxonomy grid',
+          src: "/assets/images/upgrades/the-issue-of-neat-categorization-examples.webp",
+          alt: "A plant, map, woven fabric, speech forms, and mechanical network overlap an open sorting grid.",
           aspect: '3/2',
         },
       ],
@@ -978,20 +1002,21 @@ const SITE_DATA = {
       images: [
         {
           kind: 'hero',
-          src: '/assets/images/three-perspectives-on-reality-birds-eye.webp',
-          alt: "Abstract phosphor-green bird's-eye map of a forest canopy",
+          src: "/assets/images/upgrades/three-perspectives-on-reality-birds-eye.webp",
+          alt: "An aerial view reveals a winding river and connected patterns across a forest canopy.",
+          thumbnail: "/assets/images/upgrades/three-perspectives-on-reality-birds-eye-thumb.webp",
           aspect: '3/2',
         },
         {
           after: 0,
-          src: '/assets/images/three-perspectives-on-reality-worms-eye.webp',
-          alt: "Abstract phosphor-green close-up of roots and layered earth",
+          src: "/assets/images/upgrades/three-perspectives-on-reality-worms-eye.webp",
+          alt: "A small fern and layered roots reveal the forest from close to the ground.",
           aspect: '3/2',
         },
         {
           after: 3,
-          src: '/assets/images/three-perspectives-on-reality-metaphysical.webp',
-          alt: 'Abstract phosphor-green metaphysical geometry around a forest system',
+          src: "/assets/images/upgrades/three-perspectives-on-reality-metaphysical.webp",
+          alt: "Fine geometric arcs reveal connections among a forest, its roots, and the night sky.",
           aspect: '3/2',
         },
       ],
@@ -1016,8 +1041,9 @@ const SITE_DATA = {
       images: [
         {
           kind: 'hero',
-          src: '/assets/images/generative-games-living-world.webp',
-          alt: 'A luminous isometric game world being generated from authored systems and adaptive AI particles',
+          src: "/assets/images/upgrades/generative-games-living-world.webp",
+          alt: "A playable miniature world grows from an unfinished grid into a vivid landscape around a player.",
+          thumbnail: "/assets/images/upgrades/generative-games-living-world-thumb.webp",
           aspect: '3/2',
         },
       ],

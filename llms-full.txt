@@ -1,18 +1,24 @@
 # Anshul Dhawan
 
-> Anshul Dhawan is an AI generalist, product leader, and game developer with 15 years of experience scaling gaming, social, and AI products. He is co-founder of PlayWorlds, an AI-native creation platform for kids, and founder of Social Pixels, an AI-native game studio. He has led product at Supernatural VR (acquired by Meta), VRChat, Glu Mobile / EA, and Zynga.
+> Anshul Dhawan is an AI generalist, product leader, and game developer with 12+ years leading growth and monetization for consumer products. He is founder of Social Pixels, an AI-native game studio. He has led product at Supernatural VR (acquired by Meta), VRChat, Glu Mobile / EA, and Zynga.
 
 This is the personal website of Anshul Dhawan, AI generalist, product leader, and game developer. It collects his projects in AI-native games and products, his product leadership background, and his essays on AI, games, and philosophy.
 
 ## About
 
-I'm co-founder of PlayWorlds, where I'm building the first AI-native creation platform for kids. I bring 15 years of experience scaling gaming, social, and AI products across some of the largest live-service and multiplayer platforms in the industry.
+I'm a product leader and the founder of Social Pixels. My career spans software engineering, product leadership, and entrepreneurship, with 12+ years leading growth and monetization for consumer products used by millions. I work across acquisition, engagement, retention, and revenue, partnering with engineering, data, design, and marketing to build products and teams that scale.
 
-Most recently, I founded Social Pixels, an AI-native gaming studio that achieved 20x efficiency improvements in cost and time-to-market for game production. Before that, I was VP of Product and Analytics at Supernatural VR, which was acquired by Meta in a deal reported at about $400M.
+At Social Pixels, I launched four social games and built generative AI workflows across the development process, from concept and production to live operations. I also built agentic product analytics workflows that identified bugs, onboarding problems, and frustrating gameplay loops, improving retention by 25% in the first week.
 
-I led product at VRChat, one of the defining social VR platforms, and served as Senior Director of Product and Business Intelligence at Glu Mobile / EA.
+I've led product and growth across VR, subscriptions, and gaming. At VRChat, I owned growth and the expansion to mobile, launching an alpha with creators and players and reducing the app's crash rate by 50%. At Supernatural, acquired by Meta, I led product teams responsible for engagement, subscriber growth, and revenue, and established its analytics and machine learning function.
 
-I spent the first seven-plus years of my career at Zynga, rising from software engineer to Head of Product, Growth, leading the development of Zynga's learning machine. I also founded Equally, an AI-powered AR learning platform Da Vinci Club AR.
+At VersusGame, I led product, analytics, and design, including an evaluation platform for a fine-tuned LLM product that increased time spent on partner products by 280%. I helped scale the product engineering organization threefold by restructuring it into squads. At Glu Mobile / EA, I led a centralized product group focused on ad optimization and return on ad spend (ROAS), payer conversion, revenue per user, and organic growth, and introduced a career progression framework for product managers.
+
+I started at Zynga as a software engineer building backend systems for Zynga Poker and grew into Head of Product, Growth. I led messaging-platform launches for Words With Friends and the development of Zynga's learning machine, including an experimentation platform that tripled experiment volume and a segmentation tool that increased revenue by 30% for some game studios. For this work, I received Zynga's Spirit Award, which recognizes individuals who go above and beyond their responsibilities to set new standards for the company.
+
+I also founded Equally and raised venture capital to build Da Vinci Club AR, an AI-powered AR learning platform that turned real-world objects into interactive play and reached 100,000 kids. We were semifinalists in the Global Learning XPRIZE. I hold a master's in computer science from USC and have patented work in experimentation and player recommendations.
+
+On nights and weekends, I build projects and hack on new ideas, especially at the intersection of AI and games. I also regularly participate in hackathons.
 
 ## Expertise
 
@@ -33,7 +39,7 @@ I spent the first seven-plus years of my career at Zynga, rising from software e
 
 ### Who is Anshul Dhawan?
 
-Anshul Dhawan is an AI generalist, product leader, and game developer with 15 years of experience scaling gaming, social, and AI products. He is co-founder of PlayWorlds, an AI-native creation platform for kids, and previously founded Social Pixels, an AI-native game studio. His product leadership roles include VP of Product and Analytics at Supernatural VR, leading product at VRChat, Senior Director of Product and Business Intelligence at Glu Mobile / EA, and Head of Product, Growth at Zynga.
+Anshul Dhawan is an AI generalist, product leader, and game developer with 12+ years leading growth and monetization for consumer products. He is founder of Social Pixels, an AI-native game studio. His product leadership roles include VP of Product and Analytics at Supernatural VR, leading product at VRChat, Senior Director of Product and Business Intelligence at Glu Mobile / EA, and Head of Product, Growth at Zynga.
 
 ### What makes Anshul Dhawan an AI generalist?
 
@@ -49,7 +55,7 @@ He built Network Cities, an AI-native city builder that reached 200,000 players 
 
 ### What is Anshul Dhawan working on now?
 
-He is co-founder of PlayWorlds, where he is building the first AI-native creation platform for kids. He also publishes experiments at the edge of AI and games, including LLM evaluations and generative-video game prototypes.
+He is founder of Social Pixels, where he builds AI-powered games and product analytics workflows. On nights and weekends, he builds projects, experiments with new ideas, and regularly participates in hackathons.
 
 ### Has Anshul Dhawan spoken at industry conferences?
 
@@ -62,6 +68,7 @@ He writes about AI-native organizations, generative games, the case for being a 
 ## Projects
 
 - [Can You Make an Open World Adventure Game Like GTA Without a Game Engine?](https://anshuldhawan.com/projects/open-world-adventure-without-a-game-engine/): A playable experiment combining a deterministic simulation with real-time generative video. (Builder · AI-native game · Generative video · 2026)
+- [Can You Build a Time Machine with AI?](https://anshuldhawan.com/projects/can-you-build-a-time-machine-with-ai/): On turning a city and a year into a world you can explore, and what happens when you look around the corner. (Builder · AI-native experiment · Generative worlds · 2026)
 - [Claude vs ChatGPT vs Gemini vs Grok — Poker Tournament](https://anshuldhawan.com/projects/poker-tournament/): A Texas Hold'em evaluation harness that pits frontier LLMs against each other across hands and tournaments. (Builder · LLM evaluation · 2026)
 - [Network Cities](https://anshuldhawan.com/projects/network-cities/): An AI-native city builder that went from a rough Three.js prototype to 200,000 players and $20,000 in revenue. (Founder · Social Pixels · AI-native game · 2025)
 - [Da Vinci Club AR](https://anshuldhawan.com/projects/da-vinci-club-ar/): A computer-vision-based AR app for kids that turned the world around them into a learning surface. (Builder · AR · EdTech)
@@ -72,7 +79,6 @@ He writes about AI-native organizations, generative games, the case for being a 
 
 ## Writings
 
-- [Can You Build a Time Machine with AI?](https://anshuldhawan.com/writings/can-you-build-a-time-machine-with-ai/): On turning a city and a year into a world you can explore, and what happens when you look around the corner. (Technology, 2026-09)
 - [The Age of the Artist-Entrepreneur](https://anshuldhawan.com/writings/the-age-of-the-artist-entrepreneur/): On AI, the rise of micro businesses, and a world where everyone can turn an idea into something real. (Technology, 2026-09)
 - [The Tussle Between the Brain and the Soul](https://anshuldhawan.com/writings/the-tussle-between-the-brain-and-the-soul/): Let the soul lead the creation. Let the brain lead the distribution. (Philosophy, 2026-09)
 - [AI Native Organization](https://anshuldhawan.com/writings/ai-native-organization/): On the stack, org design, and operating habits required to become AI Native. (Technology, 2026-05)
@@ -159,6 +165,88 @@ This is where I think AI games get interesting. Not just generated environments,
 
 The whole thing is about 4,000 lines of TypeScript. No 3D engine. No game assets besides eight seed images and some synthesized audio. The pattern of a deterministic simulation plus generated visuals is what I think will matter as the models get better.
 
+## Can You Build a Time Machine with AI?
+
+URL: https://anshuldhawan.com/projects/can-you-build-a-time-machine-with-ai/
+
+By Anshul Dhawan · Builder · AI-native experiment · Generative worlds · 2026
+
+Video: Timetravel experiment demo
+
+*On turning a city and a year into a world you can explore, and what happens when you look around the corner.*
+
+What if you could type in a city and a year, and walk around?
+
+San Francisco in 1920. Kyoto in 1600. Paris in 2200. A place you know, at a time you don't.
+
+I built an experiment called Timetravel around that idea. You picked a destination, AI generated a starting image, and a world model turned that image into an environment you could explore with your arrow keys. Each journey lasted thirty seconds.
+
+The interesting part was the step between looking at an image and moving through it. The moment you can turn left, the image has to become something more. There has to be a world outside the frame.
+
+### From a destination to a world
+
+The experience had three parts: decide what belongs in the scene, generate the starting image, and open an interactive video session.
+
+First, a text model prepared a scene plan for the chosen place and year. That plan described the viewpoint, the geography, the kinds of buildings and objects that could appear, and the landmarks to include or leave out. GPT Image generated the starting view through Vercel AI Gateway. Reactor connected the browser to the world model and streamed the resulting video back as you moved.
+
+The project includes two versions: LingBot World 2 and Happy Oyster Adventure, which became the default. Both start from an image and let you explore through keyboard or touch controls. Their session behavior is different, but the basic invitation is the same: pick somewhere, pick sometime, step inside.
+
+You could also upload your own image. That skipped image generation and used the photo as the starting point. The selected year guided newly revealed details, while the instructions asked the model to preserve the image's location and visual identity.
+
+That opens up another possibility. The starting point for an experience could be a photograph you already have. The world begins with something personal, and generation takes over at its edges.
+
+### A convincing street is only the beginning
+
+A historical scene has a lot of ways to be wrong while still looking convincing.
+
+A building can belong to the right city and the wrong year. A landmark can exist at that date but be invisible from where you are standing. A waterfront can look plausible while following a shoreline that did not exist yet. Even the assumption that there should be a city there can be wrong.
+
+So the problem becomes more specific than asking for an old-looking street. What actually belongs in this place, from this viewpoint, at this time?
+
+Timetravel's scene planner gives landmark candidates a date range, a location, a sightline, and a confidence level. The code filters candidates against those fields before the image is generated. When the plan is uncertain or invalid, the fallback uses a restricted view and avoids recognizable landmarks or an invented skyline.
+
+The useful design choice here is to let uncertainty make the scene smaller. There is no need to fill every horizon.
+
+The image and the world model also receive the same scene plan. Otherwise, two models can take the same city and year and imagine two different places. Sharing the plan gives them a common starting point.
+
+These constraints still depend on model knowledge. The system does not retrieve archival evidence for every scene or inspect the generated frames to verify them. A plan can pass validation and still contain a historical mistake. These are imagined reconstructions, with safeguards around what the models are asked to invent.
+
+### The world has to survive a turn
+
+A still image can leave everything beyond its border unresolved. An interactive world cannot.
+
+When the player turns, the model has to continue the street, preserve the surroundings, and keep the scene in the same period. Movement should change the camera without changing the identity of the place.
+
+The two versions approach guidance differently. In the LingBot version, the app can reinforce the scene constraints during movement. Happy Oyster Adventure takes its guidance when the world is created; this integration has no live text steering. That makes the initial image and prompt especially consequential.
+
+For me, this is one of the central design problems in generative worlds. Every movement asks the system to make another decision about what exists. Those decisions need to add up to a place.
+
+More detail alone will not solve that. The systems around the model need to carry the facts and constraints that should remain stable, and the model needs to respect them as it generates what comes next.
+
+### Thirty seconds, and the plumbing behind them
+
+The application limited each journey to thirty seconds of exploration. It also had to handle everything around those thirty seconds: preparing the image, connecting the session, waiting for live video, releasing movement controls, and ending the connection.
+
+An image can generate successfully while the world service has no available capacity. A world can report that it is ready before the browser receives playable video. Those are different states, and the interface needs to explain them differently.
+
+The app kept the starting image in browser memory so a retry could reuse it. In the Happy Oyster version, it could also reattach to a saved world within the same page session. A failed connection should not automatically mean paying to generate the same starting image again.
+
+Journeys could be recorded locally in the browser and downloaded afterward. The app did not upload those recordings. A short, temporary experience could leave you with something to keep.
+
+This is the product work around a generative model: making the wait understandable, preserving what already worked, and giving the user a sensible next step when something fails.
+
+### Where this could go
+
+I have written before about [generative games](https://anshuldhawan.com/writings/generative-games/), where parts of the experience take shape while the player is inside it. Timetravel is a small exploration of that idea, with a city and a year as the inputs.
+
+The possibilities are easy to imagine. A history lesson that begins on a street. A family photograph that becomes a place to explore. A possible future for a familiar neighborhood. Each would need a different standard of evidence and a different set of boundaries around generation.
+
+The experiment is now closed. It was a prototype, and its historical scenes were speculative. But the question behind it still interests me.
+
+We have become used to typing a prompt and receiving something to look at. Being able to move through the result creates a different relationship with it. You bring your own curiosity. You choose where to go next.
+
+And the next thing you want to know is what is around the corner.
+
 ## Claude vs ChatGPT vs Gemini vs Grok — Poker Tournament
 
 URL: https://anshuldhawan.com/projects/poker-tournament/
@@ -189,8 +277,8 @@ Video: The first Network Cities prototype — May 2025
 
 The visual pipeline started with concept art made using OpenAI's GPT Image model. Those images established the bright, toy-like world and gave the rest of the production pipeline a consistent visual target.
 
-- Game poster concept art: Network Cities concept-art poster showing Tesla in front of a colorful city
-- World concept art: Concept art for the colorful Network Cities world, with buildings, roads, cars, and mountains
+- Game poster concept art — refreshed: Updated Network Cities concept poster with its orange-jacketed guide and colorful toy-like city.
+- World concept art — refreshed: Updated colorful Network Cities world concept with toy-like buildings, roads, small cars, and mountains.
 
 I provided the concept art to MeshyAI, which turned the designs into 3D assets for the game. That let the buildings, vehicles, and characters share one visual language without a traditional 3D art pipeline.
 
@@ -271,88 +359,6 @@ Better matches mean longer sessions and stickier games. Patent issued.
 - [Patent](https://patents.google.com/patent/US20140274362)
 
 # Writings
-
-## Can You Build a Time Machine with AI?
-
-URL: https://anshuldhawan.com/writings/can-you-build-a-time-machine-with-ai/
-
-By Anshul Dhawan · Technology · 2026-09
-
-_On turning a city and a year into a world you can explore, and what happens when you look around the corner._
-
-*On turning a city and a year into a world you can explore, and what happens when you look around the corner.*
-
-What if you could type in a city and a year, and walk around?
-
-San Francisco in 1920. Kyoto in 1600. Paris in 2200. A place you know, at a time you don't.
-
-I built an experiment called Timetravel around that idea. You picked a destination, AI generated a starting image, and a world model turned that image into an environment you could explore with your arrow keys. Each journey lasted thirty seconds.
-
-The interesting part was the step between looking at an image and moving through it. The moment you can turn left, the image has to become something more. There has to be a world outside the frame.
-
-### From a destination to a world
-
-The experience had three parts: decide what belongs in the scene, generate the starting image, and open an interactive video session.
-
-First, a text model prepared a scene plan for the chosen place and year. That plan described the viewpoint, the geography, the kinds of buildings and objects that could appear, and the landmarks to include or leave out. GPT Image generated the starting view through Vercel AI Gateway. Reactor connected the browser to the world model and streamed the resulting video back as you moved.
-
-The project includes two versions: LingBot World 2 and Happy Oyster Adventure, which became the default. Both start from an image and let you explore through keyboard or touch controls. Their session behavior is different, but the basic invitation is the same: pick somewhere, pick sometime, step inside.
-
-You could also upload your own image. That skipped image generation and used the photo as the starting point. The selected year guided newly revealed details, while the instructions asked the model to preserve the image's location and visual identity.
-
-That opens up another possibility. The starting point for an experience could be a photograph you already have. The world begins with something personal, and generation takes over at its edges.
-
-### A convincing street is only the beginning
-
-A historical scene has a lot of ways to be wrong while still looking convincing.
-
-A building can belong to the right city and the wrong year. A landmark can exist at that date but be invisible from where you are standing. A waterfront can look plausible while following a shoreline that did not exist yet. Even the assumption that there should be a city there can be wrong.
-
-So the problem becomes more specific than asking for an old-looking street. What actually belongs in this place, from this viewpoint, at this time?
-
-Timetravel's scene planner gives landmark candidates a date range, a location, a sightline, and a confidence level. The code filters candidates against those fields before the image is generated. When the plan is uncertain or invalid, the fallback uses a restricted view and avoids recognizable landmarks or an invented skyline.
-
-The useful design choice here is to let uncertainty make the scene smaller. There is no need to fill every horizon.
-
-The image and the world model also receive the same scene plan. Otherwise, two models can take the same city and year and imagine two different places. Sharing the plan gives them a common starting point.
-
-These constraints still depend on model knowledge. The system does not retrieve archival evidence for every scene or inspect the generated frames to verify them. A plan can pass validation and still contain a historical mistake. These are imagined reconstructions, with safeguards around what the models are asked to invent.
-
-### The world has to survive a turn
-
-A still image can leave everything beyond its border unresolved. An interactive world cannot.
-
-When the player turns, the model has to continue the street, preserve the surroundings, and keep the scene in the same period. Movement should change the camera without changing the identity of the place.
-
-The two versions approach guidance differently. In the LingBot version, the app can reinforce the scene constraints during movement. Happy Oyster Adventure takes its guidance when the world is created; this integration has no live text steering. That makes the initial image and prompt especially consequential.
-
-For me, this is one of the central design problems in generative worlds. Every movement asks the system to make another decision about what exists. Those decisions need to add up to a place.
-
-More detail alone will not solve that. The systems around the model need to carry the facts and constraints that should remain stable, and the model needs to respect them as it generates what comes next.
-
-### Thirty seconds, and the plumbing behind them
-
-The application limited each journey to thirty seconds of exploration. It also had to handle everything around those thirty seconds: preparing the image, connecting the session, waiting for live video, releasing movement controls, and ending the connection.
-
-An image can generate successfully while the world service has no available capacity. A world can report that it is ready before the browser receives playable video. Those are different states, and the interface needs to explain them differently.
-
-The app kept the starting image in browser memory so a retry could reuse it. In the Happy Oyster version, it could also reattach to a saved world within the same page session. A failed connection should not automatically mean paying to generate the same starting image again.
-
-Journeys could be recorded locally in the browser and downloaded afterward. The app did not upload those recordings. A short, temporary experience could leave you with something to keep.
-
-This is the product work around a generative model: making the wait understandable, preserving what already worked, and giving the user a sensible next step when something fails.
-
-### Where this could go
-
-I have written before about [generative games](https://anshuldhawan.com/writings/generative-games/), where parts of the experience take shape while the player is inside it. Timetravel is a small exploration of that idea, with a city and a year as the inputs.
-
-The possibilities are easy to imagine. A history lesson that begins on a street. A family photograph that becomes a place to explore. A possible future for a familiar neighborhood. Each would need a different standard of evidence and a different set of boundaries around generation.
-
-The experiment is now closed. It was a prototype, and its historical scenes were speculative. But the question behind it still interests me.
-
-We have become used to typing a prompt and receiving something to look at. Being able to move through the result creates a different relationship with it. You bring your own curiosity. You choose where to go next.
-
-And the next thing you want to know is what is around the corner.
 
 ## The Age of the Artist-Entrepreneur
 

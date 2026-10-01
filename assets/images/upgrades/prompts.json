@@ -1,0 +1,224 @@
+{
+  "date": "2026-09-29",
+  "tool": "Built-in image_gen (model version not exposed by tool)",
+  "assets": [
+    {
+      "name": "ai-native-organization-hero",
+      "alt": "An exploded architectural model connects tools and data, a collaborating team, and a living tree through three interdependent layers.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. For an essay about AI-native organizations: an elegant exploded architectural model consisting of exactly three floating horizontal platforms linked by a clear central shaft of light. Bottom: tangible modular tools, organized books and data blocks. Middle: a small team of people collaborating at an open worktable. Top: a spreading living tree symbolizing shared thinking. These three layers depend on each other; give them balanced visual weight. Precise dimensional structure, beautiful materials, sophisticated editorial clarity.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/ai-native-organization-hero.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-55c683a8-a9e5-46b8-bae8-dc94743cedef.png"
+    },
+    {
+      "name": "ai-native-organization-stack",
+      "alt": "Books, data blocks, code panels, and tools connect through an orderly shared workspace.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. A beautifully ordered cutaway architectural workbench showing code panels, data cubes, reference books, tools and mechanical interfaces joined by a single continuous mint path. Each component is accessible from the same path: a legible organization that AI can work within. A few precise tangible objects, no sprawling network, no letters. Isometric studio view.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/ai-native-organization-stack.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-fe8603f3-a5a1-4fca-a185-a62c20e860c9.png"
+    },
+    {
+      "name": "ai-native-organization-org-design",
+      "alt": "An organized workflow routes routine tasks through tools while a small team examines an unusual case.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. An elegant physical branching workflow on a dark tabletop: many identical small cream blocks follow a smooth green channel through three precise tool stations, while one irregular golden object branches toward two human collaborators examining it. Agents handle repeatable work; people exercise judgment. Clear spatial storytelling and sparse objects, no robot faces or arrows.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/ai-native-organization-org-design.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-9ec578f7-4cf5-4ad7-824b-94209ac9af53.png"
+    },
+    {
+      "name": "ai-native-organization-app-hub",
+      "alt": "Distinct tools built by small teams connect to a shared, illuminated central workspace.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. An architectural miniature of a shared internal tool library: a bright central open courtyard with organized modular tools, linked by short walkways to four small workrooms where individual makers build different useful instruments. Focus on the clear central shared hub, sparse inviting composition, no futuristic skyscrapers, no words.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/ai-native-organization-app-hub.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-23889f95-5217-4e64-a86b-dad824632edb.png"
+    },
+    {
+      "name": "ai-native-organization-ground-up",
+      "alt": "Small workshops share useful tools along a rising circular path of learning and improvement.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. A rising spiral of five human-scale workbenches: observing a task, shaping a useful tool, testing it, placing it in a shared library, another small team adopting it. Tangible brass and green objects illustrate learning accumulating step by step. Organic circular composition on a quiet dark green surface, clear restrained editorial metaphor, not an infographic with text.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/ai-native-organization-ground-up.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-9a9d978e-96eb-4de7-90d6-409f0ccde1d7.png"
+    },
+    {
+      "name": "artist-entrepreneur-hero",
+      "alt": "An artist’s sketchbook opens into a miniature world of games, useful tools, and handmade objects.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. One thoughtful human creator at a modest desk with an open sketchbook and small laptop; a warm ribbon from a drawn idea becomes a beautifully crafted miniature world of art, playful game buildings, useful tools and handmade objects above the desk. Strong silhouette and spacious composition, tactile human scale; imagination becoming a business. Avoid a cluttered fantasy city.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/artist-entrepreneur-hero.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-cf645f87-7fee-409f-9634-0b1f643354fd.png"
+    },
+    {
+      "name": "artist-entrepreneur-one-person-team",
+      "alt": "A solo creator works at a studio bench connected to tools for art, software, writing, and correspondence.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. One adult maker in a thoughtful home studio at a curved workbench, with four distinct tools for illustration, software, writing and correspondence arranged around one continuous workspace. Subtle fine mint threads connect the tools under the maker's direction. Warm natural lamplight, credible human anatomy, room to breathe. Amplified agency, no additional people or robots.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/artist-entrepreneur-one-person-team.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-baeb139c-bcf9-4673-81d0-3528a2af40c3.png"
+    },
+    {
+      "name": "artist-entrepreneur-micro-businesses",
+      "alt": "Four small workshops form a neighborhood of independent teaching, woodworking, learning games, and cooking.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. A carefully composed architectural cutaway neighborhood of exactly four warmly lit independent studios linked by simple paths: a movement teacher, a woodworker, a parent designing a learning game, and a cook. Each has a small unobtrusive laptop. Distinct readable human activities, charming handcrafted buildings, trees, generous dark surrounding space, no signage.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/artist-entrepreneur-micro-businesses.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-f43c54c6-4ddf-487e-b3aa-a3d5da7b3d8a.png"
+    },
+    {
+      "name": "artist-entrepreneur-maker-to-audience",
+      "alt": "Paths connect a maker’s desk directly to people reading, listening, and playing.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. An overhead editorial diorama: a single maker's desk with a glowing handmade object on the left connects through three broad gently branching paths to people reading, listening and playing at home on the right. Human-scale direct connection between creator and audience. A few warm rooms, minimal elegant paths, meaningful negative space, no arrows.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/artist-entrepreneur-maker-to-audience.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-de386b18-2f66-4e13-a703-cbd89875184c.png"
+    },
+    {
+      "name": "artist-entrepreneur-open-future",
+      "alt": "A person with a sketchbook looks across branching paths toward small creative communities and an uncertain horizon.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. A person carrying a softly lit sketchbook at the beginning of a branching path. One direction opens to small warm creative workshops and gardens, another disappears into atmospheric uncertainty. Wide, calm, human-scale landscape with a clear silhouette, a quiet sense of possibility and choice. Avoid excessive fantasy architecture or decorative circuitry.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/artist-entrepreneur-open-future.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-5514b7d1-3c5b-41a4-bd30-4dce1a5470d1.png"
+    },
+    {
+      "name": "brain-and-soul-hero",
+      "alt": "Flowing gold and structured green forms meet at the pen of a thoughtful creator.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. A thoughtful creator at an open notebook. An organic warm golden ribbon representing intuition and a precise mint geometric structure representing reason flow gently toward the same pen. Balanced dynamic relationship between feeling and analysis, tangible desk details, strong uncluttered composition. No literal giant floating brain, no words.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/brain-and-soul-hero.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-5214c6e9-21af-406d-972e-9f3aecacf4db.png"
+    },
+    {
+      "name": "brain-and-soul-crayons",
+      "alt": "A child’s crayon drawing becomes a playful purple sun, green dog, and floating house.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. A child absorbed in drawing at a sunlit wooden table; their crayon marks become a charming purple sun, green dog and floating little house hovering just above the paper. The child's imagination is free of conventional rules. Tactile wax crayons and paper, warm expressive editorial painting, plausible hands, uncluttered composition. Gentle mint and amber room with small joyful purple accents.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/brain-and-soul-crayons.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-3413860c-b793-475a-9e99-0b5c94b98141.png"
+    },
+    {
+      "name": "brain-and-soul-creation-and-distribution",
+      "alt": "An imaginative drawing grows into an orderly set of paths reaching an audience.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. An open sketchbook on a simple desk gives rise to warm organic golden shapes on one side, gradually forming orderly fine green branching paths toward a small group of readers and viewers on the other. Inspiration becoming distribution. A clearly readable left-to-right flow, quiet human presence, no literal circuitry or charts.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/brain-and-soul-creation-and-distribution.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-c657e532-7288-4886-8c06-54ef7458f80c.png"
+    },
+    {
+      "name": "emotion-and-rationality-decision-making-hero",
+      "alt": "A thoughtful person weighs a warm heart and a cool geometric brain on a balanced scale.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. A thoughtful adult behind an elegant brass balance scale: a softly glowing amber heart on one pan and a finely sculpted mint geometric brain on the other, held in equilibrium. Human expression is calm and reflective, hands anatomically correct. Clear sculptural forms and restrained objects, dramatic but gentle light, enough contrast to read as a small thumbnail.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/emotion-and-rationality-decision-making-hero.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-2c8912a2-d628-41b1-9d47-2838fac904d8.png"
+    },
+    {
+      "name": "emotion-and-rationality-decision-making-prism",
+      "alt": "A warm emotional signal passes through a clear prism and emerges as a deliberate path.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. A ribbon of warm emotional light passes through a beautifully cut glass prism resting on a dark green table. Inside, the chaotic ribbon becomes clear; it exits as three clean mint and gold paths, one chosen by a small human hand placing a simple stone. Feeling examined through inquiry becomes a deliberate decision. One central optical metaphor, no labels, hearts, checkmarks or diagrams.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/emotion-and-rationality-decision-making-prism.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-8875a4ba-b444-4bf3-8be3-355cd6e81e03.png"
+    },
+    {
+      "name": "the-issue-of-neat-categorization-hero",
+      "alt": "Leaves, shells, and branches grow beyond the divisions of an orderly specimen drawer.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. A vintage naturalist's specimen drawer with a precise grid of rectangular compartments. Beautiful leaves, shells, roots and butterfly wings organically grow beyond its dividers, showing how living reality resists neat categories. Strong central object, tactile wood and brass, mint-green living forms and warm cream highlights. Elegant conceptual still life with no specimen labels.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/the-issue-of-neat-categorization-hero.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-34f45c38-92e7-4d8c-b736-c9baef102b2b.png"
+    },
+    {
+      "name": "the-issue-of-neat-categorization-spectrum",
+      "alt": "A continuous ribbon of varied human figures crosses the boundaries of geometric compartments.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. A continuous flowing paper ribbon carries a small diverse series of human silhouettes in subtly changing forms and colors. The ribbon passes through and beyond three thin empty rectangular frames, refusing hard divisions. A quiet humane metaphor for a spectrum rather than boxes. Clear simple forms, natural variation without caricature, ample negative space.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/the-issue-of-neat-categorization-spectrum.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-40a927cc-c654-4907-a691-fb4732ece3fb.png"
+    },
+    {
+      "name": "the-issue-of-neat-categorization-examples",
+      "alt": "A plant, map, woven fabric, speech forms, and mechanical network overlap an open sorting grid.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. A museum-like tabletop of five distinct tangible motifs: a medicinal plant, a folded geographic map, woven cultural fabric, sculptural overlapping speech shapes, and a small mechanical network. Each overlaps a neat open sorting grid, showing categories as useful but incomplete. Beautifully arranged sparse still life, no letters on the map, clear visual hierarchy.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/the-issue-of-neat-categorization-examples.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-451582c6-c548-426e-89ab-427c216fd516.png"
+    },
+    {
+      "name": "three-perspectives-on-reality-birds-eye",
+      "alt": "An aerial view reveals a winding river and connected patterns across a forest canopy.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. A true bird's-eye aerial view straight down over a rich forest canopy and a winding river. Individual trees combine into a larger connected pattern, with one tiny golden clearing providing scale. An elegant broad perspective on a living system. Organic realistic terrain, botanical detail, restrained mist, no giant question mark or bird silhouette.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/three-perspectives-on-reality-birds-eye.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-763c2ebe-3311-41dd-b0e4-825c9b91bf62.png"
+    },
+    {
+      "name": "three-perspectives-on-reality-worms-eye",
+      "alt": "A small fern and layered roots reveal the forest from close to the ground.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. A worm's-eye view at the forest floor, close to a single fern, a mushroom, a small beetle and intricate roots, with tall trunks rising softly into the background. A subtle cutaway at the bottom reveals layers of earth and connected roots. Intimate tactile detail, beautiful raking sunlight, coherent natural scale, rich green palette.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/three-perspectives-on-reality-worms-eye.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-dbea146f-63ee-4c61-9a53-81d63f5f2331.png"
+    },
+    {
+      "name": "three-perspectives-on-reality-metaphysical",
+      "alt": "Fine geometric arcs reveal connections among a forest, its roots, and the night sky.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. A forest reflected in a still dark pool beneath a spacious night sky. A few extremely fine translucent geometric arcs connect tree roots, canopy, reflection and stars into one coherent system. The metaphysical view of interconnected reality. Contemplative and precise, grounded natural landscape, no occult symbols, no giant glowing portal.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/three-perspectives-on-reality-metaphysical.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-d28b224c-5bf9-4824-afac-771ed372c526.png"
+    },
+    {
+      "name": "generative-games-living-world",
+      "alt": "A playable miniature world grows from an unfinished grid into a vivid landscape around a player.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. A beautiful isometric miniature game world forming as a small player walks through it. One edge begins as a spare cream design grid; terrain, trees, a footbridge, homes and paths emerge into vivid mint-green and golden physical detail around the player. Clear boundary between authored structure and generated possibility, legible playful composition, no UI or words.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/generative-games-living-world.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-2044724c-a93f-4a99-8c1f-bf95c2cf260c.png"
+    },
+    {
+      "name": "what-is-spirituality-meditation",
+      "alt": "A seated person meditates beside water as a subtle breath-like current connects the surrounding life.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. One meditating adult seated naturally on a stone beside still water in a luminous landscape of plants, birds and distant mountains. A very subtle warm breath-like current connects person and environment. Grounded peaceful human presence and beautiful natural textures, serene wide framing, avoid neon aura, religious symbols or ornamental excess.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/what-is-spirituality-meditation.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-5195187b-4f20-4e5d-b47b-dab9fc5a6335.png"
+    },
+    {
+      "name": "timetravel-hero",
+      "alt": "An imagined historical street extends through a luminous picture frame into a quiet dark room.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. In a quiet dark room a luminous standing picture frame opens onto an imagined early-twentieth-century street with period buildings and a tram. The cobbled street continues out of the frame toward the viewer, making a still image into a place to explore. Physically elegant transition, precise perspective, beautiful warm natural light through the frame, no identifiable city claim. Conceptual editorial illustration, not documentary evidence.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/timetravel-hero.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-f4455362-a3b0-4995-8a97-cb9f99837cc2.png"
+    },
+    {
+      "name": "timetravel-beyond-the-frame",
+      "alt": "A period street continues beyond a picture frame into lightly drawn architectural outlines.",
+      "prompt": "Create one finished editorial illustration for anshuldhawan.com, a personal website about AI, games and philosophy. Landscape 3:2, 1536 by 1024 if possible. Sophisticated conceptual editorial art with tactile paper grain, delicate engraved detail and painterly depth. Deep forest green and charcoal, clear luminous mint highlights with restrained warm gold. Strong readable silhouettes, intentional negative space, clear hierarchy at small thumbnail size; brighten meaningful forms so they do not disappear into the site's dark background. Avoid excessive decorative complexity, glowing circuit-board clichés, generic stock imagery, text, labels, logos, borders and watermarks. An imagined historical street seen obliquely, beginning as a richly rendered flat framed picture. Beyond the picture's right edge, the road bends around a corner into lightly drawn mint architectural outlines on dark green space. Clearly show defined image becoming unresolved explorable space. Coherent perspective, spacious composition, precise crisp illustrative linework, period architecture, no modern cars or labels.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/timetravel-beyond-the-frame.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-eeb959bc-5ad5-4cf9-9ea4-aeb38df20a96.png"
+    },
+    {
+      "name": "network-cities-concept-poster",
+      "alt": "Updated Network Cities concept poster with its orange-jacketed guide and colorful toy-like city.",
+      "reference": "/Users/anshuldhawan/Documents/code/personalwebsite/assets/images/network-cities-concept-poster.webp",
+      "prompt": "Use case: style-transfer. Upgrade this existing AI-generated game concept poster into polished modern game key art. Edit target: attached original Network Cities poster. Preserve its exact title NETWORK CITIES, teal/sky-blue and orange-yellow palette, friendly mustached guide with brown side-parted hair, orange jacket, teal vest and trousers, and the distinctive colorful toy-like city including teal-domed red hotel and hospital. Preserve wide 16:9 composition and same character identity and wardrobe. Improve material richness, crisp readable title, depth, soft global illumination, silhouettes and precise edges, while retaining playful clay-like 3D illustration. Nothing photorealistic; no new brands, no additional text. This remains concept art rather than a screenshot.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/network-cities-concept-poster.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-1a4d3ea8-a09f-49c6-9bd2-e6d25ec07ecb.png"
+    },
+    {
+      "name": "network-cities-concept-city",
+      "alt": "Updated colorful Network Cities world concept with toy-like buildings, roads, small cars, and mountains.",
+      "reference": "/Users/anshuldhawan/Documents/code/personalwebsite/assets/images/network-cities-concept-city.webp",
+      "prompt": "Use case: style-transfer. Upgrade this AI-generated Network Cities world concept illustration. Edit target: supplied original square city image. Preserve 1:1 square framing, the friendly toy-like city, orange/yellow buildings and teal/blue roofs, green mountains, turquoise sky, little rounded cars, teal-domed red hotel, central yellow hospital, and distinctive dark-teal blocky building. Preserve visual identity and layout. Refine perspective consistency, materials, edge quality, lighting and readable layering; polished high-end stylized 3D clay illustration, charming and sunny with tactile detail. Keep it concept art, not actual gameplay. No words, labels, watermark or border.",
+      "status": "complete",
+      "output": "/assets/images/upgrades/network-cities-concept-city.webp",
+      "generatedSource": "/Users/anshuldhawan/.codex/generated_images/01a0ee6c-8a43-7d21-9ebe-d5f8656c77f4/exec-ff1c7b03-9027-49c8-80ce-dd9b1259f90a.png"
+    }
+  ]
+}

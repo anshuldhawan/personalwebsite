@@ -1,0 +1,278 @@
+[
+  {
+    "path": "assets/images/ai-native-organization-app-hub.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "7a626e8cb5150474f12021b7bf6e02106b57e2ac7c2a16f9b6dec815091125ac"
+  },
+  {
+    "path": "assets/images/ai-native-organization-ground-up.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "3a5ac8ce19bcf2c427109b4882a3ad5a6fbeefad3a0f004412b2b43f82243c1d"
+  },
+  {
+    "path": "assets/images/ai-native-organization-hero.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "bcc10fd9064271116bdd972fecba47c19623d4ec292a2ab9dd7295f955262172"
+  },
+  {
+    "path": "assets/images/ai-native-organization-org-design.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "7d0fec50e663502813576ad9f1f153dedfc4ff4a4844547970dd0d70cfdfb9e5"
+  },
+  {
+    "path": "assets/images/ai-native-organization-stack.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "e1b1ddd0d84bda8efe5c459e4ebad62aade8c526164983efc9f6b996d8f9cc4e"
+  },
+  {
+    "path": "assets/images/artist-entrepreneur-hero.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "d1e7356c1aa4acf4bdb980293abe961e5c8f660f27964fcaf2e0753e9161402c"
+  },
+  {
+    "path": "assets/images/artist-entrepreneur-maker-to-audience.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "0b9140956b507d3d0a4b0e864c377fd565b937398ab539fbffa4fe5b70b1a8f8"
+  },
+  {
+    "path": "assets/images/artist-entrepreneur-micro-businesses.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "0d585578da45fd10888515f59e3011e7b2a86a57c80649de515b52890120e70d"
+  },
+  {
+    "path": "assets/images/artist-entrepreneur-one-person-team.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "ac409d0f6c315b7db3431bc048639a07edb513e6d33e254e2b7fc53cb6199cc0"
+  },
+  {
+    "path": "assets/images/artist-entrepreneur-open-future.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "cfa5731b224a45385d023e3e9ba06e84d7d8a219a22be150760614a8cb910ab1"
+  },
+  {
+    "path": "assets/images/brain-and-soul-crayons.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "20c85f2cb5c851e12416525b7a4208fd80033eaaf49f086dbdc60c16daf5af56"
+  },
+  {
+    "path": "assets/images/brain-and-soul-creation-and-distribution.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "33d9417e0f51aed44b2cfb5a01cc0d2a51c25a9728e5153f9ba2728bb38e09dc"
+  },
+  {
+    "path": "assets/images/brain-and-soul-hero.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "4ffecd36d03b86243d61f145ca0eb4a5f419f019a31d5781009b680f18dc0de2"
+  },
+  {
+    "path": "assets/images/emotion-and-rationality-decision-making-hero.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "e871ba9ca359fcfe8a0959ab790a8a85e2c4f05505a746b31c5a7a866354ff06"
+  },
+  {
+    "path": "assets/images/emotion-and-rationality-decision-making-prism.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "7cf2e8b794e7093e1379a81e7e8a059b24db21b3be74d9081ad38dcc691a885a"
+  },
+  {
+    "path": "assets/images/generative-games-living-world.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "6c4d83273130db32f7e680bd712de77ed5d2a86a9871679b5a0b351980250049"
+  },
+  {
+    "path": "assets/images/global-learning-xprize.jpg",
+    "decision": "Preserve",
+    "reason": "Photograph of an award plaque",
+    "originalSha256": "b43e618eeaecbe50dee8e26691566f99dda60f1a6c6b659a77680359adff88ba"
+  },
+  {
+    "path": "assets/images/network-cities-apartment.webp",
+    "decision": "Preserve",
+    "reason": "Rendered 3D game asset, described as MeshyAI output in the case study",
+    "originalSha256": "31b4760a4e9bb9409976f80b2d2fb9e7c4ed34f36106c8c16f9ac37c05069e08"
+  },
+  {
+    "path": "assets/images/network-cities-car.webp",
+    "decision": "Preserve",
+    "reason": "Rendered 3D game asset, described as MeshyAI output in the case study",
+    "originalSha256": "28863553b5ba3f0ac4737b70e81a2ed176b61deec9a3de76eafde4c41b85b0f4"
+  },
+  {
+    "path": "assets/images/network-cities-concept-city.webp",
+    "decision": "Regenerate",
+    "reason": "GPT Image concept art explicitly identified in the Network Cities case study",
+    "originalSha256": "86ced3e0b6c012e13c28fe2aa3d6f3b6a4f5abe17558b5e6dfb36301e49d432d"
+  },
+  {
+    "path": "assets/images/network-cities-concept-poster.webp",
+    "decision": "Regenerate",
+    "reason": "GPT Image concept art explicitly identified in the Network Cities case study",
+    "originalSha256": "5fda9de953b752a1f95bbd02d040d0513e47fdee2ce3afd02efd91b1e7772260"
+  },
+  {
+    "path": "assets/images/network-cities-delivery-truck.webp",
+    "decision": "Preserve",
+    "reason": "Rendered 3D game asset, described as MeshyAI output in the case study",
+    "originalSha256": "e0a1d69ab0d335d324d3cd2c3d11ea857eeb4e404bc5c80f9af87076a35274ca"
+  },
+  {
+    "path": "assets/images/network-cities-gaming-center.webp",
+    "decision": "Preserve",
+    "reason": "Rendered 3D game asset, described as MeshyAI output in the case study",
+    "originalSha256": "d7fbcdc265282ceea5f529ac40d62933094c0dae77995775975b09be30520000"
+  },
+  {
+    "path": "assets/images/network-cities-hotel.webp",
+    "decision": "Preserve",
+    "reason": "Rendered 3D game asset, described as MeshyAI output in the case study",
+    "originalSha256": "b1af9ffb3ed6f30784e82e4a02a2cc14e544f1fc6412ac29b6431c6831be358f"
+  },
+  {
+    "path": "assets/images/network-cities-investment-bank.webp",
+    "decision": "Preserve",
+    "reason": "Rendered 3D game asset, described as MeshyAI output in the case study",
+    "originalSha256": "b04b835069bbb74b4a74390a9e8c9dc5d71c7b23c39a4638d896c655dea5c57c"
+  },
+  {
+    "path": "assets/images/network-cities-tesla-guide.webp",
+    "decision": "Preserve",
+    "reason": "Rendered 3D game asset, described as MeshyAI output in the case study",
+    "originalSha256": "bdfcf147eb189e99d30ba602a176f69ed6e713184a78ada9867f1b57119f39a2"
+  },
+  {
+    "path": "assets/images/open-world-adventure-architecture.webp",
+    "decision": "Preserve",
+    "reason": "Image-model provenance unconfirmed; retain original",
+    "originalSha256": "1af348342e2fbb808990ffe13b7cbe3754194f6bf3fa9ad377306bdd2e4df075"
+  },
+  {
+    "path": "assets/images/open-world-adventure-seed-city.webp",
+    "decision": "Preserve",
+    "reason": "Image-model provenance unconfirmed; retain original",
+    "originalSha256": "ba2752e3be58a767a90a7230686ffd448000cb9956fcd860e625b174f555bd0f"
+  },
+  {
+    "path": "assets/images/the-issue-of-neat-categorization-examples.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "fe01df5379f21f63c468216817e052267bf3fb2d0c69e817614306275d9a1fd2"
+  },
+  {
+    "path": "assets/images/the-issue-of-neat-categorization-hero.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "7db7d935e613abed4ea721978f7a88d1bb9b8d6d788b3700bc6d8576e1dabf50"
+  },
+  {
+    "path": "assets/images/the-issue-of-neat-categorization-spectrum.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "9f1f6d29d3ff3633d9eb1ab4923a9690a3deaf8f7e248a5e6eda0d856a469f51"
+  },
+  {
+    "path": "assets/images/three-perspectives-on-reality-birds-eye.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "c4594db0f2acbff02c146227d0437045b421cdbcfdec0b3c4c01da15fd0e9d8e"
+  },
+  {
+    "path": "assets/images/three-perspectives-on-reality-metaphysical.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "e35ff198117b8517e2145c361bc6596ba73e6a7cf0c22f32da5c9a90b05f9cae"
+  },
+  {
+    "path": "assets/images/three-perspectives-on-reality-worms-eye.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "88ff88b9957d21d19e40e0b054dfd6a6b768bee499b5d1009cad9e4180dd6cd6"
+  },
+  {
+    "path": "assets/images/timetravel-beyond-the-frame.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "2a1562b80fb458cd01a08f9a50a184954836277f5a6d894a17795eabb8e8fa0f"
+  },
+  {
+    "path": "assets/images/timetravel-hero.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "2389b9b11b8845e8e32a481aeeb2cc64e650e2d6d250178e0e4a33fcab3e7e0b"
+  },
+  {
+    "path": "assets/images/what-is-spirituality-mask.webp",
+    "decision": "Preserve",
+    "reason": "Credited artwork by RozziRoomian",
+    "originalSha256": "94e7af90351467b452f1599bd6ad4662ff1c4b8de19881f0b9df0e82a6f20df6"
+  },
+  {
+    "path": "assets/images/what-is-spirituality-meditation.webp",
+    "decision": "Regenerate",
+    "reason": "Original AI editorial illustration",
+    "originalSha256": "ffb3b40c70898115a8e4cb91f9fe528377128f6cb18afba56964eaa7a49e196e"
+  },
+  {
+    "path": "assets/images/words-with-degens.png",
+    "decision": "Preserve",
+    "reason": "Existing game promotional artwork; image-model provenance unconfirmed",
+    "originalSha256": "ac4d9399b72f86fb0cbe4c176cac173aad73983e7b69e216ed700ffd06664e8b"
+  },
+  {
+    "path": "assets/posters/davinci-club-ar.jpg",
+    "decision": "Preserve",
+    "reason": "Video poster / frame, not a standalone image-model illustration",
+    "originalSha256": "31d2bf944f7eb42f4b61cfee8653e9fa15d00daa4b1332dce86a60afee3a0a9e"
+  },
+  {
+    "path": "assets/posters/network-cities-early-prototype.jpg",
+    "decision": "Preserve",
+    "reason": "Video poster / frame, not a standalone image-model illustration",
+    "originalSha256": "051bd59a03241d8f60b0106342bb52c1d8b9a98e621bfafb2b07c2628a63a769"
+  },
+  {
+    "path": "assets/posters/network-cities-final-gameplay.jpg",
+    "decision": "Preserve",
+    "reason": "Video poster / frame, not a standalone image-model illustration",
+    "originalSha256": "c13756b6c57a07bb79ec2b0620a2fc4c2dd7f02e5c6ee721d7aebd020300a778"
+  },
+  {
+    "path": "assets/posters/network-cities.jpg",
+    "decision": "Preserve",
+    "reason": "Video poster / frame, not a standalone image-model illustration",
+    "originalSha256": "fa41cb843b3c6b06e2a0e655ad9da82728304dc2b1d51ed9dd6a276408dd438c"
+  },
+  {
+    "path": "assets/posters/open-world-adventure-demo.jpg",
+    "decision": "Preserve",
+    "reason": "Video poster / frame, not a standalone image-model illustration",
+    "originalSha256": "fca3198327a9324c6330ae80f3ef0eeac2fae5495c71ac9972357124d90ef051"
+  },
+  {
+    "path": "assets/posters/poker-tournament.jpg",
+    "decision": "Preserve",
+    "reason": "Video poster / frame, not a standalone image-model illustration",
+    "originalSha256": "a87915c0e1855d3d585c759a0780633ee58cc2c2b84a16635e8ee815a760d880"
+  },
+  {
+    "path": "assets/sprites/pixel-directions/pixel-directions-spritesheet.png",
+    "decision": "Preserve",
+    "reason": "Image-model provenance unconfirmed; retain original",
+    "originalSha256": "0445cea5bbf72b4233459a5a2ef3b5467a466140574f23059d83a1b7754e72c8"
+  }
+]

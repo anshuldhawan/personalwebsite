@@ -435,7 +435,7 @@ function WritingCard({ writing, compact = false }) {
       <span className="corner va-corner-tl" /><span className="corner va-corner-br" />
       {hero && (
         <div className="va-writing-thumb va-media" style={thumbStyle}>
-          <img src={hero.src} alt={hero.alt || ''} loading="lazy" />
+          <img src={hero.thumbnail || hero.src} alt={hero.alt || ''} loading="lazy" />
         </div>
       )}
       <div className="va-writing-body">
@@ -714,20 +714,6 @@ function HomeView() {
                     </a>
                   );
                 })}
-              </div>
-            </>
-          )}
-          {data.profile && data.profile.faq.length > 0 && (
-            <>
-              <div className="va-pixel-divider" style={{ margin:'32px 0' }} />
-              <h2 className="va-h2">// quick answers</h2>
-              <div className="va-faq">
-                {data.profile.faq.map(item => (
-                  <div key={item.q}>
-                    <h3>{item.q}</h3>
-                    <p>{item.a}</p>
-                  </div>
-                ))}
               </div>
             </>
           )}

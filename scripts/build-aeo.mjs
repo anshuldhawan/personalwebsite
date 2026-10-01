@@ -99,11 +99,10 @@ const person = {
   sameAs: profileLinks.map(link => link.href),
   knowsAbout: profile.expertise,
   hasOccupation: ['AI Generalist', 'Product Leader', 'Game Developer'].map(name => ({ '@type': 'Occupation', name })),
-  worksFor: { '@id': `${SITE}/#playworlds` },
+  worksFor: { '@id': `${SITE}/#social-pixels` },
   award: 'Global Learning XPRIZE semi-finalist (2017)',
 };
 const organizations = [
-  { '@type': 'Organization', '@id': `${SITE}/#playworlds`, name: 'PlayWorlds', description: 'An AI-native creation platform for kids.', founder: { '@id': PERSON_ID } },
   { '@type': 'Organization', '@id': `${SITE}/#social-pixels`, name: 'Social Pixels', description: 'An AI-native gaming studio.', founder: { '@id': PERSON_ID } },
   { '@type': 'Organization', '@id': `${SITE}/#equally`, name: 'Equally', description: 'An AI-powered AR learning platform.', founder: { '@id': PERSON_ID } },
 ];
@@ -155,8 +154,6 @@ function homePage() {
     ...data.about.map(block => `<p>${escapeHtml(aboutText(block))}</p>`),
     '<h2>Expertise</h2>',
     `<ul>${profile.expertise.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`,
-    '<h2>Quick answers</h2>',
-    ...profile.faq.map(item => `<h3>${escapeHtml(item.q)}</h3>\n<p>${escapeHtml(item.a)}</p>`),
     '<h2>Projects</h2>',
     `<ul>${data.projects.map(p => `<li><a href="/projects/${p.slug}/">${escapeHtml(p.title)}</a> (${escapeHtml([p.role, p.year].filter(Boolean).join(', '))}): ${escapeHtml(p.blurb)}</li>`).join('')}</ul>`,
     '<h2>Writings</h2>',
