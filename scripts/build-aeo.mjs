@@ -239,6 +239,10 @@ for (const page of [...pages, ...orphans]) {
   const file = join(ROOT, page.file);
   if (!existsSync(file)) { console.warn(`skip: ${page.file} does not exist`); continue; }
   let html = readFileSync(file, 'utf8');
+  // Keep tracking on current and newly added article/project HTML shells.
+  if (!/<meta\b[^>]*http-equiv=["']refresh["']/i.test(html) && !html.includes('src="/project/site/analytics.js"')) {
+    html = html.replace('</head>', '  <script defer src="/project/site/analytics.js"></script>\n</head>');
+  }
   if (page.title) html = html.replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(page.title)}</title>`);
   html = html.replace(/\n  <!-- aeo:head -->[\s\S]*?<!-- \/aeo:head -->/, '');
   html = html.replace(/(<\/title>)/, `$1\n  <!-- aeo:head -->\n${page.head}\n  <!-- /aeo:head -->`);

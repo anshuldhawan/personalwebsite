@@ -5,6 +5,14 @@
 // Routing: window.PAGE is set per-HTML-shell to { type: 'home'|'project'|'writing', slug?: string }.
 // Default (no PAGE) = home.
 
+const contactEvent = (link) => {
+  if (link.href.startsWith('mailto:')) return 'contact-email';
+  const hostname = new URL(link.href, window.location.origin).hostname;
+  if (hostname === 'linkedin.com' || hostname === 'www.linkedin.com') return 'contact-linkedin';
+  if (['x.com', 'www.x.com', 'twitter.com', 'www.twitter.com'].includes(hostname)) return 'contact-x';
+  return undefined;
+};
+
 const VA_CSS = `
   .va-root{
     width:100%; min-height:100vh; position:relative;
@@ -324,6 +332,14 @@ const VideoOnView = ({ src, poster, autoplay = true, loop = true, controls = fal
       controls={controls}
       playsInline
       preload="metadata"
+      onPlay={controls && !autoplay ? (event) => {
+        const video = event.currentTarget;
+        if (video.dataset.analyticsPlayed || !window.umami) return;
+        video.dataset.analyticsPlayed = 'true';
+        try {
+          Promise.resolve(window.umami.track('project-demo-play', { video: src.split('/').pop() })).catch(() => {});
+        } catch (_) { /* Analytics must not interrupt playback. */ }
+      } : undefined}
     />
   );
 };
@@ -600,7 +616,7 @@ function HomeView() {
               </p>
               <div style={{ display:'flex', gap:18, flexWrap:'wrap', marginBottom:8 }}>
                 {data.links.map(l => (
-                  <a key={l.label} href={l.href} target="_blank" rel="noreferrer" className="va-link va-mono" style={{ fontSize:12, letterSpacing:'.08em', textTransform:'uppercase' }}>
+                  <a key={l.label} href={l.href} data-umami-event={contactEvent(l)} target="_blank" rel="noreferrer" className="va-link va-mono" style={{ fontSize:12, letterSpacing:'.08em', textTransform:'uppercase' }}>
                     {l.label} ↗
                   </a>
                 ))}
@@ -733,7 +749,7 @@ function HomeView() {
           <div className="va-meta" style={{ marginBottom:10 }}>// elsewhere</div>
           <div style={{ display:'flex', gap:18, flexWrap:'wrap' }}>
             {data.links.map(l => (
-              <a key={l.label} href={l.href} target="_blank" rel="noreferrer" className="va-link va-mono" style={{ fontSize:13 }}>
+              <a key={l.label} href={l.href} data-umami-event={contactEvent(l)} target="_blank" rel="noreferrer" className="va-link va-mono" style={{ fontSize:13 }}>
                 {l.label} ↗
               </a>
             ))}
@@ -803,6 +819,8 @@ function ProjectDetail({ project }) {
                     className={`${l.label.toLowerCase() === 'patent' ? 'va-patent-link' : 'va-link'} va-mono`}
                     style={{ fontSize:12, letterSpacing:'.06em', textTransform:'uppercase' }}
                     href={l.href}
+                    data-umami-event={l.kind === 'demo' ? 'project-demo-click' : 'project-link-click'}
+                    data-umami-event-link={l.label}
                     target="_blank"
                     rel="noreferrer"
                   >

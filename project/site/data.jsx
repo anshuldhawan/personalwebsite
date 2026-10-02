@@ -277,7 +277,7 @@ const SITE_DATA = {
       year: '2025',
       media: { type: 'image', src: '/assets/images/words-with-degens.png', alt: 'Words with Degens game poster', aspect: '1/1' },
       links: [
-        { label: 'play.fun', href: 'https://play.fun' },
+        { label: 'play.fun', href: 'https://play.fun', kind: 'demo' },
       ],
     },
     {
