@@ -10,6 +10,8 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = 'https://anshuldhawan.com';
+const HOME_SHARE_IMAGE = '/assets/images/anshul-dhawan-robot-share.png';
+const HOME_SHARE_IMAGE_ALT = 'Anshul Dhawan — AI generalist, product leader, and game developer, with Pixel, his friendly green-eyed robot mascot.';
 const PERSON_ID = `${SITE}/#person`;
 const WEBSITE_ID = `${SITE}/#website`;
 
@@ -112,7 +114,7 @@ const website = { '@type': 'WebSite', '@id': WEBSITE_ID, url: `${SITE}/`, name: 
 
 const bylineHtml = `<p>By <a href="/">${escapeHtml(data.name)}</a>, ${escapeHtml(data.tagline.replace(' & ', ', and '))}.</p>`;
 
-function headBlock({ title, description, path, type, image, graph, noindex }) {
+function headBlock({ title, description, path, type, image, imageAlt, imageWidth, imageHeight, imageType, graph, noindex }) {
   const url = absolute(path);
   const tags = [
     `<meta name="description" content="${escapeHtml(description)}" />`,
@@ -128,11 +130,16 @@ function headBlock({ title, description, path, type, image, graph, noindex }) {
       `<meta property="og:description" content="${escapeHtml(description)}" />`,
       `<meta property="og:url" content="${url}" />`,
       image ? `<meta property="og:image" content="${absolute(image)}" />` : '',
+      image && imageType ? `<meta property="og:image:type" content="${escapeHtml(imageType)}" />` : '',
+      image && imageWidth ? `<meta property="og:image:width" content="${imageWidth}" />` : '',
+      image && imageHeight ? `<meta property="og:image:height" content="${imageHeight}" />` : '',
+      image && imageAlt ? `<meta property="og:image:alt" content="${escapeHtml(imageAlt)}" />` : '',
       `<meta name="twitter:card" content="${image ? 'summary_large_image' : 'summary'}" />`,
       `<meta name="twitter:site" content="@AnshulDhawan001" />`,
       `<meta name="twitter:title" content="${escapeHtml(title)}" />`,
       `<meta name="twitter:description" content="${escapeHtml(description)}" />`,
       image ? `<meta name="twitter:image" content="${absolute(image)}" />` : '',
+      image && imageAlt ? `<meta name="twitter:image:alt" content="${escapeHtml(imageAlt)}" />` : '',
       jsonLd({ '@context': 'https://schema.org', '@graph': graph }),
     );
   }
@@ -167,7 +174,7 @@ function homePage() {
     person, website, ...organizations,
     { '@type': 'ProfilePage', '@id': `${SITE}/#profile`, url: `${SITE}/`, name: title, isPartOf: { '@id': WEBSITE_ID }, mainEntity: { '@id': PERSON_ID }, dateModified: today, inLanguage: 'en' },
   ];
-  return { file: 'index.html', path: '/', title, head: headBlock({ title, description: profile.description, path: '/', type: 'profile', graph }), body };
+  return { file: 'index.html', path: '/', title, head: headBlock({ title, description: profile.description, path: '/', type: 'profile', image: HOME_SHARE_IMAGE, imageAlt: HOME_SHARE_IMAGE_ALT, imageWidth: 1200, imageHeight: 630, imageType: 'image/png', graph }), body };
 }
 
 function projectPage(project) {

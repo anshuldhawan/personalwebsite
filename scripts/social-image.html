@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Anshul Dhawan — social share image</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+    body {
+      position: relative;
+      background: #0b0d0a;
+      color: #f1f7ec;
+      font-family: Georgia, serif;
+    }
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 79% 48%, rgba(124,242,160,.15), transparent 42%),
+        linear-gradient(rgba(124,242,160,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(124,242,160,.025) 1px, transparent 1px);
+      background-size: auto, 40px 40px, 40px 40px;
+    }
+    main { position: absolute; inset: 84px 80px; }
+    .domain {
+      margin: 0 0 60px;
+      color: #7cf2a0;
+      font: 22px Menlo, monospace;
+      letter-spacing: .03em;
+    }
+    h1 { margin: 0 0 30px; font-size: 66px; font-weight: 400; letter-spacing: -.04em; }
+    .roles { margin: 0; color: #a8b5a1; font: 25px/1.65 Menlo, monospace; }
+    .accent { margin-top: 38px; width: 68px; height: 3px; background: #7cf2a0; }
+    .robot {
+      position: absolute;
+      width: 530px;
+      height: 530px;
+      right: -20px;
+      top: 42px;
+      background: url('../assets/sprites/pixel-directions/pixel-directions-spritesheet.png') 50% 50% / 300% 300% no-repeat;
+      filter: drop-shadow(0 0 22px rgba(124,242,160,.16));
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="domain">anshuldhawan.com</p>
+    <h1>Anshul Dhawan</h1>
+    <p class="roles">AI generalist.<br />Product leader.<br />Game developer.</p>
+    <div class="accent"></div>
+  </main>
+  <div class="robot" role="img" aria-label="Pixel, a friendly robot with a glowing green face"></div>
+</body>
+</html>
