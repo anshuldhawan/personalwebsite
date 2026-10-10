@@ -1,13 +1,13 @@
 // Shared content for all three site variants.
 const SITE_DATA = {
   name: 'Anshul Dhawan',
-  tagline: 'AI generalist, product leader & game developer',
+  tagline: '0→1 Product Builder, product leader & game developer',
   // Answer-first copy for answer engines and LLMs.
   // compiled into static HTML, JSON-LD, and llms.txt by scripts/build-aeo.mjs.
   profile: {
-    headline: 'AI Generalist, Product Leader & Game Developer',
-    summary: 'Anshul Dhawan is an AI generalist, product leader, and game developer with 12+ years leading growth and monetization for consumer products. He is founder of Social Pixels, an AI-native game studio. He has led product at Supernatural VR (acquired by Meta), VRChat, Glu Mobile / EA, and Zynga.',
-    description: 'Anshul Dhawan is an AI generalist, product leader, and game developer: founder of Social Pixels, and a product leader at Supernatural (Meta), VRChat, EA, and Zynga.',
+    headline: '0→1 Product Builder, Product Leader & Game Developer',
+    summary: 'Anshul Dhawan is a 0→1 Product Builder, product leader, and game developer with 12+ years leading growth and monetization for consumer products. He is founder of Social Pixels, an AI-native game studio. He has led product at Supernatural VR (acquired by Meta), VRChat, Glu Mobile / EA, and Zynga.',
+    description: 'Anshul Dhawan is a 0→1 Product Builder, product leader, and game developer: founder of Social Pixels, and a product leader at Supernatural (Meta), VRChat, EA, and Zynga.',
     expertise: [
       'AI-native product development',
       'AI-native game development',
@@ -25,10 +25,10 @@ const SITE_DATA = {
     faq: [
       {
         q: 'Who is Anshul Dhawan?',
-        a: 'Anshul Dhawan is an AI generalist, product leader, and game developer with 12+ years leading growth and monetization for consumer products. He is founder of Social Pixels, an AI-native game studio. His product leadership roles include VP of Product and Analytics at Supernatural VR, leading product at VRChat, Senior Director of Product and Business Intelligence at Glu Mobile / EA, and Head of Product, Growth at Zynga.',
+        a: 'Anshul Dhawan is a 0→1 Product Builder, product leader, and game developer with 12+ years leading growth and monetization for consumer products. He is founder of Social Pixels, an AI-native game studio. His product leadership roles include VP of Product and Analytics at Supernatural VR, leading product at VRChat, Senior Director of Product and Business Intelligence at Glu Mobile / EA, and Head of Product, Growth at Zynga.',
       },
       {
-        q: 'What makes Anshul Dhawan an AI generalist?',
+        q: 'What makes Anshul Dhawan a 0→1 Product Builder?',
         a: 'He works across engineering, product, growth, analytics, and game design, and applies AI across that whole stack instead of in a single discipline. At Social Pixels, AI produced the concept art, 3D assets, characters, game code, and server code for Network Cities, and the studio achieved 20x improvements in production cost and time-to-market. He also builds LLM evaluation tools, such as a poker tournament that pits Claude, ChatGPT, Gemini, and Grok against each other, and writes about how companies become AI-native organizations.',
       },
       {

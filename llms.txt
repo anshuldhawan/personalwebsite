@@ -1,8 +1,8 @@
 # Anshul Dhawan
 
-> Anshul Dhawan is an AI generalist, product leader, and game developer with 12+ years leading growth and monetization for consumer products. He is founder of Social Pixels, an AI-native game studio. He has led product at Supernatural VR (acquired by Meta), VRChat, Glu Mobile / EA, and Zynga.
+> Anshul Dhawan is a 0→1 Product Builder, product leader, and game developer with 12+ years leading growth and monetization for consumer products. He is founder of Social Pixels, an AI-native game studio. He has led product at Supernatural VR (acquired by Meta), VRChat, Glu Mobile / EA, and Zynga.
 
-This is the personal website of Anshul Dhawan, AI generalist, product leader, and game developer. It collects his projects in AI-native games and products, his product leadership background, and his essays on AI, games, and philosophy.
+This is the personal website of Anshul Dhawan, 0→1 Product Builder, product leader, and game developer. It collects his projects in AI-native games and products, his product leadership background, and his essays on AI, games, and philosophy.
 
 ## About
 
@@ -41,9 +41,9 @@ On nights and weekends, I build projects and hack on new ideas, especially at th
 
 ### Who is Anshul Dhawan?
 
-Anshul Dhawan is an AI generalist, product leader, and game developer with 12+ years leading growth and monetization for consumer products. He is founder of Social Pixels, an AI-native game studio. His product leadership roles include VP of Product and Analytics at Supernatural VR, leading product at VRChat, Senior Director of Product and Business Intelligence at Glu Mobile / EA, and Head of Product, Growth at Zynga.
+Anshul Dhawan is a 0→1 Product Builder, product leader, and game developer with 12+ years leading growth and monetization for consumer products. He is founder of Social Pixels, an AI-native game studio. His product leadership roles include VP of Product and Analytics at Supernatural VR, leading product at VRChat, Senior Director of Product and Business Intelligence at Glu Mobile / EA, and Head of Product, Growth at Zynga.
 
-### What makes Anshul Dhawan an AI generalist?
+### What makes Anshul Dhawan a 0→1 Product Builder?
 
 He works across engineering, product, growth, analytics, and game design, and applies AI across that whole stack instead of in a single discipline. At Social Pixels, AI produced the concept art, 3D assets, characters, game code, and server code for Network Cities, and the studio achieved 20x improvements in production cost and time-to-market. He also builds LLM evaluation tools, such as a poker tournament that pits Claude, ChatGPT, Gemini, and Grok against each other, and writes about how companies become AI-native organizations.
 

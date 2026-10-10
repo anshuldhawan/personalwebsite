@@ -612,7 +612,7 @@ function HomeView() {
                 Anshul Dhawan<span className="va-cursor" />
               </h1>
               <p style={{ fontSize:19, color:'#cfd8c9', maxWidth:580, margin:'0 0 28px' }}>
-                AI generalist, product leader, and game developer. I work on <span className="va-acc">product, growth, analytics</span>, and <span className="va-acc">AI</span>, usually where games or software are trying to do something new.
+                0→1 Product Builder, product leader, and game developer. I work on <span className="va-acc">product, growth, analytics</span>, and <span className="va-acc">AI</span>, usually where games or software are trying to do something new.
               </p>
               <div style={{ display:'flex', gap:18, flexWrap:'wrap', marginBottom:8 }}>
                 {data.links.map(l => (

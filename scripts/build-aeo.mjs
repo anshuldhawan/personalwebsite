@@ -10,8 +10,8 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = 'https://anshuldhawan.com';
-const HOME_SHARE_IMAGE = '/assets/images/anshul-dhawan-robot-share.png';
-const HOME_SHARE_IMAGE_ALT = 'Anshul Dhawan — AI generalist, product leader, and game developer, with Pixel, his friendly green-eyed robot mascot.';
+const HOME_SHARE_IMAGE = '/assets/images/anshul-dhawan-robot-share.png?v=2';
+const HOME_SHARE_IMAGE_ALT = 'Anshul Dhawan — 0→1 Product Builder, product leader, and game developer, with Pixel, his friendly green-eyed robot mascot.';
 const PERSON_ID = `${SITE}/#person`;
 const WEBSITE_ID = `${SITE}/#website`;
 
@@ -100,7 +100,7 @@ const person = {
   email: emailLink?.href,
   sameAs: profileLinks.map(link => link.href),
   knowsAbout: profile.expertise,
-  hasOccupation: ['AI Generalist', 'Product Leader', 'Game Developer'].map(name => ({ '@type': 'Occupation', name })),
+  hasOccupation: ['0→1 Product Builder', 'Product Leader', 'Game Developer'].map(name => ({ '@type': 'Occupation', name })),
   worksFor: { '@id': `${SITE}/#social-pixels` },
   award: 'Global Learning XPRIZE semi-finalist (2017)',
 };
