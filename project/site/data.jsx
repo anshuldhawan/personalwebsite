@@ -1,13 +1,13 @@
 // Shared content for all three site variants.
 const SITE_DATA = {
   name: 'Anshul Dhawan',
-  tagline: '0→1 Product Builder, product leader & game developer',
+  tagline: 'Product leader, 0→1 Product Builder & game developer',
   // Answer-first copy for answer engines and LLMs.
   // compiled into static HTML, JSON-LD, and llms.txt by scripts/build-aeo.mjs.
   profile: {
-    headline: '0→1 Product Builder, Product Leader & Game Developer',
-    summary: 'Anshul Dhawan is a 0→1 Product Builder, product leader, and game developer with 12+ years leading growth and monetization for consumer products. He is founder of Social Pixels, an AI-native game studio. He has led product at Supernatural VR (acquired by Meta), VRChat, Glu Mobile / EA, and Zynga.',
-    description: 'Anshul Dhawan is a 0→1 Product Builder, product leader, and game developer: founder of Social Pixels, and a product leader at Supernatural (Meta), VRChat, EA, and Zynga.',
+    headline: 'Product Leader, 0→1 Product Builder & Game Developer',
+    summary: 'Anshul Dhawan is a product leader, 0→1 Product Builder, and game developer with 12+ years leading growth and monetization for consumer products. He is founder of Social Pixels, an AI-native game studio. He has led product at Supernatural VR (acquired by Meta), VRChat, Glu Mobile / EA, and Zynga.',
+    description: 'Anshul Dhawan is a product leader, 0→1 Product Builder, and game developer: founder of Social Pixels, and a product leader at Supernatural (Meta), VRChat, EA, and Zynga.',
     expertise: [
       'AI-native product development',
       'AI-native game development',
@@ -25,7 +25,7 @@ const SITE_DATA = {
     faq: [
       {
         q: 'Who is Anshul Dhawan?',
-        a: 'Anshul Dhawan is a 0→1 Product Builder, product leader, and game developer with 12+ years leading growth and monetization for consumer products. He is founder of Social Pixels, an AI-native game studio. His product leadership roles include VP of Product and Analytics at Supernatural VR, leading product at VRChat, Senior Director of Product and Business Intelligence at Glu Mobile / EA, and Head of Product, Growth at Zynga.',
+        a: 'Anshul Dhawan is a product leader, 0→1 Product Builder, and game developer with 12+ years leading growth and monetization for consumer products. He is founder of Social Pixels, an AI-native game studio. His product leadership roles include VP of Product and Analytics at Supernatural VR, leading product at VRChat, Senior Director of Product and Business Intelligence at Glu Mobile / EA, and Head of Product, Growth at Zynga.',
       },
       {
         q: 'What makes Anshul Dhawan a 0→1 Product Builder?',
@@ -54,17 +54,16 @@ const SITE_DATA = {
     ],
   },
   about: [
-    "I'm a product leader and the founder of Social Pixels. My career spans software engineering, product leadership, and entrepreneurship, with 12+ years leading growth and monetization for consumer products used by millions. I work across acquisition, engagement, retention, and revenue, partnering with engineering, data, design, and marketing to build products and teams that scale.",
-    "At Social Pixels, I launched four social games and built generative AI workflows across the development process, from concept and production to live operations. I also built agentic product analytics workflows that identified bugs, onboarding problems, and frustrating gameplay loops, improving retention by 25% in the first week.",
-    "I've led product and growth across VR, subscriptions, and gaming. At VRChat, I owned growth and the expansion to mobile, launching an alpha with creators and players and reducing the app's crash rate by 50%. At Supernatural, acquired by Meta, I led product teams responsible for engagement, subscriber growth, and revenue, and established its analytics and machine learning function.",
-    "At VersusGame, I led product, analytics, and design, including an evaluation platform for a fine-tuned LLM product that increased time spent on partner products by 280%. I helped scale the product engineering organization threefold by restructuring it into squads. At Glu Mobile / EA, I led a centralized product group focused on ad optimization and return on ad spend (ROAS), payer conversion, revenue per user, and organic growth, and introduced a career progression framework for product managers.",
+    "Product Leader and founder of Social Pixels. Social Pixels is an AI native gaming studio leveraging AI workflows across the game development process. My career spans software engineering, product leadership, and entrepreneurship, with 12+ years leading growth and monetization for consumer products. I work across acquisition, engagement, retention, and revenue, partnering with engineering, data, design, and marketing to build products and teams that scale.",
+    "I've led product and growth across VR, subscriptions, and gaming. At VRChat, I owned growth and the expansion to mobile, launching an alpha with creators and players and improving app stability. At Supernatural, acquired by Meta, I led product teams responsible for engagement, subscriber growth, and revenue, and established its analytics and machine learning function.",
+    "At VersusGame, I led product, analytics, and design, including an evaluation platform for a fine-tuned LLM product that improved engagement on partner products. I helped scale the product engineering organization by restructuring it into squads. At Glu Mobile / EA, I led a centralized product group focused on ad optimization and organic growth, and introduced a career progression framework for product managers.",
     {
         "text": "I started at Zynga as a software engineer building backend systems for Zynga Poker and grew into Head of Product, Growth. I led messaging-platform launches for Words With Friends and the development of ",
         "link": {
             "label": "Zynga's learning machine",
             "href": "/projects/experimentation-service/"
         },
-        "after": ", including an experimentation platform that tripled experiment volume and a segmentation tool that increased revenue by 30% for some game studios. For this work, I received Zynga's Spirit Award, which recognizes individuals who go above and beyond their responsibilities to set new standards for the company."
+        "after": ", including an experimentation platform and segmentation tooling for game studios. For this work, I received Zynga's Spirit Award, which recognizes individuals who go above and beyond their responsibilities to set new standards for the company."
     },
     {
         "text": "I also founded Equally and raised venture capital to build ",
@@ -72,7 +71,7 @@ const SITE_DATA = {
             "label": "Da Vinci Club AR",
             "href": "/projects/da-vinci-club-ar/"
         },
-        "after": ", an AI-powered AR learning platform that turned real-world objects into interactive play and reached 100,000 kids. We were semifinalists in the ",
+        "after": ", an AI-powered AR learning platform that turned real-world objects into interactive play. We were semifinalists in the ",
         "secondLink": { "label": "Global Learning XPRIZE", "href": "/projects/global-learning-xprize/" },
         "secondAfter": ". I hold a master's in computer science from USC and have patented work in experimentation and player recommendations."
     },

@@ -1,6 +1,6 @@
 // Variant A — CRT Arcade (dark, neon-green accent, scanlines, monospace + serif)
 // Readability-first: body in serif at 16-17px on near-black.
-// Effects: scanlines, vignette, subtle screen-flicker, cursor sparks.
+// Effects: scanlines, vignette, ASCII footage, phosphor trails, and click ripples.
 //
 // Routing: window.PAGE is set per-HTML-shell to { type: 'home'|'project'|'writing', slug?: string }.
 // Default (no PAGE) = home.
@@ -25,12 +25,12 @@ const VA_CSS = `
   .va-world canvas{ display:block; width:100%; height:100%; }
   .va-world::after{
     content:''; position:absolute; inset:0;
-    background:linear-gradient(90deg, transparent, rgba(7,14,12,.78) calc(50% - 330px), rgba(7,14,12,.88) 50%, rgba(7,14,12,.78) calc(50% + 330px), transparent);
+    background:radial-gradient(ellipse at center, transparent 35%, rgba(4,10,4,.32) 100%);
   }
   .va-world-active .va-card{ background:rgba(9,20,16,.82); backdrop-filter:blur(8px); }
   .va-world-active .va-flicker{ animation:none; }
   @media (max-width:600px){
-    .va-world::after{ background:rgba(7,14,12,.76); }
+    .va-world::after{ background:rgba(7,14,7,.18); }
   }
   .va-mono{ font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; }
   .va-faq h3{ font-family:'JetBrains Mono', monospace; font-weight:500; font-size:15px; line-height:1.4; color:#f1f7ec; margin:0 0 8px; }
@@ -612,7 +612,7 @@ function HomeView() {
                 Anshul Dhawan<span className="va-cursor" />
               </h1>
               <p style={{ fontSize:19, color:'#cfd8c9', maxWidth:580, margin:'0 0 28px' }}>
-                0→1 Product Builder, product leader, and game developer. I work on <span className="va-acc">product, growth, analytics</span>, and <span className="va-acc">AI</span>, usually where games or software are trying to do something new.
+                Product leader, 0→1 Product Builder, and game developer. I work on <span className="va-acc">product, growth, analytics</span>, and <span className="va-acc">AI</span>, usually where games or software are trying to do something new.
               </p>
               <div style={{ display:'flex', gap:18, flexWrap:'wrap', marginBottom:8 }}>
                 {data.links.map(l => (
@@ -1017,7 +1017,7 @@ function loadWorldRenderer() {
   if (!worldRendererPromise) {
     worldRendererPromise = new Promise((resolve, reject) => {
       const script = document.createElement('script');
-      script.src = '/project/site/world-background.js?v=1';
+      script.src = '/project/site/world-background.js?v=2';
       script.onload = () => {
         if (window.createSiteWorld) resolve(window.createSiteWorld);
         else reject(new Error('World renderer unavailable'));
