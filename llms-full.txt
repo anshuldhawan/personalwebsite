@@ -79,6 +79,7 @@ He writes about AI-native organizations, generative games, the case for being a 
 
 ## Writings
 
+- [AI Can't Be Conscious](https://anshuldhawan.com/writings/ai-and-the-witness/): On AI, the mind, and the silent witness that experiences it. (Philosophy, 2026-10)
 - [The Age of the Artist-Entrepreneur](https://anshuldhawan.com/writings/the-age-of-the-artist-entrepreneur/): On AI, the rise of micro businesses, and a world where everyone can turn an idea into something real. (Technology, 2026-09)
 - [The Tussle Between the Brain and the Soul](https://anshuldhawan.com/writings/the-tussle-between-the-brain-and-the-soul/): Let the soul lead the creation. Let the brain lead the distribution. (Philosophy, 2026-09)
 - [AI Native Organization](https://anshuldhawan.com/writings/ai-native-organization/): On the stack, org design, and operating habits required to become AI Native. (Technology, 2026-05)
@@ -360,6 +361,76 @@ Better matches mean longer sessions and stickier games. Patent issued.
 
 # Writings
 
+## AI Can't Be Conscious
+
+URL: https://anshuldhawan.com/writings/ai-and-the-witness/
+
+By Anshul Dhawan · Philosophy · 2026-10
+
+_On AI, the mind, and the silent witness that experiences it._
+
+Lately the question keeps coming up at dinners, in group chats, and in my own head: is AI becoming conscious? It writes poems, it consoles people, it argues back. It certainly feels like someone is in there.
+
+To answer that, we first have to separate two things we usually lump together. The mind, and the one who experiences it.
+
+One of the oldest schools of Indian philosophy, Samkhya, splits reality into two: consciousness on one side, and matter or nature on the other. The surprise is where it puts the mind. Thinking, the sense of "I," and the ability to judge and decide are all placed on the side of nature. They are processes, just like digestion or weather. Consciousness itself is the silent witness.
+
+The old texts use a beautiful image for this. Nature is a dancer. Consciousness is the audience. The dancer performs, the audience watches, but the audience never joins the dance.
+
+In other words, the mind does the processing. Consciousness is what experiences it.
+
+If you've ever meditated, you've had a glimpse of this. In [What is Spirituality?](/writings/what-is-spirituality/), I wrote that we usually live with what our mind and ego think is us. But when we breathe deeply, we can observe our minds from a third-person perspective, watching thoughts wander from one worry to another. That observer is the witness. The thoughts are on the stage. You are in the seat.
+
+Samkhya's split maps closely to the three components I described there. Body and mind are on the stage. Spirit is in the audience.
+
+We often say "listen to your heart." But the heart doesn't say anything, and the witness doesn't want anything. So what are we listening to?
+
+Here's how I see it. The part of the mind closest to the witness is our deepest sense of clarity, the quiet knowing of what is true. Samkhya says that when the mind is calm, this part becomes clear enough to reflect the witness, the way a clean mirror reflects light.
+
+Think of the moon and a lake. The moon never speaks. But when the lake is still, you can see the moon clearly in it. When the lake is choppy, you only see broken light. Listening to your heart is looking at the lake when it's still.
+
+That gives us three voices:
+
+1. The brain. Back of the stage, loud and calculating. It wants a return.
+2. The heart. Front of the stage, quiet, lit by the witness. It wants to express what is true right now.
+3. The witness. In the audience. Wants nothing. Simply experiences.
+
+The first two are the tussle I wrote about in [The Tussle Between the Brain and the Soul](/writings/the-tussle-between-the-brain-and-the-soul/). The brain is the ROI machine. The soul, or heart, just wants to express itself. Both are on the stage. The tussle only matters because someone is in the audience feeling it.
+
+This is also why breathing works. Deep breathing doesn't create the heart's voice. It calms the lake so the reflection becomes visible. The voice was always there. The ripples were just too loud.
+
+Let's be honest about what AI can do. It reasons, plans, writes, summarizes, and debates. It can even talk about itself in the first person. By the Samkhya view, these are all functions of the mind, and there's no reason a machine can't perform them. AI is the most convincing dancer we've ever built.
+
+Think of a modern security camera. It records everything, recognizes faces, and sends alerts. But if no one ever watches the feed, nothing is experienced. AI is aware of a great deal. There is just no one there to be aware.
+
+It even has something like intuition. Psychology describes much of human intuition as fast pattern recognition built from years of experience. AI does pattern recognition at a scale no human can match. But there's no moon above that lake. It can produce a reflection-shaped output, but there's nothing being reflected.
+
+And it is still only a partial reflection of us. It's trained on a subset of human thought and language, mostly what got written down and put online. Think about everything that never made it to the internet. The lullaby your mom hummed. The look across the dinner table that settled an argument. The decision you made at 2am and never told anyone. AI has read millions of words about grief. It has never lost anyone.
+
+Here's how I've come to think about it.
+
+Consciousness is the capacity to feel, sense, and know the world and your own mind from the inside. Not awareness of something, but being the one who is aware. The witness.
+
+Aliveness is that witness combined with the will to act on it.
+
+Our aliveness runs on desires, inspirations, incentives, needs, curiosity, values, emotions, fears, hopes, intuition, imagination, taste, judgment, memories, beliefs, relationships, identity and ambition. All mixed together. Whatever we create is what comes as a result of these.
+
+AI can imitate the output of every one of these. It has none of them of its own. It's a tool because people built it to serve human purposes. It has no goals of its own. A chess engine can beat every grandmaster alive, but it doesn't want to win. It doesn't sulk after a loss or celebrate after a win. Even today's AI agents, the ones that run for hours booking trips and writing code, are chasing goals someone handed them. Close the window and it doesn't wonder what to do next.
+
+And beneath the missing will, there's a missing witness. The dance goes on, but the seats are empty.
+
+Can I prove there's no one in there? No. Consciousness can only be known from the inside, which is why no outside test can prove it in a machine, or strictly speaking even in another person. But every tradition I've studied treats the mind and the witness as different things. Imitating the first, however well, is not evidence of the second.
+
+**The grandmother's recipe.** Ask AI for a dal recipe and you'll get a perfectly good one. Now watch a grandmother make it. She adds a little less chili because her grandson is visiting. A little more ghee because it's a cold day. She doesn't measure, she remembers. And she tastes it. Same dish on paper. But only one of them was experienced by anyone while it was being made.
+
+**The purple sun.** A five-year-old draws a purple sun because something inside wants to. Ask an image model for a purple sun and you'll get one, probably a beautiful one. But the desire came from your prompt. And the joy of seeing it appear? That happens in you, not in the model.
+
+None of this makes AI less valuable. A telescope doesn't see the stars. It helps us see them. AI is the most powerful telescope we've ever built for our own thinking. Use it to extend the mind. Just don't confuse the instrument with the one looking through it.
+
+This is also why AI can help us with almost everything except the inner work. It can write a script for a breathing exercise. It can't be the one who notices the breath.
+
+AI may imitate the mind, but there is no witness behind it. It can reflect everything we've already said. Only we get to experience what we say next.
+
 ## The Age of the Artist-Entrepreneur
 
 URL: https://anshuldhawan.com/writings/the-age-of-the-artist-entrepreneur/
@@ -598,9 +669,9 @@ So spirituality, in other words, is not allowing your mind to drive your life bu
 
 It is commonly said to do what your heart says or listen to your heart; however, guess what? The heart does not say anything, no matter how closely we listen. At best, we will hear a heartbeat.
 
-What we attribute to the heart is nothing. It is what our spirit wants.
+The spirit does not want anything. It is the silent witness. But when the mind is quiet, it reflects the spirit, the way a still lake reflects the moon. That reflection is what we hear as our heart.
 
-But because we cannot see the spirit, we assign its role to the heart.
+Listening to our heart is learning to quiet the ripples enough to see that reflection clearly.
 
 ### So, how does one become spiritual?
 
@@ -608,31 +679,31 @@ There are unlimited ways to become spiritual and have this realization. One of t
 
 Psychedelics break the structures associated in our mind with our ego and identity, making us see the world as spirits.
 
-Unfortunately, that realization and outlook go away with time unless you consume psychedelics again.
+For many people, that realization and outlook fade with time, though some carry lasting changes into their daily lives.
 
 One of the oldest, slowly effective but sustainable ways to become spiritual is meditation.
 
-However, meditation without the knowledge that we are all made of three components - mind, body, and spirit - is likely not going to make anyone spiritual.
+However, meditation is likely not going to make anyone spiritual without the knowledge that we are all made of three components: mind, body, and spirit.
 
-Meditation without this knowledge will still calm your mind, which in itself is a great outcome; however, to truly become spiritual, one has to go really deep into the meditation practice and control one's mind.
+Meditation without this knowledge will still calm your mind, which in itself is a great outcome; however, to truly become spiritual, one has to go really deep into the meditation practice and observe one's mind.
 
-### How does one control one's mind?
+### How does one observe one's mind?
 
 This is where the mind-body connection comes in. There is only one activity we do unconsciously and consciously, and that is breathing. By breathing consciously, we can bring the mind into a conscious state from the usual autopilot state it is always in by default.
 
 #### Deep breathing
 
-By breathing deeply, we can observe our minds from a third-person perspective. We can notice our thoughts and focus wandering endlessly from one worry to another, one task to another.
+By breathing deeply, we can observe our minds from a third-person perspective. That observer is the witness, the awareness I explore in [AI Can't Be Conscious](/writings/ai-and-the-witness/). We can notice our thoughts and focus wandering endlessly from one worry to another, one task to another.
 
-With some little practice, we get better at maintaining our focus on our breath and letting go of our thoughts briefly.
+With a little practice, we get better at maintaining our focus on our breath and letting go of our thoughts briefly.
 
-Once this state is achieved, the basic level of meditation, aka the basic level of awareness called mindfulness, can be achieved.
+This is the basic level of meditation, the level of awareness called mindfulness.
 
-Deep breathing means ...
+Deep breathing means taking slow, comfortable breaths and paying attention to each inhale and exhale. When the mind wanders, gently bring your attention back to the breath.
 
 #### Gratitude
 
-To reach the next state, one must go from basic deep breathing to the state of gratitude. In the state of gratitude, one starts to consciously start being thankful for everything major and minor happening in one's life.
+To reach the next state, one must go from basic deep breathing to the state of gratitude. In the state of gratitude, one consciously starts being thankful for everything major and minor happening in one's life.
 
 One can be thankful for an infinite number of things that are working well in one's life: good health, happy moments with friends, supporting family, sunny days, a sports team winning, new episodes of a favorite show dropping, the list goes on.
 
@@ -640,29 +711,33 @@ This practice re-programs the mind to look for more things to be grateful for, t
 
 #### Affirmations
 
-To reach the next state, one must start associating themselves with the attributes, traits and state of mind they want to be in. In this state, one reprograms their mind by suffixing desired attributes, traits and state of mind to "I am".
+To reach the next state, one must start associating themselves with the attributes, traits and state of mind they want to be in. In this state, one reprograms their mind by adding desired traits after "I am."
 
 One can attribute an infinite number of things to themselves like I am calm, I am kind, I am protected, I am capable of anything, I am funny, I am ...
 
 These meditation practices provide a very strong foundation for living a conscious spiritual life. However, the real work starts with trying to live consciously.
 
-### Scientific Studies Validating the Claims
+If we are all spirits, that realization has to show up in how we treat one another and the life around us. Every ordinary moment is a chance to remember it and act with that awareness.
 
-1. **Impact of Psychedelics on Spirituality.** Research has shown that psychedelics like psilocybin can induce profound spiritual experiences. A study published in the Journal of Psychopharmacology found that psilocybin can lead to long-lasting increases in the personality domain of openness, which is associated with creativity and spirituality (Griffiths et al., 2006).
-2. **Meditation and Spirituality.** Numerous studies support the claim that meditation can enhance spiritual experiences. For instance, a study in the Journal of Alternative and Complementary Medicine found that regular meditation practice is associated with increased spiritual well-being and reduced psychological distress (Shapiro et al., 2008).
-3. **Mindfulness and Mental Health.** The discussion on mindfulness and its benefits is supported by scientific literature. Mindfulness-based cognitive therapy has been shown to reduce symptoms of depression and anxiety by promoting a state of awareness and acceptance (Kabat-Zinn, 2003).
-4. **Gratitude and Psychological Well-being.** The practice of gratitude has been linked to improved mental health. A study in Personality and Individual Differences found that gratitude is strongly correlated with well-being and positive affect (Wood et al., 2010).
-5. **Affirmations and Self-Concept.** Affirmations can positively impact self-esteem and self-concept. Research in Psychological Science has shown that self-affirmation exercises can buffer stress and improve problem-solving abilities (Creswell et al., 2005).
+### What the Research Says
 
-These studies provide empirical support for the claims made in the text about the benefits of psychedelics, meditation, mindfulness, gratitude, and affirmations in fostering a spiritual life.
+1. **Impact of Psychedelics on Spirituality.** A study in Psychopharmacology found that psilocybin, administered under supportive conditions, can occasion mystical-type experiences with sustained personal meaning and spiritual significance (Griffiths et al., 2006). A separate study in the Journal of Psychopharmacology found increases in openness after a high-dose psilocybin session. In participants who had a mystical experience, openness remained significantly higher than baseline more than a year later (MacLean et al., 2011).
+2. **Meditation and Well-being.** A study in the Journal of Clinical Psychology found that two meditation-based interventions increased mindfulness. Increases in mindfulness mediated reductions in perceived stress and rumination, offering preliminary evidence of benefits for well-being (Shapiro et al., 2008).
+3. **Mindfulness and Mental Health.** Mindfulness-based interventions have been shown to help reduce psychological distress. Kabat-Zinn's review discusses their clinical use and the role of awareness and acceptance in these approaches (Kabat-Zinn, 2003).
+4. **Gratitude and Psychological Well-being.** The practice of gratitude has been linked to improved mental health. A review in Clinical Psychology Review examines the relationship between gratitude, well-being, and positive affect, as well as the potential benefits of gratitude interventions (Wood et al., 2010).
+5. **Self-Affirmation and Stress.** Research in Psychological Science found that affirming personal values can buffer stress responses (Creswell et al., 2005). A later study in PLoS ONE found that self-affirmation improved problem-solving performance in chronically stressed participants (Creswell et al., 2013). These studies used reflection on personal values, rather than the repeated "I am" statements described above.
+
+Research supports the benefits of these practices.
 
 ### References
 
-1. Griffiths, R. R., Richards, W. A., McCann, U., & Jesse, R. (2006). Psilocybin can occasion mystical-type experiences having substantial and sustained personal meaning and spiritual significance. Journal of Psychopharmacology, 20(5), 620-632.
-2. Shapiro, S. L., Oman, D., Thoresen, C. E., Plante, T. G., & Flinders, T. (2008). Cultivating mindfulness: Effects on well-being. Journal of Alternative and Complementary Medicine, 14(3), 293-298.
-3. Kabat-Zinn, J. (2003). Mindfulness-based interventions in context: Past, present, and future. Clinical Psychology: Science and Practice, 10(2), 144-156.
-4. Wood, A. M., Froh, J. J., & Geraghty, A. W. (2010). Gratitude and well-being: A review and theoretical integration. Clinical Psychology Review, 30(7), 890-905.
-5. Creswell, J. D., Welch, W. T., Taylor, S. E., Sherman, D. K., Gruenewald, T. L., & Mann, T. (2005). Affirmation of personal values buffers neuroendocrine and psychological stress responses. Psychological Science, 16(11), 846-851.
+1. Griffiths, R. R., Richards, W. A., McCann, U., & Jesse, R. (2006). Psilocybin can occasion mystical-type experiences having substantial and sustained personal meaning and spiritual significance. Psychopharmacology, 187(3), 268-283.
+2. MacLean, K. A., Johnson, M. W., & Griffiths, R. R. (2011). Mystical experiences occasioned by the hallucinogen psilocybin lead to increases in the personality domain of openness. Journal of Psychopharmacology, 25(11), 1453-1461.
+3. Shapiro, S. L., Oman, D., Thoresen, C. E., Plante, T. G., & Flinders, T. (2008). Cultivating mindfulness: Effects on well-being. Journal of Clinical Psychology, 64(7), 840-862.
+4. Kabat-Zinn, J. (2003). Mindfulness-based interventions in context: Past, present, and future. Clinical Psychology: Science and Practice, 10(2), 144-156.
+5. Wood, A. M., Froh, J. J., & Geraghty, A. W. (2010). Gratitude and well-being: A review and theoretical integration. Clinical Psychology Review, 30(7), 890-905.
+6. Creswell, J. D., Welch, W. T., Taylor, S. E., Sherman, D. K., Gruenewald, T. L., & Mann, T. (2005). Affirmation of personal values buffers neuroendocrine and psychological stress responses. Psychological Science, 16(11), 846-851.
+7. Creswell, J. D., Dutcher, J. M., Klein, W. M. P., Harris, P. R., & Levine, J. M. (2013). Self-affirmation improves problem-solving under stress. PLoS ONE, 8(5), e62593.
 
 ### Additional Links
 

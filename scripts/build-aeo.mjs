@@ -43,7 +43,11 @@ function blocksToHtml(blocks, images = []) {
       case 'subheading': return `<h3>${escapeHtml(block.text)}</h3>`;
       case 'emphasis': return `<p><em>${escapeHtml(block.text)}</em></p>`;
       case 'linkedParagraph': return `<p>${escapeHtml(block.before)}<a href="${escapeHtml(block.href)}">${escapeHtml(block.label)}</a>${escapeHtml(block.after)}</p>`;
-      case 'image': return `<figure><img src="${escapeHtml(block.src)}" alt="${escapeHtml(block.alt || '')}" style="max-width:100%;height:auto" loading="lazy" />${block.caption ? `<figcaption>${escapeHtml(block.caption)}</figcaption>` : ''}</figure>`;
+      case 'image': {
+        const img = `<img src="${escapeHtml(block.src)}" alt="${escapeHtml(block.alt || '')}" style="max-width:100%;height:auto" loading="lazy" />`;
+        const media = block.fullSizeLink ? `<a href="${escapeHtml(block.src)}" target="_blank" rel="noreferrer" title="Open full-size illustration">${img}</a>` : img;
+        return `<figure>${media}${block.caption ? `<figcaption>${escapeHtml(block.caption)}</figcaption>` : ''}</figure>`;
+      }
       case 'leadParagraph': return `<p><strong>${escapeHtml(block.lead)}</strong> ${escapeHtml(block.text)}</p>`;
       case 'unorderedList':
       case 'orderedList': {
@@ -163,8 +167,6 @@ function homePage() {
     `<ul>${profile.expertise.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`,
     '<h2>Projects</h2>',
     `<ul>${data.projects.map(p => `<li><a href="/projects/${p.slug}/">${escapeHtml(p.title)}</a> (${escapeHtml([p.role, p.year].filter(Boolean).join(', '))}): ${escapeHtml(p.blurb)}</li>`).join('')}</ul>`,
-    '<h2>Writings</h2>',
-    `<ul>${data.writings.map(w => `<li><a href="/writings/${w.slug}/">${escapeHtml(w.title)}</a> (${escapeHtml(monthOf(w.date))}): ${escapeHtml(w.blurb)}</li>`).join('')}</ul>`,
     '<h2>Talks</h2>',
     `<ul>${(data.talks || []).map(t => `<li><a href="${escapeHtml(t.href)}">${escapeHtml(t.title)}</a> (${escapeHtml(t.event)}, ${escapeHtml(t.company)}): ${escapeHtml(t.blurb)}</li>`).join('')}</ul>`,
     '<h2>Contact</h2>',

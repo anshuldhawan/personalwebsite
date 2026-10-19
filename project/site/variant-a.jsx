@@ -350,7 +350,11 @@ const ProjectMedia = ({ media, style }) => {
   if (media.type === 'image') {
     return (
       <div className="va-media" style={containerStyle}>
-        <img src={media.src} alt={media.alt || ''} loading="lazy" />
+        {media.fullSizeLink ? (
+          <a href={media.src} target="_blank" rel="noreferrer" title="Open full-size illustration" style={{ display:'block', width:'100%', height:'100%', cursor:'zoom-in' }}>
+            <img src={media.src} alt={media.alt || ''} loading="lazy" />
+          </a>
+        ) : <img src={media.src} alt={media.alt || ''} loading="lazy" />}
       </div>
     );
   }
@@ -648,18 +652,6 @@ function HomeView() {
             ))}
           </div>
 
-          <div className="va-pixel-divider" style={{ margin:'40px 0 24px' }} />
-          <div style={{ display:'flex', alignItems:'baseline', justifyContent:'space-between', marginBottom:18 }}>
-            <h2 className="va-h2" style={{ margin:0 }}>// writings</h2>
-            <button onClick={() => handleTabClick('writings')} className="va-link va-mono" style={{ background:'none', border:'none', cursor:'pointer', fontSize:11, letterSpacing:'.1em', textTransform:'uppercase', padding:0 }}>
-              all {data.writings.length} →
-            </button>
-          </div>
-          <div className="va-stack">
-            {data.writings.map(w => (
-              <WritingCard key={w.slug} writing={w} compact />
-            ))}
-          </div>
         </section>
       )}
 

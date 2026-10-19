@@ -1,0 +1,37 @@
+{
+  "generatedOn": "2026-10-02",
+  "tool": "Built-in image_gen",
+  "images": [
+    {
+      "path": "assets/images/ai-and-the-witness-stage.webp",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "prompt": "Use case: infographic-diagram.\nAsset type: editorial illustration for a philosophical essay, titled The Stage and the Witness.\nCreate a finished 1600x900 landscape image, 16:9, two panels side by side on warm off-white textured paper. Warm hand-drawn pencil, fine ink hatching and soft watercolor washes, thoughtful and beautiful, human and intimate, not glossy or corporate.\nLeft panel heading exactly \"The human\". A small theater stage marked \"Nature\" holds one faceless dancer made of five stacked translucent bands. Beside the dancer, five clearly legible callouts top to bottom: \"Intellect (clarity, judging, deciding)\", \"Sense of \\\"I\\\"\", \"Mind (thinking, feeling, desiring)\", \"Senses and actions (seeing, hearing, speaking, moving)\", \"Body and the physical world\". Use generous callout space. Top intellect band softly glows gold where light falls on it; a small associated label exactly \"The heart: where the witness is reflected.\" Below a clear stage edge, a single softly glowing seated human silhouette sits in the front row, separated from the stage, casting a gentle amber beam onto the dancer's top band. Label that figure \"The witness.\" Label near stage edge \"The audience never joins the dance.\"\nRight panel heading exactly \"The AI\". Same theater stage, marked \"Nature\", same dance pose, but a faceless geometric dancer built from circuit linework. Five layered bands visually corresponding to human layers; top three are dotted outlines to suggest imitation. No glow on the top layer. Several completely empty seats in the foreground, no audience figure and no beam. Flat cool even work lights on this stage. Label under the seats \"No witness.\"\nBottom caption across both panels exactly: \"AI may imitate the mind, but there is no witness behind it.\"\nPalette: warm gold and soft amber witness/light, muted blue and gray stages/AI panel. Off-white background, gently drawn outlines, understated illustration. Text should be crisp, readable dark ink and laid out without overlap.\nAvoid Sanskrit, religious iconography, robot faces, facial expressions on the AI, decorative symbols, watermarks. The human witness must sit in audience below the stage edge; no figure on stage except dancer."
+    },
+    {
+      "path": "assets/images/ai-and-the-witness-lake.webp",
+      "dimensions": [
+        1500,
+        1000
+      ],
+      "prompt": "Use case: illustration-story.\nAsset type: inline editorial illustration for a philosophical essay, The Moon and the Lake.\nCreate a finished landscape image at 1500x1000, 3:2 aspect. Warm hand-drawn pencil and fine ink hatching with watercolor washes on softly textured paper; same intimate editorial illustration style as a philosophical theater diagram. Two halves separated by a soft subtle vertical divide.\nLeft half heading exactly \"A busy mind\". A moonlit lake at night with choppy dark teal water. A clear full moon in the deep indigo sky; its reflection broken into many scattered fragments of silver and pale gold across ripples. Small readable label exactly \"Choppy lake: broken light.\"\nRight half heading exactly \"A still mind\". The same shore, mountains and moon at the same position, but the lake perfectly still. Full moon clearly reflected as a whole recognizable unbroken circular reflection with some soft moonlight beneath. One small quiet figure sits cross-legged on the shore, a faint curl of breath visible in the cool air. Small readable label exactly \"Still lake: the heart's voice.\"\nPalette: deep indigo sky, silver and pale gold moonlight, dark teal water, a warm paper texture visible in the drawn strokes. Typography simple hand-lettered dark or light as legibility requires, no additional captions or symbols. Both skies contain the moon; only reflection differs. Mood quiet, contemplative. Avoid religious iconography, Sanskrit, robots, watermarks, photorealism, cartoon faces."
+    },
+    {
+      "path": "assets/images/ai-and-the-witness-grandmothers-recipe.webp",
+      "dimensions": [
+        1500,
+        1000
+      ],
+      "prompt": "Use case: illustration-story.\nAsset type: inline illustration for the essay \"AI Can't Be Conscious\", accompanying the paragraph \"The grandmother's recipe.\"\nCreate a landscape 1500x1000 (3:2) editorial illustration. Match the essay's warm hand-drawn pencil and fine ink hatching with layered watercolor washes on textured paper, intimate and contemplative, detailed but not photorealistic.\nScene: a grandmother in a lived-in Indian home kitchen tastes a spoonful of golden dal from a small saucepan before serving her visiting young grandson seated nearby at the kitchen table. She is attentive to the taste, softly smiling in recognition; this is a moment of care, memory, and lived experience. Her other hand rests on the saucepan handle. A small pot of ghee and a few spices and chilies sit nearby, with a modest bowl and folded towel. Thin curls of steam in warm window light. Natural plausible anatomy and realistic relationships between spoon, hand, mouth and saucepan. Grandson looks toward his grandmother, not toward viewer. Avoid exaggerated expressions.\nComposition: grandmother and saucepan central foreground, grandson smaller to one side in the same coherent kitchen, enough negative space around figures. Quiet domestic scene, no split panels. Warm amber and soft gold light, muted teal and indigo shadows, soft earthy tones, tactile ink strokes and watercolor grain. It should feel handmade and connect stylistically to the moonlit-lake illustration, while standing as its own warm daylight scene.\nConstraints: no robots, no devices, no religious iconography, no Sanskrit, no letters, no labels, no watermark. This illustration represents experience and care, not a technical diagram."
+    }
+  ],
+  "thumbnail": "assets/images/ai-and-the-witness-mask-thumb.webp",
+  "reusedArtwork": {
+    "path": "assets/images/what-is-spirituality-mask.webp",
+    "credit": "RozziRoomian",
+    "creditUrl": "https://www.rozziroomian.com/store/p/the-mask-canvas-prints",
+    "sourceArticle": "/writings/what-is-spirituality/"
+  }
+}
