@@ -4,7 +4,8 @@
 // writes llms.txt, llms-full.txt, sitemap.xml, and robots.txt.
 //
 // Run after editing project/site/data.jsx:  node scripts/build-aeo.mjs
-import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -42,6 +43,7 @@ function blocksToHtml(blocks, images = []) {
       case 'heading': return `<h2>${escapeHtml(block.text)}</h2>`;
       case 'subheading': return `<h3>${escapeHtml(block.text)}</h3>`;
       case 'emphasis': return `<p><em>${escapeHtml(block.text)}</em></p>`;
+      case 'embed': return `<figure><p><a href="${escapeHtml(block.src)}">${escapeHtml(block.title || 'Interactive 3D showcase')}</a></p>${block.caption ? `<figcaption>${escapeHtml(block.caption)}</figcaption>` : ''}</figure>`;
       case 'linkedParagraph': return `<p>${escapeHtml(block.before)}<a href="${escapeHtml(block.href)}">${escapeHtml(block.label)}</a>${escapeHtml(block.after)}</p>`;
       case 'image': {
         const img = `<img src="${escapeHtml(block.src)}" alt="${escapeHtml(block.alt || '')}" style="max-width:100%;height:auto" loading="lazy" />`;
@@ -74,6 +76,7 @@ function blocksToMarkdown(blocks) {
       case 'heading': return `### ${block.text}`;
       case 'subheading': return `#### ${block.text}`;
       case 'emphasis': return `*${block.text}*`;
+      case 'embed': return `[${block.title || 'Interactive 3D showcase'}](${absolute(block.src)})${block.caption ? `\n\n${block.caption}` : ''}`;
       case 'linkedParagraph': return `${block.before}[${block.label}](${block.href})${block.after}`;
       case 'leadParagraph': return `**${block.lead}** ${block.text}`;
       case 'unorderedList':
@@ -189,7 +192,7 @@ function projectPage(project) {
     `<h1>${escapeHtml(project.title)}</h1>`,
     bylineHtml,
     `<p>${escapeHtml([project.role, project.tag, project.year].filter(Boolean).join(' · '))}</p>`,
-    blocksToHtml(blocks),
+    blocksToHtml(blocks, project.images),
     project.links?.length ? `<ul>${project.links.map(l => `<li><a href="${escapeHtml(l.href)}">${escapeHtml(l.label)}</a></li>`).join('')}</ul>` : '',
     `<p><a href="/">More projects and writing by ${escapeHtml(data.name)}</a></p>`,
   ].filter(Boolean).join('\n');
@@ -244,10 +247,25 @@ const orphans = [
   ...orphanPages('writings', new Set(data.writings.map(w => w.slug))),
 ];
 
+// New project/writing routes share the home shell and the same app entry point.
+const homeShell = readFileSync(join(ROOT, 'index.html'), 'utf8');
+const assetVersions = Object.fromEntries(['data.jsx', 'variant-a.jsx'].map(name => [
+  name, createHash('sha256').update(readFileSync(join(ROOT, 'project/site', name))).digest('hex').slice(0, 10),
+]));
+
 for (const page of [...pages, ...orphans]) {
   const file = join(ROOT, page.file);
-  if (!existsSync(file)) { console.warn(`skip: ${page.file} does not exist`); continue; }
-  let html = readFileSync(file, 'utf8');
+  let html;
+  if (existsSync(file)) html = readFileSync(file, 'utf8');
+  else {
+    const [, section, slug] = page.path.split('/');
+    if (!['projects', 'writings'].includes(section) || !slug) throw new Error(`No shell template for ${page.file}`);
+    mkdirSync(dirname(file), { recursive: true });
+    html = homeShell.replace(/window\.PAGE = \{ type: 'home' \};/, `window.PAGE = { type: '${section === 'projects' ? 'project' : 'writing'}', slug: '${slug}' };`);
+  }
+  for (const [name, version] of Object.entries(assetVersions)) {
+    html = html.replace(new RegExp(`(/project/site/${name.replace('.', '\\.')})(?:\\?v=[^"']*)?`, 'g'), `$1?v=${version}`);
+  }
   // Keep tracking on current and newly added article/project HTML shells.
   if (!/<meta\b[^>]*http-equiv=["']refresh["']/i.test(html) && !html.includes('src="/project/site/analytics.js"')) {
     html = html.replace('</head>', '  <script defer src="/project/site/analytics.js"></script>\n</head>');

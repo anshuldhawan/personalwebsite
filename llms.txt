@@ -67,6 +67,7 @@ He writes about AI-native organizations, generative games, the case for being a 
 
 ## Projects
 
+- [Roadster Jump: Building a WebGPU Stunt Game Around the 2026 Tesla Roadster](https://anshuldhawan.com/projects/roadster-canyon-jump/): A browser racing and stunt game built from scratch with Blender MCP, Three.js WebGPU, custom TSL automotive shaders, and a deterministic 120Hz physics loop. (Builder · AI-native game · WebGPU & Three.js · 2026)
 - [Can You Make an Open World Adventure Game Like GTA Without a Game Engine?](https://anshuldhawan.com/projects/open-world-adventure-without-a-game-engine/): A playable experiment combining a deterministic simulation with real-time generative video. (Builder · AI-native game · Generative video · 2026)
 - [Can You Build a Time Machine with AI?](https://anshuldhawan.com/projects/can-you-build-a-time-machine-with-ai/): On turning a city and a year into a world you can explore, and what happens when you look around the corner. (Builder · AI-native experiment · Generative worlds · 2026)
 - [Claude vs ChatGPT vs Gemini vs Grok — Poker Tournament](https://anshuldhawan.com/projects/poker-tournament/): A Texas Hold'em evaluation harness that pits frontier LLMs against each other across hands and tournaments. (Builder · LLM evaluation · 2026)

@@ -789,7 +789,10 @@ function ProjectDetail({ project }) {
                 <WritingBlock block={p} />
                 {inlineImages.filter((image) => image.after === i).map((image) => (
                   <React.Fragment key={image.src}>
-                    <ProjectMedia media={{ type:'image', ...image }} style={{ margin:'26px 0 28px' }} />
+                    <figure className="va-inline-media">
+                      <ProjectMedia media={{ type:'image', ...image }} />
+                      {image.caption && <figcaption className="va-caption">{image.caption}</figcaption>}
+                    </figure>
                     {image.credit && (
                       <div className="va-caption">
                         <a href={image.credit.href} target="_blank" rel="noreferrer">{image.credit.label}</a>
@@ -833,9 +836,37 @@ function ProjectDetail({ project }) {
 
 // ----- Writing detail view -----
 
+function ResponsiveEmbed({ block }) {
+  const iframeRef = React.useRef(null);
+  const [height, setHeight] = React.useState(block.height || 730);
+  React.useEffect(() => {
+    const onMessage = (event) => {
+      const frame = iframeRef.current;
+      if (!frame || event.source !== frame.contentWindow || event.origin !== new URL(block.src, location.href).origin) return;
+      if (event.data?.type === 'roadster-viewer-height' && Number.isFinite(event.data.height)) {
+        setHeight(Math.min(2400, Math.max(480, Math.ceil(event.data.height))));
+      }
+    };
+    window.addEventListener('message', onMessage);
+    return () => window.removeEventListener('message', onMessage);
+  }, [block.src]);
+  return (
+    <figure className="va-inline-media">
+      <div className="va-media" style={{ background:'#0b0d0a' }}>
+        <iframe ref={iframeRef} src={block.src} title={block.title || 'Interactive 3D showcase'} loading="lazy"
+          style={{ width:'100%', height, border:0, display:'block', background:'#0b0d0a' }} />
+      </div>
+      {block.caption && <figcaption className="va-caption">{block.caption}</figcaption>}
+      <p className="va-caption"><a href={block.src} target="_blank" rel="noreferrer">Open the 3D showcase in a new tab ↗</a></p>
+    </figure>
+  );
+}
+
 function WritingBlock({ block }) {
   if (typeof block === 'string') return <p>{block}</p>;
   if (!block || typeof block !== 'object') return null;
+
+  if (block.type === 'embed') return <ResponsiveEmbed block={block} />;
 
   if (block.type === 'heading') return <h2>{block.text}</h2>;
   if (block.type === 'subheading') return <h3>{block.text}</h3>;

@@ -45,6 +45,7 @@
 <p>San Francisco in 1920. Kyoto in 1600. Paris in 2200. A place you know, at a time you don't.</p>
 <p>I built an experiment called Timetravel around that idea. You picked a destination, AI generated a starting image, and a world model turned that image into an environment you could explore with your arrow keys. Each journey lasted thirty seconds.</p>
 <p>The interesting part was the step between looking at an image and moving through it. The moment you can turn left, the image has to become something more. There has to be a world outside the frame.</p>
+<figure><img src="/assets/images/upgrades/timetravel-hero.webp" alt="An imagined historical street extends through a luminous picture frame into a quiet dark room." style="max-width:100%;height:auto" loading="lazy" /><figcaption>AI-generated editorial illustration of stepping inside an image. Not a product screenshot or historical record.</figcaption></figure>
 <h2>From a destination to a world</h2>
 <p>The experience had three parts: decide what belongs in the scene, generate the starting image, and open an interactive video session.</p>
 <p>First, a text model prepared a scene plan for the chosen place and year. That plan described the viewpoint, the geography, the kinds of buildings and objects that could appear, and the landmarks to include or leave out. GPT Image generated the starting view through Vercel AI Gateway. Reactor connected the browser to the world model and streamed the resulting video back as you moved.</p>
@@ -60,6 +61,7 @@
 <p>The image and the world model also receive the same scene plan. Otherwise, two models can take the same city and year and imagine two different places. Sharing the plan gives them a common starting point.</p>
 <p>These constraints still depend on model knowledge. The system does not retrieve archival evidence for every scene or inspect the generated frames to verify them. A plan can pass validation and still contain a historical mistake. These are imagined reconstructions, with safeguards around what the models are asked to invent.</p>
 <h2>The world has to survive a turn</h2>
+<figure><img src="/assets/images/upgrades/timetravel-beyond-the-frame.webp" alt="A period street continues beyond a picture frame into lightly drawn architectural outlines." style="max-width:100%;height:auto" loading="lazy" /><figcaption>AI-generated conceptual illustration: the starting image is defined; the space beyond it has to be generated.</figcaption></figure>
 <p>A still image can leave everything beyond its border unresolved. An interactive world cannot.</p>
 <p>When the player turns, the model has to continue the street, preserve the surroundings, and keep the scene in the same period. Movement should change the camera without changing the identity of the place.</p>
 <p>The two versions approach guidance differently. In the LingBot version, the app can reinforce the scene constraints during movement. Happy Oyster Adventure takes its guidance when the world is created; this integration has no live text steering. That makes the initial image and prompt especially consequential.</p>
@@ -87,8 +89,8 @@
   <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
 
   <script type="text/babel" src="/project/site/cursor-trail.jsx?v=13"></script>
-  <script type="text/babel" src="/project/site/data.jsx?v=37"></script>
-  <script type="text/babel" src="/project/site/variant-a.jsx?v=42"></script>
+  <script type="text/babel" src="/project/site/data.jsx?v=836f908099"></script>
+  <script type="text/babel" src="/project/site/variant-a.jsx?v=c252367b73"></script>
 
   <script type="text/babel">
     ReactDOM.createRoot(document.getElementById('root')).render(<window.VariantA />);

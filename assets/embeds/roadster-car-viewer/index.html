@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 Tesla Roadster — Interactive 3D &amp; TSL Effects Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://roadsterjump.anshuldhawan.com/vendor/three/build/three.webgpu.js",
+        "three/webgpu": "https://roadsterjump.anshuldhawan.com/vendor/three/build/three.webgpu.js",
+        "three/tsl": "https://roadsterjump.anshuldhawan.com/vendor/three/build/three.tsl.js",
+        "three/addons/": "https://roadsterjump.anshuldhawan.com/vendor/three/examples/jsm/"
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #0b0d0a;
+      --bg-stage: #0d110c;
+      --bg-panel: rgba(12, 17, 13, 0.92);
+      --border: rgba(124, 242, 160, 0.20);
+      --border-strong: rgba(124, 242, 160, 0.48);
+      --acc: #7cf2a0;
+      --acc-dim: rgba(124, 242, 160, 0.12);
+      --amber: #f59e0b;
+      --text: #e6efe1;
+      --text-soft: #cfd8c9;
+      --muted: #7a8a76;
+      --mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+      --serif: 'Source Serif 4', Georgia, serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--mono);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .lab-shell {
+      position: relative;
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: linear-gradient(180deg, rgba(124, 242, 160, 0.03), rgba(11, 13, 10, 0.98));
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .corner {
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      border-color: var(--acc);
+      pointer-events: none;
+      z-index: 12;
+    }
+    .corner-tl { top: -1px; left: -1px; border-top: 1px solid; border-left: 1px solid; }
+    .corner-br { bottom: -1px; right: -1px; border-bottom: 1px solid; border-right: 1px solid; }
+
+    /* Top Header & Camera Presets */
+    .lab-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 14px;
+      border-bottom: 1px solid rgba(124, 242, 160, 0.14);
+      background: rgba(9, 13, 10, 0.9);
+      flex-wrap: wrap;
+      z-index: 5;
+    }
+
+    .lab-title {
+      font-size: 11px;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .lab-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--acc);
+      box-shadow: 0 0 8px rgba(124, 242, 160, 0.8);
+      flex: 0 0 auto;
+    }
+
+    .cam-row {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+
+    .pill-btn {
+      appearance: none;
+      background: rgba(230, 239, 225, 0.025);
+      border: 1px solid rgba(124, 242, 160, 0.20);
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 5px 9px;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: color 0.14s ease, border-color 0.14s ease, background 0.14s ease, box-shadow 0.14s ease;
+      white-space: nowrap;
+    }
+
+    .pill-btn:hover {
+      color: var(--text);
+      border-color: var(--border-strong);
+      background: rgba(124, 242, 160, 0.06);
+    }
+
+    .pill-btn.active {
+      color: #0b0d0a;
+      background: var(--acc);
+      border-color: var(--acc);
+      font-weight: 600;
+      box-shadow: 0 0 14px rgba(124, 242, 160, 0.24);
+    }
+
+    .pill-btn.accent-amber.active {
+      background: #f59e0b;
+      border-color: #fbbf24;
+      color: #0b0d0a;
+      box-shadow: 0 0 14px rgba(245, 158, 11, 0.32);
+    }
+
+    /* 3D Viewport Stage */
+    .viewport-wrap {
+      position: relative;
+      width: 100%;
+      height: 368px;
+      background: radial-gradient(ellipse at 50% 62%, #1a1612 0%, #0d100c 58%, #080a07 100%);
+      overflow: hidden;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    #viewer-canvas-host {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      cursor: grab;
+    }
+    #viewer-canvas-host:active {
+      cursor: grabbing;
+    }
+
+    .viewport-hint {
+      position: absolute;
+      bottom: 10px;
+      left: 14px;
+      z-index: 4;
+      pointer-events: none;
+      font-size: 9.5px;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: rgba(207, 216, 201, 0.62);
+      background: rgba(8, 11, 8, 0.68);
+      border: 1px solid rgba(124, 242, 160, 0.14);
+      padding: 4px 8px;
+      border-radius: 3px;
+    }
+
+    .viewport-badge-right {
+      position: absolute;
+      bottom: 10px;
+      right: 14px;
+      z-index: 4;
+      pointer-events: none;
+      font-size: 9.5px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--acc);
+      background: rgba(8, 11, 8, 0.72);
+      border: 1px solid rgba(124, 242, 160, 0.22);
+      padding: 4px 8px;
+      border-radius: 3px;
+    }
+
+    /* Loading Overlay */
+    #viewer-loader {
+      position: absolute;
+      inset: 0;
+      z-index: 8;
+      background: rgba(9, 12, 9, 0.90);
+      backdrop-filter: blur(8px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 24px;
+      transition: opacity 0.35s ease, visibility 0.35s ease;
+    }
+
+    #viewer-loader.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .loader-label {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--acc);
+      text-align: center;
+    }
+
+    .loader-bar-outer {
+      width: min(320px, 82%);
+      height: 6px;
+      border: 1px solid rgba(124, 242, 160, 0.35);
+      background: rgba(124, 242, 160, 0.06);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    #loader-bar-inner {
+      width: 8%;
+      height: 100%;
+      background: var(--acc);
+      box-shadow: 0 0 12px rgba(124, 242, 160, 0.6);
+      transition: width 0.12s linear;
+    }
+
+    #loader-sub {
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    /* Controls Console */
+    .lab-console {
+      padding: 11px 13px 12px;
+      border-top: 1px solid rgba(124, 242, 160, 0.16);
+      background: var(--bg-panel);
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .control-group-label {
+      font-size: 9px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 5px;
+    }
+
+    .effects-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 5px;
+    }
+
+    .effect-btn {
+      appearance: none;
+      text-align: left;
+      background: rgba(230, 239, 225, 0.025);
+      border: 1px solid rgba(124, 242, 160, 0.18);
+      color: var(--text-soft);
+      font-family: var(--mono);
+      font-size: 10px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      padding: 7px 8px;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .effect-btn .ef-idx {
+      font-size: 9px;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .effect-btn .ef-name {
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .effect-btn:hover {
+      border-color: var(--border-strong);
+      background: rgba(124, 242, 160, 0.06);
+    }
+
+    .effect-btn.active {
+      background: rgba(124, 242, 160, 0.14);
+      border-color: var(--acc);
+      box-shadow: 0 0 16px rgba(124, 242, 160, 0.14), inset 0 0 12px rgba(124, 242, 160, 0.06);
+    }
+
+    .effect-btn.active .ef-idx,
+    .effect-btn.active .ef-name {
+      color: var(--acc);
+    }
+
+    .secondary-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding-top: 4px;
+      border-top: 1px dashed rgba(124, 242, 160, 0.12);
+    }
+
+    .inline-ctrl-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .inline-ctrl-title {
+      font-size: 9.5px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-right: 2px;
+    }
+
+    .swatch-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 5px;
+      vertical-align: -1px;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .effect-readout {
+      font-family: var(--serif);
+      font-size: 13.5px;
+      line-height: 1.45;
+      color: var(--text-soft);
+      background: rgba(124, 242, 160, 0.03);
+      border-left: 2px solid var(--acc);
+      padding: 7px 10px;
+      border-radius: 0 3px 3px 0;
+    }
+
+    .effect-readout strong {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--acc);
+      margin-right: 6px;
+    }
+
+    @media (max-width: 560px) {
+      .viewport-wrap { height: 290px; }
+      .effects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <div class="lab-shell" id="roadster-effects-lab">
+    <span class="corner corner-tl"></span>
+    <span class="corner corner-br"></span>
+
+    <div class="lab-header">
+      <div class="lab-title">
+        <span class="lab-dot"></span>
+        <span>2026 Roadster · 3D Model &amp; Shader Effects</span>
+      </div>
+      <div class="cam-row" role="group" aria-label="Camera presets">
+        <button type="button" class="pill-btn cam-btn active" data-cam="hero">3/4 Hero</button>
+        <button type="button" class="pill-btn cam-btn" data-cam="rear">Rear Nozzles</button>
+        <button type="button" class="pill-btn cam-btn" data-cam="brake">Rotor &amp; Rim</button>
+        <button type="button" class="pill-btn cam-btn" data-cam="side">Side</button>
+        <button type="button" class="pill-btn cam-btn" data-cam="canopy">Canopy</button>
+        <button type="button" class="pill-btn cam-btn" data-cam="underbody">Underbody</button>
+        <button type="button" class="pill-btn active" id="btn-auto-orbit" title="Toggle continuous 360° turntable rotation">Orbit: On</button>
+      </div>
+    </div>
+
+    <div class="viewport-wrap">
+      <div id="viewer-canvas-host"></div>
+      <div class="viewport-hint">Drag to orbit 360° &middot; Scroll to zoom</div>
+      <div class="viewport-badge-right" id="renderer-backend-badge">WebGPU / TSL</div>
+
+      <div id="viewer-loader">
+        <div class="loader-label" id="loader-title">Streaming 2026 Roadster GLB (4.4 MB)...</div>
+        <div class="loader-bar-outer"><div id="loader-bar-inner"></div></div>
+        <div id="loader-sub">Compiling TSL Clearcoat, Shock-Diamond &amp; Blackbody Shaders</div>
+      </div>
+    </div>
+
+    <div class="lab-console">
+      <div>
+        <div class="control-group-label">// Select Effect or Shader Inspection Layer</div>
+        <div class="effects-grid" role="tablist" aria-label="3D Roadster Effects">
+          <button type="button" class="effect-btn active" data-effect="beauty">
+            <span class="ef-idx">01 · PBR + TSL</span>
+            <span class="ef-name">Candy Clearcoat</span>
+          </button>
+          <button type="button" class="effect-btn" data-effect="thrusters">
+            <span class="ef-idx">02 · Cold-Gas</span>
+            <span class="ef-name">SpaceX Thrusters</span>
+          </button>
+          <button type="button" class="effect-btn" data-effect="barrelRoll">
+            <span class="ef-idx">03 · Quintic Arc</span>
+            <span class="ef-name">360° Barrel Roll</span>
+          </button>
+          <button type="button" class="effect-btn" data-effect="brakes">
+            <span class="ef-idx">04 · Blackbody</span>
+            <span class="ef-name">1680K Brake Glow</span>
+          </button>
+          <button type="button" class="effect-btn" data-effect="aero">
+            <span class="ef-idx">05 · Active Aero</span>
+            <span class="ef-name">Wing &amp; Launch Squat</span>
+          </button>
+          <button type="button" class="effect-btn" data-effect="normals">
+            <span class="ef-idx">06 · Debug TSL</span>
+            <span class="ef-name">Analytical Normals</span>
+          </button>
+          <button type="button" class="effect-btn" data-effect="roughness">
+            <span class="ef-idx">07 · Debug TSL</span>
+            <span class="ef-name">Roughness Heat</span>
+          </button>
+          <button type="button" class="effect-btn" data-effect="wireframe">
+            <span class="ef-idx">08 · Topology</span>
+            <span class="ef-name">4.4 MB Wireframe</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="secondary-bar">
+        <div class="inline-ctrl-group" role="group" aria-label="Paint coat">
+          <span class="inline-ctrl-title">Paint:</span>
+          <button type="button" class="pill-btn paint-btn active" data-paint="crimson"><span class="swatch-dot" style="background:#d91622"></span>Reveal Crimson</button>
+          <button type="button" class="pill-btn paint-btn" data-paint="silver"><span class="swatch-dot" style="background:#cbd5e1"></span>Prototype Silver</button>
+          <button type="button" class="pill-btn paint-btn" data-paint="obsidian"><span class="swatch-dot" style="background:#1e293b"></span>Stealth Obsidian</button>
+          <button type="button" class="pill-btn paint-btn" data-paint="gold"><span class="swatch-dot" style="background:#f59e0b"></span>Canyon Gold</button>
+        </div>
+
+        <div class="inline-ctrl-group" role="group" aria-label="Tonemapper">
+          <span class="inline-ctrl-title">Tonemap:</span>
+          <button type="button" class="pill-btn tm-btn active" data-tm="0">AgX Punchy</button>
+          <button type="button" class="pill-btn tm-btn" data-tm="2">PBR Neutral</button>
+          <button type="button" class="pill-btn tm-btn" data-tm="3">ACES</button>
+        </div>
+      </div>
+
+      <div class="effect-readout" id="effect-readout">
+        <strong>Candy Clearcoat:</strong> Smooth analytical 3D body normals eliminate mesh facet seams on the hood and haunches, paired with a three-stage pigment flop and energy-conserving Weidlich-Wilkie clearcoat reflecting drifting cumulus clouds and sunlit sandstone.
+      </div>
+    </div>
+  </div>
+
+  <noscript><p style="padding:16px">JavaScript is needed for the 3D showcase. <a style="color:#7cf2a0" href="https://roadsterjump.anshuldhawan.com/">Open Roadster Jump</a>.</p></noscript>
+  <script>
+    // Keep sizing and failure feedback available even if a remote module cannot load.
+    const shell = document.getElementById('roadster-effects-lab');
+    const notifyHeight = () => {
+      if (window.parent !== window) window.parent.postMessage({
+        type: 'roadster-viewer-height', height: Math.ceil(shell.getBoundingClientRect().height) + 2,
+      }, location.origin);
+    };
+    if (typeof ResizeObserver !== 'undefined') new ResizeObserver(notifyHeight).observe(shell);
+    window.addEventListener('load', notifyHeight);
+    window.showViewerFailure = () => {
+      clearTimeout(window.viewerLoadTimeout);
+      document.getElementById('viewer-loader').classList.remove('hidden');
+      document.getElementById('loader-title').textContent = 'The 3D showcase could not load.';
+      document.getElementById('loader-sub').textContent = 'Check your connection or try a browser with WebGPU / WebGL2 support.';
+      document.getElementById('renderer-backend-badge').textContent = '3D unavailable';
+      document.querySelectorAll('button').forEach(button => { button.disabled = true; });
+    };
+    window.viewerLoadTimeout = setTimeout(() => {
+      if (!window.__roadsterLoaded || !window.__gpuReady) window.showViewerFailure();
+    }, 45000);
+  </script>
+  <script type="module">
+    import('./viewer.js').catch(error => {
+      console.error('Roadster showcase could not start:', error);
+      window.showViewerFailure();
+    });
+  </script>
+</body>
+</html>
