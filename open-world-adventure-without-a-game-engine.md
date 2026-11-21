@@ -18,7 +18,7 @@ A deterministic simulation at 30Hz tracks position, speed, mission progress, pol
 
 The simulation is always right. The video tries to match it.
 
-![Two-layer architecture for Mini Theft Auto: a deterministic 30Hz simulation drives the HUD, audio, prompt composer, and live AI video](./assets/images/open-world-adventure-architecture.webp)
+![Two-layer architecture for Mini Theft Auto: a deterministic 30Hz simulation drives the HUD, audio, prompt composer, and live AI video](./assets/images/open-world-adventure-architecture.svg)
 
 ## How Reactor Powers the Experience
 
@@ -32,9 +32,11 @@ Events don't happen because the AI "decided" to show them. They happen because t
 
 Thirty times per second, the game reads your keys, updates the simulation, checks mission rules, and composes new instructions for the model. It never sends raw key presses and hopes for the best. Instead, it translates simulation state into layered prompts: a base layer for scene identity, a camera layer, a movement layer, a pursuit layer, and an event layer. These get composed, trimmed to stay under the model's character limit, and deduplicated so identical prompts never get sent twice.
 
-![Seed image of a sports car pursued by two police cars through a neon-lit city at night](./assets/images/open-world-adventure-seed-city.webp)
+![The prompt pipeline: game state supplies layered descriptions, the composer fits the character budget, and a duplicate check sends only new prompts to the video model](./assets/images/open-world-adventure-prompt-pipeline.webp)
 
 The mission is broken into visual segments, each with its own seed image and prompt set. When you move between locations, the game resets the video session entirely behind a full-screen transition still. The player sees a cinematic cut. The model gets a clean slate.
+
+![Seed image of a sports car pursued by two police cars through a neon-lit city at night](./assets/images/open-world-adventure-seed-city.webp)
 
 ## Interactive Dialogue with a Second AI Model
 

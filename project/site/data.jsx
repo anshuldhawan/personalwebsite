@@ -614,12 +614,20 @@ const SITE_DATA = {
         {
           kind: 'hero',
           after: 7,
-          src: '/assets/images/open-world-adventure-architecture.webp',
+          src: '/assets/images/open-world-adventure-architecture.svg',
           alt: 'Two-layer architecture for Mini Theft Auto: a deterministic 30Hz simulation drives the HUD, audio, prompt composer, and live AI video',
-          aspect: '1672/941',
+          aspect: '1600/1040',
+          fullSizeLink: true,
         },
         {
           after: 13,
+          src: '/assets/images/open-world-adventure-prompt-pipeline.webp',
+          alt: 'The prompt pipeline: game state supplies base, camera, movement, pursuit, and event layers; the composer fits the character budget, skips duplicate prompts, and sends new prompts to the video model.',
+          aspect: '1672/941',
+          fullSizeLink: true,
+        },
+        {
+          after: 14,
           src: '/assets/images/open-world-adventure-seed-city.webp',
           alt: 'Seed image of a sports car pursued by two police cars through a neon-lit city at night',
           aspect: '1128/636',

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040" role="img" aria-labelledby="title desc">
+  <title id="title">Mini Theft Auto — two-layer architecture</title>
+  <desc id="desc">Player input updates a deterministic simulation at 30 Hz. The simulation controls the HUD, minimap, objectives and synthesized audio. Its prompt composer sends scene descriptions, a seed image and camera controls through Reactor to LingBot World 2. The resulting live AI video joins the simulation-driven interface and audio in the playable game. Video output never changes game state.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#06182f"/><stop offset="1" stop-color="#020b19"/></linearGradient>
+    <linearGradient id="panel" x2="0" y2="1"><stop stop-color="#102c45"/><stop offset="1" stop-color="#091c30"/></linearGradient>
+    <linearGradient id="render" x2="0" y2="1"><stop stop-color="#192847"/><stop offset="1" stop-color="#101a30"/></linearGradient>
+    <marker id="cyan" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 8 5 1 9" fill="none" stroke="#53d8ee" stroke-width="1.8"/></marker>
+    <marker id="purple" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 8 5 1 9" fill="none" stroke="#b4a4fc" stroke-width="1.8"/></marker>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#f2f6ff}
+      .eyebrow{font-size:18px;letter-spacing:4px;fill:#9dbbdb}
+      .label{font-size:28px;font-weight:600}
+      .body{font-size:23px;fill:#c0d0e4}
+      .small{font-size:19px;fill:#9dbbdb}
+      .flow{fill:none;stroke:#53d8ee;stroke-width:3;marker-end:url(#cyan)}
+      .model-flow{fill:none;stroke:#b4a4fc;stroke-width:3;marker-end:url(#purple)}
+      .panel{fill:url(#panel);stroke:#30617c;stroke-width:1.5}
+    </style>
+  </defs>
+  <rect width="1600" height="1040" fill="url(#bg)"/>
+  <path d="M60 170H1540 M60 895H1540" stroke="#355570" stroke-width="1"/>
+  <text x="60" y="60" class="eyebrow">MINI THEFT AUTO · SYSTEM ARCHITECTURE</text>
+  <text x="56" y="132" style="font-family:Georgia,serif;font-size:68px">One simulation. A generated world.</text>
+
+  <!-- Authoritative simulation and its three independent outputs. -->
+  <path d="M230 365H300" class="flow"/>
+  <path d="M740 260H850" class="flow"/>
+  <path d="M740 405H850" class="flow"/>
+  <path d="M520 535V620" class="flow"/>
+  <path d="M1155 260H1240" class="flow"/>
+  <path d="M1155 405H1240" class="flow"/>
+  <path d="M740 707H850" class="model-flow"/>
+  <path d="M1155 707H1240" class="model-flow"/>
+  <path d="M1390 620V460" class="model-flow"/>
+
+  <rect x="60" y="285" width="170" height="160" rx="16" class="panel"/>
+  <g fill="none" stroke="#53d8ee" stroke-width="3" stroke-linecap="round">
+    <path d="M111 321h68l13 47q1 12-9 12l-20-16h-36l-20 16q-10 0-9-12z"/>
+    <path d="M117 339h18m-9-9v18"/><circle cx="169" cy="337" r="2"/><circle cx="178" cy="346" r="2"/>
+  </g>
+  <text x="145" y="415" text-anchor="middle" style="font-size:24px">Player input</text>
+
+  <rect x="300" y="205" width="440" height="330" rx="18" class="panel" style="stroke:#53d8ee"/>
+  <text x="332" y="248" class="eyebrow" style="fill:#53d8ee;letter-spacing:2px">01 / SOURCE OF TRUTH</text>
+  <text x="332" y="291" class="label">Deterministic simulation</text>
+  <rect x="332" y="310" width="85" height="32" rx="16" fill="#144258"/>
+  <text x="374" y="333" text-anchor="middle" style="font-size:20px;fill:#8ce7f5">30 Hz</text>
+  <text x="332" y="381" class="body">Position &amp; speed</text>
+  <text x="332" y="419" class="body">Mission progress &amp; objectives</text>
+  <text x="332" y="457" class="body">Police distance</text>
+  <text x="332" y="495" class="body">Timers &amp; triggers</text>
+
+  <rect x="850" y="205" width="305" height="110" rx="16" class="panel"/>
+  <text x="877" y="250" class="label">Game interface</text>
+  <text x="877" y="285" class="small">HUD · minimap · objectives</text>
+  <rect x="850" y="350" width="305" height="110" rx="16" class="panel"/>
+  <text x="877" y="395" class="label">Synthesized audio</text>
+  <text x="877" y="430" class="small">Engine · sirens · helicopter</text>
+
+  <rect x="1240" y="205" width="300" height="255" rx="18" fill="#0c2936" stroke="#62dac7" stroke-width="2"/>
+  <rect x="1298" y="234" width="184" height="96" rx="8" fill="#061a26" stroke="#62dac7" stroke-width="2"/>
+  <path d="M1315 310 1360 264 1382 288 1405 258 1464 310 M1390 330V345 M1365 345H1415" fill="none" stroke="#62dac7" stroke-width="2.5"/>
+  <text x="1390" y="388" text-anchor="middle" class="label">Playable game</text>
+  <text x="1390" y="424" text-anchor="middle" class="small">State + sound + visuals</text>
+
+  <text x="60" y="580" class="eyebrow" style="fill:#b4a4fc;letter-spacing:2px">02 / RENDERING LAYER</text>
+  <text x="550" y="580" class="small">Simulation state becomes scene instructions</text>
+
+  <rect x="300" y="620" width="440" height="175" rx="18" fill="url(#render)" stroke="#8479c7" stroke-width="1.5"/>
+  <text x="332" y="665" class="label">Prompt composer</text>
+  <text x="332" y="703" class="body">Base · camera · movement</text>
+  <text x="332" y="738" class="body">Pursuit · events</text>
+  <text x="332" y="774" class="small">Compose → budget → deduplicate</text>
+  <rect x="850" y="620" width="305" height="175" rx="18" fill="url(#render)" stroke="#8479c7" stroke-width="1.5"/>
+  <text x="877" y="665" class="label">LingBot World 2</text>
+  <text x="877" y="703" class="body">via Reactor</text>
+  <text x="877" y="743" class="small">Seed image + prompt</text>
+  <text x="877" y="772" class="small">+ camera controls</text>
+  <rect x="1240" y="620" width="300" height="175" rx="18" fill="url(#render)" stroke="#8479c7" stroke-width="1.5"/>
+  <circle cx="1390" cy="663" r="20" fill="none" stroke="#b4a4fc" stroke-width="2"/>
+  <path d="m1385 653 15 10-15 10z" fill="#b4a4fc"/>
+  <text x="1390" y="723" text-anchor="middle" class="label">Live AI video</text>
+  <text x="1390" y="761" text-anchor="middle" class="small">Generated rendering</text>
+
+  <text x="300" y="846" class="small">One-way flow: generated video never updates mission state.</text>
+  <circle cx="74" cy="950" r="7" fill="#62dac7"/>
+  <text x="100" y="959" style="font-family:Georgia,serif;font-size:32px">The simulation is always right. The video tries to match it.</text>
+  <text x="60" y="1001" class="eyebrow" style="font-size:14px;letter-spacing:3px">DETERMINISTIC GAMEPLAY / GENERATIVE VISUALS</text>
+</svg>

@@ -758,6 +758,9 @@ function HomeView() {
 
 function ProjectDetail({ project }) {
   const paragraphs = (project.content && project.content.length > 0) ? project.content : [project.blurb];
+  const hasInlinePreview = project.media?.type === 'video' && paragraphs.some(
+    (block) => block?.type === 'video' && block.src === project.media.src
+  );
   const images = project.images || [];
   const inlineImages = images.filter((image) => Number.isInteger(image.after));
   React.useEffect(() => {
@@ -781,7 +784,7 @@ function ProjectDetail({ project }) {
           </h1>
           <div className="va-meta" style={{ marginBottom:28 }}>{project.role}</div>
 
-          <ProjectMedia media={project.media} style={{ marginBottom:32 }} />
+          {!hasInlinePreview && <ProjectMedia media={project.media} style={{ marginBottom:32 }} />}
 
           <div className="va-prose" style={{ fontSize:17 }}>
             {paragraphs.map((p, i) => (
